@@ -27,9 +27,10 @@ twitter_username: umrobotics
 github_username:  michiganrobotics
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+remote_theme: jekyll/minima@296bf6b872b8450529bee1e48d0ca9be200a4be5
 
 # Exclude from processing.
 # The following items will not be processed, by default.

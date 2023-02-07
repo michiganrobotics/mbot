@@ -1,10 +1,6 @@
 ---
 layout: post
-<<<<<<< HEAD
 title:  "Welcome to the MBot Website"
-=======
-title:  "Welcome to Jekyll!"
->>>>>>> parent of f2de2c3 (Testing github commandline functionality)
 date:   2023-01-24 15:13:37 -0500
 categories: jekyll update
 ---
