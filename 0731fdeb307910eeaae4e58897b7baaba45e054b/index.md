@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+WELCOME WELCOME
+
+Want to build some robots? You are at the right place : D

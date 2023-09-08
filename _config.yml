@@ -30,7 +30,12 @@ github_username:  michiganrobotics
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-remote_theme: jekyll/minima@296bf6b872b8450529bee1e48d0ca9be200a4be5
+# remote_theme: pmarsceill/just-the-docs
+theme: just-the-docs
+
+logo: "/assets/images/robotics-logo.svg"
+favicon_ico: "/assets/images/mbot-logo.png"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
