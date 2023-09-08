@@ -30,8 +30,8 @@ github_username:  michiganrobotics
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-# remote_theme: pmarsceill/just-the-docs
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
+# theme: just-the-docs
 
 logo: "/assets/images/robotics-logo.svg"
 favicon_ico: "/assets/images/mbot-logo.png"
