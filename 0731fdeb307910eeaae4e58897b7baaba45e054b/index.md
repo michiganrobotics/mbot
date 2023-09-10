@@ -12,5 +12,5 @@ nav_order: 1
 Want to build some robots? You are at the right place : D
 
 <a class="image-link" href="/assets/images/welcome_bots.png">
-  <img src="/assets/images/welcome_bots.png" alt="Image Description">
+  <img src="/assets/images/welcome_bots.png" alt="2 mbots">
 </a>

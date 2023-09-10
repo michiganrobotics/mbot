@@ -30,6 +30,8 @@ github_username:  michiganrobotics
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-last-modified-at
+
 remote_theme: pmarsceill/just-the-docs
 # theme: just-the-docs
 

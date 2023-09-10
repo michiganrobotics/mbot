@@ -26,10 +26,11 @@ layout: table_wrappers
           {% else %}
             {{ content }}
           {% endif %}
-
+          
           {% if page.has_children == true and page.has_toc != false %}
             {% include components/children_nav.html %}
           {% endif %}
+          <p>Last updated: {{ page.last_modified_at | date: "%Y-%m-%d" }}</p>  
         </main>
         {% include components/footer.html %}
       </div>
@@ -43,7 +44,7 @@ layout: table_wrappers
     {% include components/mermaid.html %}
   {% endif %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="{{ "/assets/js/jquery.magnific-popup.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/jquery.magnific-popup.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 
 </body>
