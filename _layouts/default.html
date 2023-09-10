@@ -30,7 +30,7 @@ layout: table_wrappers
           {% if page.has_children == true and page.has_toc != false %}
             {% include components/children_nav.html %}
           {% endif %}
-          <p>Last updated: {{ page.last_modified_at | date: "%Y-%m-%d" }}</p>  
+          <p>Last updated: {{ page.last_modified_at | date: "%b-%d-%Y" }}</p>  
         </main>
         {% include components/footer.html %}
       </div>
