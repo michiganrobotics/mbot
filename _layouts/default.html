@@ -26,6 +26,7 @@ layout: table_wrappers
           {% else %}
             {{ content }}
           {% endif %}
+          <p>Last updated: {{ page.last_modified_at | date: "%b-%d-%Y"  }}</p>
           
           {% if page.has_children == true and page.has_toc != false %}
             {% include components/children_nav.html %}
