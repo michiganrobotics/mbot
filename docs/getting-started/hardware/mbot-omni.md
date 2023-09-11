@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Mbot OMNI
+grand_parent: Getting Started
 parent: Hardware
 nav_order: 1
 last_modified_at: 2023-09-11 16:37:48 -0500
@@ -18,8 +19,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 ### Contents
 * TOC
 {:toc}
-
-***
+ 
 
 ## Bottom Assembly
 
