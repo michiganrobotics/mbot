@@ -5,10 +5,8 @@ grand_parent: Getting Started
 parent: Hardware
 nav_order: 1
 last_modified_at: 2023-09-11 16:37:48 -0500
+author: abhishek
 ---
-
-
-# Mbot OMNI Assembly
 
 This guide will walk you through the steps needed to assemble the MBot Omni. The MBot Omni Bot is comprised of 3 sections i.e the [bottom plate](#bottom-assembly), [middle plate](#middle-assembly) and the [top plate](#top-assembly). Each of these plates are assembled separately first, before attaching them together to create the MBot Omni.
 

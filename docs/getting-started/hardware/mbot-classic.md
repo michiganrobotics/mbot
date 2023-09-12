@@ -5,9 +5,9 @@ grand_parent: Getting Started
 parent: Hardware
 nav_order: 2
 last_modified_at: 2023-09-11 16:51:48 -0500
+author: shaw
 ---
 
-# Mbot Classic Assembly
 
 This guide will walk you through the steps needed to assemble the MBot Classic. 
 

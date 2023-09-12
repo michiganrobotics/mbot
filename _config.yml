@@ -38,6 +38,7 @@ remote_theme: pmarsceill/just-the-docs
 logo: "/assets/images/robotics-logo.svg"
 favicon_ico: "/assets/images/mbot-logo.png"
 
+last_modified_at: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

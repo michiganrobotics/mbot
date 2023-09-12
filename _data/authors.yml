@@ -1,0 +1,15 @@
+# Example:
+
+# john_doe:
+#     name: John Doe
+#     url: http://johndoe.com
+
+
+shaw:
+    name: Shaw Sun
+    url: https://robotics.umich.edu/profile/shaw-sun/
+
+abhishek:
+    name: Abhishek Narula
+    url: https://robotics.umich.edu/profile/abhishek-narula/
+
