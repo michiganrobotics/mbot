@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: Architecture
 parent: Concepts
 nav_order: 1

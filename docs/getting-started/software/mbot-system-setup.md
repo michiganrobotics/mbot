@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: MBot System Setup
 grand_parent: Getting Started
 parent: Software

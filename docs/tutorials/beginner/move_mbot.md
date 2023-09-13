@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: Move Mbot
 nav_order: 1
 grand_parent: Tutorials

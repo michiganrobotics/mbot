@@ -19,7 +19,8 @@ gem 'github-pages', group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
-  gem "jekyll-remote-theme" 
+gem "jekyll-remote-theme"
+gem "jekyll-include-cache", group: :jekyll_plugins
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
@@ -42,4 +43,3 @@ gem 'magnific-popup-rails', '~> 1.1'
 group :jekyll_plugins do
   gem "jekyll-last-modified-at"
 end
- 

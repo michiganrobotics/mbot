@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: LCM
 parent: Concepts
 nav_order: 2
