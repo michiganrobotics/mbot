@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: intermediate
 nav_order: 2
 parent: Tutorials

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: Mbot OMNI
 grand_parent: Getting Started
 parent: Hardware
@@ -17,7 +17,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 ### Contents
 * TOC
 {:toc}
- 
+
 
 ## Bottom Assembly
 
@@ -158,19 +158,19 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     </a>
 
 5. With the black piece of the connector pulled out on the camera, insert the Raspberry Pi ribbon cable into the camera PCB as shown (metal contacts facing toward the camera side, blue side on the rear), and then close the black connector.
-    
+
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/6.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/6.jpg" alt="" style="max-width:400px;"/>
     </a>
 
 6. Fasten the camera PCB to the 3D-printed camera mount with two (2) M2x8 bolts threading directly into the 3D-printed material (only 2 necessary, diagonal orientation preferred)
-   
+
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/7.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/7.jpg" alt="" style="max-width:400px;"/>
     </a>
 
 7. Insert USB-C-to-USB cable into port on Raspberry Pi as shown
-  
+
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/8.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/8.jpg" alt="" style="max-width:400px;"/>
     </a>

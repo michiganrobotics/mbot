@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: Mbot Classic
 grand_parent: Getting Started
 parent: Hardware
@@ -9,7 +9,7 @@ author: shaw
 ---
 
 
-This guide will walk you through the steps needed to assemble the MBot Classic. 
+This guide will walk you through the steps needed to assemble the MBot Classic.
 
 **TODO: Insert a finished mbot here**
 
@@ -26,15 +26,15 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
 1. Mount the caster to the bottom
 
-    | Components               |# | 
+    | Components               |# |
     |:-----------------------  |:-|
     | Metal ball               |1 |
     | Bottom Acrylic Sheet     |1 |
     | 1/8" spacer              |1 |
     | M2 hex nuts              |2 |
-    | M2 x 12mm screw          |2 | 
+    | M2 x 12mm screw          |2 |
     | Caster housing           |1 |
- 
+
     Collect all the necessary components and assemble them as illustrated in the images below.
 
     <div class="popup-gallery">
@@ -46,10 +46,10 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
 2. Mount the motor brackets
 
-    | Components     | #         | 
+    | Components     | #         |
     |:-------------|:---- -------|
-    | M2.5 x 8mm Screws        |8| 
-    | Motor Mount (3D printed) |2| 
+    | M2.5 x 8mm Screws        |8|
+    | Motor Mount (3D printed) |2|
 
     Collect all the necessary components and assemble them as illustrated in the images below. When attaching the mount to the bottom plate, ensure that the slot faces inward.
 
@@ -61,11 +61,11 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
 3. Mount the motors
 
-    | Components     | #         | 
+    | Components     | #         |
     |:-------------|:---- -------|
-    | M2.5 x 6mm Screws        |4| 
-    | Gear Motors w/ Wiring & Encoders |2| 
-    
+    | M2.5 x 6mm Screws        |4|
+    | Gear Motors w/ Wiring & Encoders |2|
+
     Collect all the necessary components and assemble them as illustrated in the images below. Note that you need to align unthreaded holes in motor vertically to the holes in the motor mount, while the wires should face the back of the MBot as shown in the second figure.
 
     <div class="popup-gallery">
@@ -76,11 +76,11 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
 4. Mount the tall 1.5” aluminum standoffs
 
-    | Components               |# | 
+    | Components               |# |
     |:-----------------------  |:-|
     | 1.5" Aluminum standoffs  |4 |
-    | 4-40 machine screw 3/8"  |4 | 
- 
+    | 4-40 machine screw 3/8"  |4 |
+
     Gather all the components and assemble as shown in the images below.
 
     <div class="popup-gallery">
@@ -90,10 +90,10 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
 5. Put the wheels on
 
-    | Components               |# | 
+    | Components               |# |
     |:-----------------------  |:-|
     | Scooter Wheels 84 X 24 mm  |2 |
-    | Hex Key  |1 | 
+    | Hex Key  |1 |
 
     1. If your wheels are not assembled yet, you need to assemble it first
 
@@ -105,7 +105,7 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
     2. If your wheels are assembled already
 
-        Then you can directly put the wheel on, use the hex key to tight the wheels. Note that it is necessary to leave a nominal space between the wheel and the screw head of the motor, as depicted in the image below. 
+        Then you can directly put the wheel on, use the hex key to tight the wheels. Note that it is necessary to leave a nominal space between the wheel and the screw head of the motor, as depicted in the image below.
 
         <div class="popup-gallery">
             <a href="/assets/images/hardware/classic/bottomPlate/wheelon1.jpg" title="Mount the wheel on 1"><img src="/assets/images/hardware/classic/bottomPlate/wheelon1.jpg" width="300" height="300"></a>
@@ -114,13 +114,13 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 
 6. Assemble the MBot board standoffs
 
-    | Components     | #         | 
+    | Components     | #         |
     |:-------------|:---- -------|
     | MBot board               |1|
-    | M2.5 8mm Nylon Standoffs |4| 
-    | M2.5 x 6mm Screws        |4| 
+    | M2.5 8mm Nylon Standoffs |4|
+    | M2.5 x 6mm Screws        |4|
 
-    Gather all the components you need and assemble them as depicted in the image below. 
+    Gather all the components you need and assemble them as depicted in the image below.
 
     <div class="popup-gallery">
         <a href="/assets/images/hardware/classic/bottomPlate/mbotboard1.jpg" title="Assemble the MBot board standoffs 1"><img src="/assets/images/hardware/classic/bottomPlate/mbotboard1.jpg" width="300" height="300"></a>

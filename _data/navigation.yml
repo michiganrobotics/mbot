@@ -1,0 +1,33 @@
+main:
+  - title: "About"
+    url: /about
+  - title: "Teaching"
+    url: /teaching
+  - title: "Documentation"
+    url: /docs/
+
+docs:
+  # - title: Getting Started
+  #   children:
+  #     - title: "Quick-Start Guide"
+  #       url: /docs/getting-started/
+  #     - title: "Hardware"
+  #       url: /docs/getting-started/hardware/
+  #     - title: "Software"
+  #       url: /docs/getting-started/software/
+
+  # - title: Tutorials
+  #   children:
+  #     - title: "MBot Tutorials"
+  #       url: /docs/tutorials/
+  #     - title: "Intermediate"
+  #       url: /docs/tutorials/intermediate/
+  #     - title: "Advanced"
+  #       url: /docs/tutorials/advanced/
+
+  # - title: Concepts
+  #   children:
+  #     - title: "Architecture"
+  #       url: /docs/concepts/architecture
+  #     - title: "LCM"
+  #       url: /docs/concepts/lcm
