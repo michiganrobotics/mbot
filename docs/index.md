@@ -3,6 +3,12 @@ layout: single
 title: MBot Documentation
 ---
 
-This documentation is intended for current students and instructors using the MBot platform.
+<a class="image-link" href="/docs/classic/">
+  <img src="/assets/images/mbotclassicHeadShot.png" alt="" style="max-width:200px;"/>
+</a>
 
-*Coming Soon!*
+<a class="image-link" href="/docs/omni/">
+  <img src="/assets/images/mbotomniHeadShot.png" alt="" style="max-width:200px;"/>
+</a>
+
+

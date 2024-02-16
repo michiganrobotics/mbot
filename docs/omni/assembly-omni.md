@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Mbot OMNI
+title: Mbot Omni
 grand_parent: Getting Started
 parent: Hardware
 nav_order: 1

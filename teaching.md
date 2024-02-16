@@ -3,6 +3,9 @@ layout: single
 title: Teaching with the MBot
 ---
 
-*Coming soon!*
+Courses currently using the MBOT Platform:
+- [University of Michigan: ROB 102](https://hellorob.org/)
+- University of Michigan: ROB 330
+- University of Michigan: EECS 467
+- [University of Michigan: ROB 550](https://rob550-docs.github.io/)
 
-In the meanwhile please email us at [um-mbothelp@umich.edu](mailto:um-mbothelp@umich.edu) to get in touch!
