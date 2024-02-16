@@ -23,7 +23,7 @@ title: MBot Classic Documentation
 
 ## Bill of Materials
 
-- [List of Components needed to build the MBot Omni](https://docs.google.com/spreadsheets/d/e/2PACX-1vS7C7Ihd4johpeZGAauQtoXg-p-wTMKtaLudPkOynFAVTpiVApPRE6XmYgAk9ICQTBNwOSDSgDIIbGC/pubhtml?gid=1948317146&single=true)
+- [List of Components needed to build the MBot Classic](https://docs.google.com/spreadsheets/d/e/2PACX-1vS7C7Ihd4johpeZGAauQtoXg-p-wTMKtaLudPkOynFAVTpiVApPRE6XmYgAk9ICQTBNwOSDSgDIIbGC/pubhtml?gid=1948317146&single=true)
 
 ## Assembly Instructions
 - [Step by Step Instructions on assembling the MBot Classic](https://rob550-docs.github.io/docs/botlab/setup-guide/mbot-classic-assemly.html)
