@@ -18,7 +18,7 @@ title: MBot Classic Documentation
 <iframe src="https://umich2673.autodesk360.com/shares/public/SHd38bfQT1fb47330c992b10548a6821d4ee?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 
-- [Download Full Assembly STEP File](https://www.dropbox.com/scl/fi/pqqv7auzamibjmqkde0ee/MBot-Classic-Jetson-Nano-Full-Assembly.stp?rlkey=vllsbdbvedzpoi7u19yh7uqnc&dl=0
+- [Download Full Assembly STEP File](https://www.dropbox.com/scl/fi/pqqv7auzamibjmqkde0ee/MBot-Classic-Jetson-Nano-Full-Assembly.stp?rlkey=vllsbdbvedzpoi7u19yh7uqnc&dl=0)
 
 
 ## Bill of Materials
