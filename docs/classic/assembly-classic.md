@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Mbot Classic
+title: MBot Classic
 grand_parent: Getting Started
 parent: Hardware
 nav_order: 2

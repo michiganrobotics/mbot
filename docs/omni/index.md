@@ -14,8 +14,10 @@ title: MBot Omni Documentation
 
 
 ## Design Files
-
+- Autodesk Fusion 360
 <iframe src="https://umich2673.autodesk360.com/shares/public/SHd38bfQT1fb47330c9980a39d618e3327df?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+- [Download Full Assembly STEP File](https://www.dropbox.com/scl/fi/y2e5qqra6bz3351x4xmau/Battery-Clip.dxf?rlkey=n1n6009ux23dd2zckoqx1c5r3&dl=0)
 
 ## Bill of Materials
 

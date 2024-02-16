@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Mbot Omni
+title: MBot Omni
 grand_parent: Getting Started
 parent: Hardware
 nav_order: 1
@@ -29,7 +29,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 - 1 X Bottom Acrylic Plate
 - 3 X 6V DC Motors with Encoders
 - 3 X 3D Printed Motor Mounts
-- 3 X Motor Cables
+- [3 X Motor Cables](/docs/omni/omnimotorCables)
 - 1 X Robotics Control Board
 - 4 X 2.5M-8mm Nylon Standoffs
 - 3 X Omni-wheel Sets
