@@ -10,7 +10,7 @@ title: MBot Classic Documentation
 - [Design Files](#design-files)
 - [Bill of Materials(BOM)](#bill-of-materials)
 - [Assembly Instructions](#assembly-instructions)
-- [Software](#software)
+- [System Setup](#system-setup)
 
 
 ## Design Files
@@ -28,5 +28,6 @@ title: MBot Classic Documentation
 ## Assembly Instructions
 - [Step by Step Instructions on assembling the MBot Classic](https://rob550-docs.github.io/docs/botlab/setup-guide/mbot-classic-assemly.html)
 
-## Software
-*Coming Soon*
+## System Setup
+- [Software setup guide](https://rob550-docs.github.io/docs/botlab/setup-guide/mbot-system-setup.html)
+- [Github Repo](https://github.com/mbot-project)
