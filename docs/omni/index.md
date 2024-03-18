@@ -10,7 +10,7 @@ title: MBot Omni Documentation
 - [Design Files](#design-files)
 - [Bill of Materials(BOM)](#bill-of-materials)
 - [Assembly Instructions](#assembly-instructions)
-- [Software](#software)
+- [System Setup](#system-setup)
 
 
 ## Design Files
@@ -26,8 +26,10 @@ title: MBot Omni Documentation
 ## Assembly Instructions
 - [Step by Step Instructions on assembling the MBot Omni](/docs/omni/assembly-omni)
 
-## Software
-*Coming Soon*
+## System Setup
+- [Software setup guide](https://hellorob.org/staff-guides/mbot-setup)
+- [Github Repo](https://github.com/mbot-project)
+
 
 
 
