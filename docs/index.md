@@ -16,7 +16,7 @@ title: MBot Documentation
   </tr>
   <tr>
     <td>MBot Omni with Raspberry Pi 4</td>
-    <td><a class="image-link" href="/docs/classic-rpi5/"><img src="/assets/images/mbotomniHeadShot.png" alt="" style="max-width:200px;"/></a></td>
+    <td><a class="image-link" href="/docs/omni/"><img src="/assets/images/mbotomniHeadShot.png" alt="" style="max-width:200px;"/></a></td>
 
   </tr>
 </table>
