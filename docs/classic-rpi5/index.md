@@ -30,6 +30,7 @@ title: MBot Classic (RPi5) Documentation
   - [Laser Cut Raspberry Pi 5 Holder](https://www.dropbox.com/scl/fi/wxkgztyra9k70rgaxwqrq/MBot_RPi_Adapter.DXF?rlkey=mwed1ncoq8341obf04w6crbrl&dl=0) 
   - [3D Printed Camera Mount STL](https://www.dropbox.com/scl/fi/s86rho4ihm4d4usf3q5qq/MBot-Camera-Mount-Flat-Jetson-Nano.stl?rlkey=92krowlh6zdckhmqfrs9n30mw&dl=0)
   - [3D Printed Motor Mount STL](https://www.dropbox.com/scl/fi/jg96lskozyztngsft5ou6/MBot-Motor-Mount.stl?rlkey=p4woj1pharj43px08k8djggtt&dl=0)
+  - [3D Printed OLED Screen Mount STL](https://www.dropbox.com/scl/fi/onqvq7l84132avl8tv7a5/OLED-Screen-Mount.stl?rlkey=w3bavnkkjv6o494vjkgawngmj&dl=0)
 
 
 ### Bill of Materials

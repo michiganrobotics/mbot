@@ -27,6 +27,7 @@ title: MBot Classic (Jetson Nano) Documentation
   - [Laser Cut Battery Clip DXF](https://www.dropbox.com/scl/fi/y2e5qqra6bz3351x4xmau/Battery-Clip.dxf?rlkey=n1n6009ux23dd2zckoqx1c5r3&dl=0) 
   - [3D Printed Camera Mount STL](https://www.dropbox.com/scl/fi/s86rho4ihm4d4usf3q5qq/MBot-Camera-Mount-Flat-Jetson-Nano.stl?rlkey=92krowlh6zdckhmqfrs9n30mw&dl=0)
   - [3D Printed Motor Mount STL](https://www.dropbox.com/scl/fi/jg96lskozyztngsft5ou6/MBot-Motor-Mount.stl?rlkey=p4woj1pharj43px08k8djggtt&dl=0)
+    - [3D Printed OLED Screen Mount STL](https://www.dropbox.com/scl/fi/onqvq7l84132avl8tv7a5/OLED-Screen-Mount.stl?rlkey=w3bavnkkjv6o494vjkgawngmj&dl=0)
 
 
 ## Bill of Materials
