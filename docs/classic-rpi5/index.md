@@ -41,7 +41,7 @@ title: MBot Classic (RPi5) Documentation
 - [Step by Step Instructions on assembling the MBot Classic](https://rob550-docs.github.io/docs/botlab/setup-guide/mbot-classic-assemly.html)
 
 ### System Setup
-- [Software setup guide](https://rob550-docs.github.io/docs/botlab/setup-guide/mbot-system-setup.html)
+- [Software setup guide](https://rob550-docs.github.io/docs/staff-guide/dev-setup-pi5-classic.html)
 - [Github Repo](https://github.com/mbot-project)
   
 
