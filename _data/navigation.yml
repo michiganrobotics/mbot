@@ -19,20 +19,20 @@ docs:
         url: /docs/getting-started/software/
 
   - title: MBot Classic
-    url: /docs/classic/
+    url: /docs/hardware/classic/
     children:
       - title: "Assembly"
-        url: /docs/classic/assembly
+        url: /docs/hardware/classic/assembly
       - title: "Get the Hardware"
-        url: /docs/classic/building
+        url: /docs/hardware/classic/building
 
   - title: MBot Omni
-    url: /docs/omni/
+    url: /docs/hardware/omni/
     children:
       - title: "Assembly"
-        url: /docs/omni/assembly
+        url: /docs/hardware/omni/assembly
       - title: "Get the Hardware"
-        url: /docs/omni/building
+        url: /docs/hardware/omni/building
 
   # - title: Tutorials
   #   children:
