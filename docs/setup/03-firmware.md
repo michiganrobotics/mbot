@@ -59,10 +59,10 @@ The calibration script detects the motor and encoder polarity and then calibrate
 
 ## 4. Test your Setup
 
-Follow the [Quick Start Guide](/docs/getting-started/drive) to make sure your robot can drive around!
+Follow the [Quick Start Guide](/docs/tutorials/drive) to make sure your robot can drive around!
 
 **Something not right?** If your robot doesn't drive properly, you may have a hardware issue. See the [debugging tips](/docs/hardware/debugging) to check for hardware issues.
 {: .notice--info}
 
 [**Previous Step:** Configure your image](/docs/setup/02-configuration){: .btn .btn--inverse .align-left}
-[**Next Step:** Test your setup!](/docs/getting-started/drive){: .btn .btn--inverse .align-right}
+[**Next Step:** Test your setup!](/docs/tutorials/drive){: .btn .btn--inverse .align-right}

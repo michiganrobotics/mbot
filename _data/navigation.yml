@@ -9,29 +9,19 @@ main:
     url: /docs/
 
 docs:
-  - title: Getting Started
-    url: /docs/getting-started/
+  - title: Documentation
+    url: /docs/
     children:
-      - title: "Quick Start"
+      - title: "Getting Started"
         url: /docs/getting-started/
-      - title: "Drive the MBot"
-        url: /docs/getting-started/drive
 
-  - title: "Hardware: Classic"
-    url: /docs/hardware/classic/
+  - title: "Hardware"
+    url: /docs/hardware/
     children:
-      - title: "Assembly"
-        url: /docs/hardware/classic/assembly
-      - title: "Get the Hardware"
-        url: /docs/hardware/classic/building
-
-  - title: "Hardware: Omni"
-    url: /docs/hardware/omni/
-    children:
-      - title: "Assembly"
-        url: /docs/hardware/omni/assembly
-      - title: "Get the Hardware"
-        url: /docs/hardware/omni/building
+      - title: "MBot Classic"
+        url: /docs/hardware/classic/
+      - title: "MBot Omni"
+        url: /docs/hardware/omni/
 
   - title: "Setup"
     url: /docs/setup/
@@ -46,6 +36,12 @@ docs:
         url: /docs/setup/03-firmware
       - title: "Advanced: OS Image Setup"
         url: /docs/setup/new-image
+
+  - title: Tutorials
+    url: /docs/tutorials/
+    children:
+      - title: "Drive the MBot"
+        url: /docs/tutorials/drive
 
   # - title: Tutorials
   #   children:
