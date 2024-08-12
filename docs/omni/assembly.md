@@ -1,21 +1,15 @@
 ---
 layout: single
-title: MBot Omni
-grand_parent: Getting Started
-parent: Hardware
-nav_order: 1
+title: MBot Omni Assembly Guide
 author: abhishek
+toc: true
 ---
 
-This guide will walk you through the steps needed to assemble the MBot Omni. The MBot Omni Bot is comprised of 3 sections i.e the [bottom plate](#bottom-assembly), [middle plate](#middle-assembly) and the [top plate](#top-assembly). Each of these plates are assembled separately first, before attaching them together to create the MBot Omni.
+This guide will walk you through the steps needed to assemble the MBot Omni. The MBot Omni Bot is comprised of 3 sections: the [bottom plate](#bottom-assembly), [middle plate](#middle-assembly) and the [top plate](#top-assembly). Each of these plates are assembled separately first, before attaching them together to create the MBot Omni.
 
 <a class="image-link" href="/assets/images/hardware/omni/omni.jpg">
-  <img src="/assets/images/hardware/omni/omni.jpg" alt="" style="max-width:200px;"/>
+  <img src="/assets/images/hardware/omni/omni.jpg" alt="" style="max-width:200px;" class="align-center"/>
 </a>
-
-### Contents
-* TOC
-{:toc}
 
 
 ## Bottom Assembly
@@ -24,11 +18,11 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
   <img src="/assets/images/hardware/omni/bottomPlate.jpg" alt="" style="max-width:500px;"/>
 </a>
 
-### Required Components:
+### Required Components
 - 1 X Bottom Acrylic Plate
 - 3 X 6V DC Motors with Encoders
 - 3 X 3D Printed Motor Mounts
-- [3 X Motor Cables](/docs/omni/omnimotorCables)
+- [3 X Motor Cables](/docs/omni/omni-motor-cables)
 - 1 X Robotics Control Board
 - 4 X 2.5M-8mm Nylon Standoffs
 - 3 X Omni-wheel Sets
@@ -120,7 +114,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 <img src="/assets/images/hardware/omni/middlePlate/13.jpg" alt="" style="max-width:400px;"/>
 </a>
 
-### Required Components:
+### Required Components
 - 1 X Middle Acrylic Plate
 - 1 X Raspberry Pi 4B 4GB
 - 1 X Raspberry Pi Heatsink Case
@@ -204,14 +198,14 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 <img src="/assets/images/hardware/omni/topPlate/1.jpg" alt="" style="max-width:400px;"/>
 </a>
 
-### Required Components:
+### Required Components
 - 1 X Bottom Plate
 - 1 X RPLidar A1 with USB Interface
 - 1 X Zip tie
 - 1 X Micro USB Cable
 
 
-### Top Assembly Steps
+### Assembly Steps
 
 1. Fish the RPLidar USB Interface through the opening in the top plate and align with holes shown below.
 
@@ -240,7 +234,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 ## Final Assembly
 {: .line}
 
-### Required Components:
+### Required Components
 - 1 X Top Assembly
 - 1 X Middle Assembly
 - 1 X Bottom Assembly
@@ -253,7 +247,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 <img src="/assets/images/hardware/omni/final/1.jpg" alt="" style="max-width:600px;"/>
 </a>
 
-### Top Assembly Steps
+### Assembly Steps
 
 1. With four (4) thumbscrews, fasten the middle blue acrylic plate to the standoffs of the bottom yellow acrylic plate after aligning the camera to the frontward orientation of the robot. NOTE: You may have to remove the USB-C connector to fasten the 4th thumbscrew, just remember to re-connect after fastened.
 

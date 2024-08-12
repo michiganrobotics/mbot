@@ -4,19 +4,35 @@ main:
   - title: "Teaching"
     url: /teaching
   - title: "Getting Started"
-    url: /docs/getting-started/  
+    url: /docs/getting-started/
   - title: "Documentation"
     url: /docs/
 
 docs:
-  # - title: Getting Started
-  #   children:
-  #     - title: "Quick-Start Guide"
-  #       url: /docs/getting-started/
-  #     - title: "Hardware"
-  #       url: /docs/getting-started/hardware/
-  #     - title: "Software"
-  #       url: /docs/getting-started/software/
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/getting-started/
+      - title: "Hardware"
+        url: /docs/getting-started/hardware/
+      - title: "Software"
+        url: /docs/getting-started/software/
+
+  - title: MBot Classic
+    url: /docs/classic/
+    children:
+      - title: "Assembly"
+        url: /docs/classic/assembly
+      - title: "Get the Hardware"
+        url: /docs/classic/building
+
+  - title: MBot Omni
+    url: /docs/omni/
+    children:
+      - title: "Assembly"
+        url: /docs/omni/assembly
+      - title: "Get the Hardware"
+        url: /docs/omni/building
 
   # - title: Tutorials
   #   children:
@@ -33,3 +49,6 @@ docs:
   #       url: /docs/concepts/architecture
   #     - title: "LCM"
   #       url: /docs/concepts/lcm
+
+sidebar:
+  nav: "docs"

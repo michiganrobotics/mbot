@@ -6,16 +6,13 @@ parent: Hardware
 nav_order: 2
 last_modified_at: 2023-09-12 19:22:48 -0500
 author: shaw
+toc: true
 ---
 
 
 This guide will walk you through the steps needed to assemble the MBot Classic.
 
 **TODO: Insert a finished mbot here**
-
-### Contents
-* TOC
-{:toc}
 
 ## Bottom Assembly
 
