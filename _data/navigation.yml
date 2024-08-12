@@ -10,15 +10,14 @@ main:
 
 docs:
   - title: Getting Started
+    url: /docs/getting-started/
     children:
-      - title: "Quick-Start Guide"
+      - title: "Quick Start"
         url: /docs/getting-started/
-      - title: "Hardware"
-        url: /docs/getting-started/hardware/
-      - title: "Software"
-        url: /docs/getting-started/software/
+      - title: "Drive the MBot"
+        url: /docs/getting-started/drive
 
-  - title: MBot Classic
+  - title: "Hardware: Classic"
     url: /docs/hardware/classic/
     children:
       - title: "Assembly"
@@ -26,13 +25,27 @@ docs:
       - title: "Get the Hardware"
         url: /docs/hardware/classic/building
 
-  - title: MBot Omni
+  - title: "Hardware: Omni"
     url: /docs/hardware/omni/
     children:
       - title: "Assembly"
         url: /docs/hardware/omni/assembly
       - title: "Get the Hardware"
         url: /docs/hardware/omni/building
+
+  - title: "Setup"
+    url: /docs/setup/
+    children:
+      - title: "Overview"
+        url: /docs/setup/
+      - title: "Step 1: Installing the OS"
+        url: /docs/setup/01-install-os
+      - title: "Step 2: Configuring"
+        url: /docs/setup/02-configuration
+      - title: "Step 3: Calibration & Flashing"
+        url: /docs/setup/03-firmware
+      - title: "Advanced: OS Image Setup"
+        url: /docs/setup/new-image
 
   # - title: Tutorials
   #   children:
