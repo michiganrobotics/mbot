@@ -1,8 +1,8 @@
 main:
   - title: "About"
     url: /about
-  - title: "Teaching"
-    url: /teaching
+  # - title: "Teaching"
+  #   url: /teaching
   - title: "Getting Started"
     url: /docs/getting-started/
   - title: "Documentation"
@@ -34,6 +34,8 @@ docs:
         url: /docs/setup/02-configuration
       - title: "Step 3: Calibration & Flashing"
         url: /docs/setup/03-firmware
+      - title: "Networking"
+        url: /docs/setup/networking
       - title: "Advanced: OS Image Setup"
         url: /docs/setup/new-image
 
@@ -42,6 +44,8 @@ docs:
     children:
       - title: "Drive the MBot"
         url: /docs/tutorials/drive
+      - title: "Programming your MBot"
+        url: /docs/tutorials/programming
 
   # - title: Tutorials
   #   children:
