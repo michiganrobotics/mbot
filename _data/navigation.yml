@@ -46,6 +46,8 @@ docs:
         url: /docs/tutorials/drive
       - title: "Programming your MBot"
         url: /docs/tutorials/programming
+      - title: "The MBot Bridge API"
+        url: /docs/tutorials/bridge
 
   # - title: Tutorials
   #   children:
