@@ -50,6 +50,8 @@ docs:
         url: /docs/tutorials/programming
       - title: "The MBot Bridge API"
         url: /docs/tutorials/bridge
+      - title: "NoMachine"
+        url: /docs/tutorials/no-machine
 
   # - title: Tutorials
   #   children:

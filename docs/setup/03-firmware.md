@@ -11,7 +11,6 @@ Each robot needs to be individually calibrated in order to control it. Once it's
 You will need:
 * The calibration script for your hardware configuration,
 * The MBot firmware for your hardware configuration,
-* NoMachine (download from [NoMachine website](https://www.nomachine.com/){:target="_blank"})
 * Your robot's IP.
 
 **TODO:** Add links to the firmware.
@@ -19,14 +18,8 @@ You will need:
 
 ## 1. Get the Firmware
 
-1. Connect to the MBot in NoMachine. You will need the robot's IP, which you can get from the MBot IP registry from your course. To connect in NoMachine, first, add the robot as a new host with a descriptive name and the robot's IP as "Host":
-    ![NoMachine Add Host](/assets/images/setup/nomachine-add-host.jpg){:style="width:800px;" .align-center}
-    Then, connect to the robot in NoMachine using the robot's *username* and *password* (the default username is `mbot` and the password is `i<3robots!`):
-    ![NoMachine Connect Host](/assets/images/setup/nomachine-login.jpg){:style="width:800px;" .align-center}
-2. Download the MBot firmware. You will need the calibration and firmware files. Downloading the tests is optional.
-    **TODO:** Add links to the firmware.
-    {: .notice--danger}
-3. Drag and drop the two files from your laptop to the robot's desktop using NoMachine.
+**TODO:** Add links to the firmware.
+{: .notice--danger}
 
 ## 2. Calibrate the MBot
 
