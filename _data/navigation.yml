@@ -42,6 +42,8 @@ docs:
   - title: Tutorials
     url: /docs/tutorials/
     children:
+      - title: "What's my MBot's IP?"
+        url: /docs/tutorials/get-ip
       - title: "Drive the MBot"
         url: /docs/tutorials/drive
       - title: "Programming your MBot"
