@@ -21,6 +21,10 @@ You will need:
 **TODO:** Add links to the firmware.
 {: .notice--danger}
 
+1. Connect to the robot in VSCode.
+2. Select "Open Folder" then open the Home folder, `/home/mbot`.
+3. Drag and drop all the firmware files onto the File Explorer panel to copy the firmware onto the robot.
+
 ## 2. Calibrate the MBot
 
 We will now flash the calibration script onto the Pico to calibrate it before we flash it with the firmware.
@@ -30,29 +34,47 @@ The calibration script detects the motor and encoder polarity and then calibrate
 **Warning:** *Do not run the calibration script with the MBot on a table!!*
 {: .notice--warning}
 
-**TODO:** Add flashing script and better flashing instructions.
-{: .notice--danger}
+To calibrate the robot, do:
+```bash
+sudo mbot-upload-firmware flash mbot_calibrate_<TYPE>.uf2
+```
 
-1. First, unplug the Robotics Control Board by disconnecting the barrel plug from the battery (leave the USB that powers the RPi plugged in). Also unplug the USB that connects the Pico to the Raspberry Pi.
-2. We will now put the Pico in flashing mode. Hold down the `BOOTSEL` button on the Pico board (it's near the USB port). The location of the button depends on the version of your Robotics Control Board. The button is highlighted in red for each board in this photo:
-    ![BOOTSEL Button](/assets/images/setup/bootsel-location.jpg){:style="width:800px;" .align-center}
-    With the button held down, plug the Pico's USB cord back into the Raspberry Pi. Then release the button. The Pico should now show up as a device in NoMachine (see below).
-    ![Pico device in NoMachine](/assets/images/setup/pop-up-plug-in.png){:style="width:800px;" .align-center}
-3. Plug the barrel plug that powers the Robotics Control Board back into the battery.
-4. Place the MBot on the floor in a spot with at least 2 feet of clear space all around the robot.
-5. Open the Pico device folder in NoMachine. Drag and drop the script `mbot_calibrate_omni.uf2` into the folder. The Pico will reboot automatically, and will then run its calibration routine. *Don't touch the robot while it does this procedure.* The calibration procedure looks like this:
+**Got an error?** You may need to [manually put the board into Flashing mode](#manual-flashing-mode) before you run the above command.
+{: .notice--info}
+
+The Pico will reboot automatically, and will then run its calibration routine. *Don't touch the robot while it does this procedure.* The calibration procedure looks like this:
 
 <iframe class="aligh-center" width="560" height="315" src="https://www.youtube.com/embed/Fl2M0zanTJc?si=LukUDRFrAkW_Dnkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+### Manual Flashing Mode
+
+If you get the error:
+```bash
+$ No accessible RP2040 devices in BOOTSEL mode were found.
+```
+you may not have the ability to automatically put your MBot Control Board in "flashing" mode. You need to manually put the robot in flashing more before you run the calibration command.
+
+1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
+    ![BOOTSEL Button](/assets/images/setup/bootsel-location.jpg){:style="width:800px;" .align-center}
+2. Hold down both "RST" and "BOOTSEL"
+3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
+4. Run the upload script again.
+
 ## 3. Flash the Firmware
 
-3. **Flash the MBot Firmware onto the Pico.** The calibration script will have saved parameters onto the Pico's memory. We can now flash the firmware that will run on the Pico during operation. We will be repeating the flashing procedure.
-    1. Repeat steps [2.1-2.3 from the calibration instructions](#2-calibrate-the-mbot) to put the Pico into flashing mode.
-    2. Open the Pico device folder in NoMachine. Drag and drop the script `mbot.uf2` into the folder. The Pico will reboot automatically.
+**Flash the MBot Firmware onto the Pico.** The calibration script will have saved parameters onto the Pico's memory. We can now flash the firmware that will run on the Pico during operation.
+
+**Do you need to manually put your MBot Control Board in Flashing Mode?** If you needed to manually put the board in flashing mode during calibration, you will need to do this again before running the next command. See [the manual flashing instructions above](#manual-flashing-mode).
+{: .notice--info}
+
+To flash the MBot Control Board with the firmware, do:
+```bash
+sudo mbot-upload-firmware flash mbot-<TYPE>.uf2
+```
 
 ## 4. Test your Setup
 
-Follow the [Quick Start Guide](/docs/tutorials/drive) to make sure your robot can drive around!
+[Drive the robot](/docs/tutorials/drive) to make sure your firmware is working as expected!
 
 **Something not right?** If your robot doesn't drive properly, you may have a hardware issue. See the [debugging tips](/docs/hardware/debugging) to check for hardware issues.
 {: .notice--info}
