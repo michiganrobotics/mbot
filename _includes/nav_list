@@ -1,0 +1,48 @@
+{% assign navigation = site.data.navigation[include.nav] %}
+
+<nav class="nav__list">
+  {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+  <ul class="nav__items">
+    {% for nav in navigation %}
+      <li>
+        {% if nav.url %}
+          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+        {% else %}
+          <span class="nav__sub-title">{{ nav.title }}</span>
+        {% endif %}
+
+        {% if nav.children != null %}
+        <ul>
+            {% for child in nav.children %}
+            {% assign isSubOpen = false %}
+            {% if child.children != null %}
+            {% for sub_child in child.children %}
+                {% if sub_child.url == page.url %}
+                {% assign isSubOpen = true %}
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            <li {% if isSubOpen %} class="nav-open"{% endif %}>
+                <a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a>
+                {% if child.children != null %}
+                <button class="subnav-expand" onclick="this.parentElement.classList.toggle('nav-open')">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul>
+                {% for subchild in child.children %}
+                    <li>
+                        <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %}>{{ subchild.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

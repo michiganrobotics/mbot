@@ -20,8 +20,18 @@ docs:
     children:
       - title: "MBot Classic"
         url: /docs/hardware/classic/
+        children:
+          - title: "Assembly"
+            url: "/docs/hardware/classic/assembly/"
+          - title: "Building"
+            url: "/docs/hardware/classic/building/"
       - title: "MBot Omni"
         url: /docs/hardware/omni/
+        children:
+          - title: "Assembly"
+            url: "/docs/hardware/omni/assembly/"
+          - title: "Building"
+            url: "/docs/hardware/omni/building/"
 
   - title: "Setup"
     url: /docs/setup/

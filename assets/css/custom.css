@@ -1,0 +1,24 @@
+/* Custom CSS. */
+
+/* Hide submenu by default */
+nav ul ul ul {
+  display: none;
+  padding-left: 20px;
+  font-size: large;
+}
+
+ul li.nav-open ul {
+  display: block;
+}
+
+button.subnav-expand {
+  float: right;  /* The button for the sub navigation should be on the right.  */
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+li.nav-open button.subnav-expand i {
+  transform: rotate(180deg);
+}
