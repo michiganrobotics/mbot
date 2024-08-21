@@ -9,14 +9,12 @@ toc: true
 
 This guide is intended to help you set up a new Raspberry Pi image from the base MBot image.
 
-**Note:** This guide has been tested with the *Raspberry Pi 5*.
-{: .notice--info}
-
 **Note:** The base image has the following login credentials:
 * Username: `mbot`
 * Password: `i<3robots!`
 
-*Coming soon: Instructions for setting up from the base Raspian image*
+**Starting from a base Raspberry Pi OS image?** The MBot Base Raspberry Pi image is a Raspberry Pi OS 12 (Bookworm) image with the MBot standard system utilities set up. See the instructions for this setup on [GitHub](https://github.com/mbot-project/mbot_sys_utils/blob/main/README.md){:target="_blank"}.
+{: .notice--info}
 
 ---
 
@@ -227,7 +225,3 @@ You should first clean up your current image by deleting any data you don't want
 * **Remove your credentials from the WiFi network.** If you logged into your personal account on the WiFi, you should delete the connection to remove your credentials.
 * **Set default configurations.** Set the robot hostname to a good default for your fleet in `mbot_config.txt`, and remove any WiFi information that does not involve the whole fleet. If your fleet will share an IP registry, leave that in.
 * **Remove session-specific files.** You can safely delete `~/.vscode-server`.
-
-### Creating the image
-
-*Coming soon!*

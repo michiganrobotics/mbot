@@ -16,6 +16,8 @@ docs:
         url: /docs/getting-started/
       - title: "MBot Basics"
         url: /docs/basics/
+      - title: "Troubleshooting"
+        url: /docs/troubleshooting/
 
   - title: "Hardware"
     url: /docs/hardware/

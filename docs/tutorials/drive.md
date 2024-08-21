@@ -25,7 +25,7 @@ We will connect to the robot's web app and drive it around to make sure it's wor
 **Warning:** Make sure that your robot is on the floor, on a flat surface before driving it!! *Never drive your robot on a table.*
 {: .notice--warning}
 
-1. **Turn the robot on.** For instructions, check [here](#).
+1. **Turn the robot on.** For instructions, check [here](/docs/basics).
 2. **Get your robot's IP.** The robot should publish its IP to an IP registry when it starts up.
 
     **Don't know your IP?** See the [tutorial on finding out your robot's IP](/docs/tutorials/get-ip).
@@ -36,5 +36,5 @@ We will connect to the robot's web app and drive it around to make sure it's wor
 
     ![Drive Panel on the Web App](/assets/images/tutorials/drive-web-app.png){:style="max-width: 500px" .align-center}
 
-**Debugging Tip:** Make sure that the file in the IP registry is recent by checking the time that it was updated. The IP can change when rebooted. It can take a few minutes for the robot to boot up and connect, so be patient! If the IP is not updated after a few minutes, try restarting the robot.
+**MBot not driving?** Check out the [Troubleshooting Guide](/docs/troubleshooting) for help.
 {: .notice--info}
