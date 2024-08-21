@@ -17,6 +17,9 @@
         <ul>
             {% for child in nav.children %}
             {% assign isSubOpen = false %}
+            {% if child.url == page.url %}
+            {% assign isSubOpen = true %}
+            {% endif %}
             {% if child.children != null %}
             {% for sub_child in child.children %}
                 {% if sub_child.url == page.url %}
