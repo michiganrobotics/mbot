@@ -39,6 +39,7 @@ First, download the correct firmware type for your MBot. You will need to select
 <div class="message" id="message"></div>
 
 ### What's my encoder resolution?
+{: .no_toc }
 
 There are three possible encoders, each with a different resolution. Check the back of the motors on your MBot to determine which one you have.
 
@@ -54,6 +55,7 @@ There are three possible encoders, each with a different resolution. Check the b
 <div class="show-omni hidden" markdown=1>
 
 ### What's my wheel radius?
+{: .no_toc }
 
 There are two possible Omni wheels, with different diameters. Check your wheels to determine which ones you have.
 
