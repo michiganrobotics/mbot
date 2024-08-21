@@ -39,29 +39,29 @@ docs:
       - title: "Overview"
         url: /docs/setup/
       - title: "Step 1: Installing the OS"
-        url: /docs/setup/01-install-os
+        url: /docs/setup/01-install-os/
       - title: "Step 2: Configuring"
-        url: /docs/setup/02-configuration
+        url: /docs/setup/02-configuration/
       - title: "Step 3: Calibration & Flashing"
-        url: /docs/setup/03-firmware
+        url: /docs/setup/03-firmware/
       - title: "Networking"
-        url: /docs/setup/networking
+        url: /docs/setup/networking/
       - title: "Advanced: OS Image Setup"
-        url: /docs/setup/new-image
+        url: /docs/setup/new-image/
 
   - title: Tutorials
     url: /docs/tutorials/
     children:
       - title: "What's my MBot's IP?"
-        url: /docs/tutorials/get-ip
+        url: /docs/tutorials/get-ip/
       - title: "Drive the MBot"
-        url: /docs/tutorials/drive
+        url: /docs/tutorials/drive/
       - title: "Programming your MBot"
-        url: /docs/tutorials/programming
+        url: /docs/tutorials/programming/
       - title: "The MBot Bridge API"
-        url: /docs/tutorials/bridge
+        url: /docs/tutorials/bridge/
       - title: "NoMachine"
-        url: /docs/tutorials/no-machine
+        url: /docs/tutorials/no-machine/
 
   # - title: Tutorials
   #   children:
