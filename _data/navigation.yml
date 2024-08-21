@@ -38,14 +38,15 @@ docs:
   - title: "Setup"
     url: /docs/setup/
     children:
-      - title: "Overview"
+      - title: "Setting up a new MBot"
         url: /docs/setup/
-      - title: "Step 1: Installing the OS"
-        url: /docs/setup/01-install-os/
-      - title: "Step 2: Configuring"
-        url: /docs/setup/02-configuration/
-      - title: "Step 3: Calibration & Flashing"
-        url: /docs/setup/03-firmware/
+        children:
+          - title: "Step 1: Installing the OS"
+            url: /docs/setup/01-install-os/
+          - title: "Step 2: Configuring"
+            url: /docs/setup/02-configuration/
+          - title: "Step 3: Calibration & Flashing"
+            url: /docs/setup/03-firmware/
       - title: "Networking"
         url: /docs/setup/networking/
       - title: "Advanced: OS Image Setup"
