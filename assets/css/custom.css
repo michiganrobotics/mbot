@@ -22,3 +22,78 @@ button.subnav-expand {
 li.nav-open button.subnav-expand i {
   transform: rotate(180deg);
 }
+
+/* Image row */
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* For the firmware selector */
+
+.firmware-selector {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.firmware-selector > .row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+  .firmware-selector > .row:last-child {
+    margin-bottom: 0;
+  }
+  .firmware-selector > .row.hidden {
+    display: none;
+  }
+
+.label-cell, .option-cell {
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.label-cell {
+  flex: 0 0 235px; /* Fixed width for label cells, adjust as needed */
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.info-icon {
+  margin-left: 5px;
+  font-size: 16px;
+}
+  a.info-icon {
+    color: #3d4144;
+  }
+
+.option-cell {
+  flex: 1; /* Distribute remaining space equally */
+  cursor: pointer;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+  text-align: center;
+}
+  .option-cell:last-child {
+    margin-right: 0;
+  }
+
+  .option-cell.selected {
+    background-color: #add8e6;
+  }
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Other displays in this file might override this one. Leave it at the bottom. */
+.hidden {
+  display: none;
+}
