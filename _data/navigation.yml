@@ -46,9 +46,11 @@ docs:
           - title: "Step 2: Configuring"
             url: /docs/setup/02-configuration/
           - title: "Step 3: Calibration & Flashing"
-            url: /docs/setup/03-firmware/
+            url: /docs/setup/03-calibration/
       - title: "Networking"
         url: /docs/setup/networking/
+      - title: "Flashing Firmware"
+        url: /docs/setup/firmware/
       - title: "Advanced: OS Image Setup"
         url: /docs/setup/new-image/
 
