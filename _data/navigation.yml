@@ -14,6 +14,8 @@ docs:
     children:
       - title: "Getting Started"
         url: /docs/getting-started/
+      - title: "MBot Basics"
+        url: /docs/basics/
 
   - title: "Hardware"
     url: /docs/hardware/
