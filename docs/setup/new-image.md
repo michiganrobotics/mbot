@@ -2,6 +2,13 @@
 layout: single
 title: "MBot Setup: Setting up a new image (Advanced)"
 toc: true
+
+# Versions for the code to checkout.
+lcm_base_version: v1.0.0
+rplidar_version: v1.0.0
+web_app_version: v1.3.0
+mbot_bridge_version: v1.0.0
+mbot_autonomy_version: v1.0.0
 ---
 
 **Students:** You should not need to set up an image from scratch! Check with your instructor for the link to the OS image for your class. Then, start the setup process by [installing the image](/docs/setup/01-install-os).
@@ -159,18 +166,18 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 2. **Install the base MBot code.** This includes the message types and serial server which communicates between the MBot Control Board and the RPi using LCM. The install script will compile the code and install it onto the robot. It will also install a service to automatically start the serial server on startup.
     ```bash
     cd ~/mbot_ws/mbot_lcm_base/
-    git checkout <vX.Y.Z>
+    git checkout {{ page.lcm_base_version }}
     ./scripts/install.sh
     ```
 3. **Install the MBot Web App.** The web app is a useful tool for commanding the robot from your laptop's browser.
     1. Download the latest web app release and unpack it:
         ```bash
-        wget https://github.com/MBot-Project-Development/mbot_web_app/releases/download/v1.2.0/mbot_web_app-v1.2.0.tar.gz
-        tar -xvzf mbot_web_app-v1.2.0.tar.gz
+        wget https://github.com/MBot-Project-Development/mbot_web_app/releases/download/{{ page.web_app_version }}/mbot_web_app-{{ page.web_app_version }}.tar.gz
+        tar -xvzf mbot_web_app-{{ page.web_app_version }}.tar.gz
         ```
     2. Install the web app dependencies:
         ```bash
-        cd mbot_web_app-v1.2.0/
+        cd mbot_web_app-{{ page.web_app_version }}/
         ./install_nginx.sh
         ./install_python_deps.sh
         ```
@@ -178,7 +185,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
         ```bash
         ./deploy_app.sh --no-rebuild
         ```
-    4. It's now safe to delete the folder `mbot_web_app-v1.2.0/` and the tar file `mbot_web_app-v1.2.0.tar.gz`.
+    4. It's now safe to delete the folder `mbot_web_app-{{ page.web_app_version }}/` and the tar file `mbot_web_app-{{ page.web_app_version }}.tar.gz`.
 
     **Checkpoint:** The web app should now be available by going to your browser and typing in the robot's IP address.
     {: .notice--info}
@@ -186,7 +193,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 4. **Install the RPLidar driver.** To install the Lidar driver, do:
     ```bash
     cd ~/mbot_ws/rplidar_lcm_driver/
-    git checkout <vX.Y.Z>
+    git checkout {{ page.rplidar_version }}
     ./scripts/install.sh
     ```
     This will pull some code dependencies, compile and install the code, and install a service to start the driver on startup.
@@ -194,7 +201,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 5. **Install the MBot Bridge and API.** The MBot Bridge includes a server that bridges student code with the MBot software, as well as APIs in C++ and Python. Install it with:
     ```bash
     cd ~/mbot_ws/mbot_bridge/
-    git checkout <vX.Y.Z>
+    git checkout {{ page.mbot_bridge_version }}
     ./scripts/install.sh
     ```
     This installs the scripts and services needed to run the MBot Bridge Server and installs the MBot API and its dependencies.
@@ -202,10 +209,13 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 6. **Optional: Install the MBot Autonomy code.** *TODO: Update instructions with binaries.* The autonomy code includes SLAM and a motion controller program. Install it with:
     ```bash
     cd ~/mbot_ws/mbot_autonomy/
-    git checkout <vX.Y.Z>
-    ./scripts/install.sh
+    git checkout {{ page.mbot_autonomy_version }}
+    ./scripts/install.sh -t <TYPE>
     ```
-    Again, this installs the binaries and services needed to run SLAM and the motor controller.
+    Replace `<TYPE>` with `DIFF` for the classic, or `OMNI` for the Omni. Again, this installs the binaries and services needed to run SLAM and the motor controller.
+
+    **Warning:** If you are using the classic, there is a known issue where `motion_controller` interfers with other scripts. You may want to disable `mbot-motion-controller.service`.
+    {: .notice--warning}
 
 
 ## Testing your setup
