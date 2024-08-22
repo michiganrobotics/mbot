@@ -2,6 +2,11 @@
 layout: single
 title: "MBot Setup: Installing the OS"
 toc: true
+
+# Public image links
+mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/5s7t0tnf2bqjifuchb5ia/2024-08-22-mbot-base-bookworm.img.gz?rlkey=pvy1z6mb0ybgj5o0cf1p7yv7x&st=t395qrqn&dl=0
+mbot_full_classic_rpi_os_link: ""
+mbot_full_omni_rpi_os_link: ""
 ---
 
 To configure a new robot, you must first flash a new SD card with the robot's image.
@@ -15,8 +20,22 @@ You will need:
 1. A way to read and write to a Micro SD card (you can use a laptop with an SD card slot or a USB adapter),
 2. An MBot Raspberry Pi OS image.
 
-**TODO:** Include links to base images.
-{: .notice--danger}
+Standard images for the MBot can be downloaded from here:
+
+<div style="text-align: center;">
+    <a href="{{ page.mbot_base_rpi_os_link }}" class="btn btn--info" target="_blank">
+        <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Base Image
+    </a>
+    <a href="{{ page.mbot_full_classic_rpi_os_link }}" class="btn btn--info" target="_blank">
+        <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Full Image (Classic)
+    </a>
+    <a href="{{ page.mbot_full_omni_rpi_os_link }}" class="btn btn--info" target="_blank">
+        <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Full Image (Omni)
+    </a>
+</div>
+
+**Which image should I use?** The "Full" images have all the MBot code installed, so you can start driving, making maps, and programming your robot out of the box! The "Base" image has no MBot code on it. You will need to [setup the image](/docs/setup/new-image) with any code that you need.
+{: .notice--info}
 
 ## Instructions
 
