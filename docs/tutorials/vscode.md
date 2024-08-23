@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Programming the MBot
+title: Connecting to the MBot in VSCode
 toc: true
 ---
 

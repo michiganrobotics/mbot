@@ -63,12 +63,12 @@ docs:
         url: /docs/tutorials/get-ip/
       - title: "Drive the MBot"
         url: /docs/tutorials/drive/
-      - title: "Programming your MBot"
-        url: /docs/tutorials/programming/
+      - title: "Connecting with VSCode"
+        url: /docs/tutorials/vscode/
+      - title: "Connecting with NoMachine"
+        url: /docs/tutorials/no-machine/
       - title: "The MBot Bridge API"
         url: /docs/tutorials/bridge/
-      - title: "NoMachine"
-        url: /docs/tutorials/no-machine/
 
   # - title: Tutorials
   #   children:

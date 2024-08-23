@@ -95,7 +95,7 @@ function updateLinks() {
             wgetCommand.textContent = `wget ${root_url + calib_file}\nwget ${root_url + main_file}`;
         }
         else if (MBOT_TYPE === "OMNI") {
-            const suffix = `_enc${ENC_RES}_w${OMNI_WHEEL_DIAMETER}mm`;
+            const suffix = `enc${ENC_RES}_w${OMNI_WHEEL_DIAMETER}mm`;
             const calib_file = `mbot_calibrate_omni_${mbotFirmwareVersion}_${suffix}.uf2`;
             const main_file = `mbot_omni_${mbotFirmwareVersion}_${suffix}.uf2`;
             btnCalibration.href = root_url + calib_file;
