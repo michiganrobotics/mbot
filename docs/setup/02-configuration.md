@@ -18,7 +18,7 @@ You will need the following information:
 
 1. Your robot's name (your course staff will tell you what your robot should be named to keep the fleet organized),
 2. The WiFi connection information for your classroom or home (if applicable),
-3. The IP registry information for your course.
+3. The IP registry information for your course (if applicable).
 
 Your course staff will provide this information to you. You will also need a way to read and write to a Micro SD card. You can use a laptop with an SD card slot or a USB adapter.
 
@@ -64,4 +64,4 @@ The following information can be configured in the `mbot_config.txt` file:
 * `mbot_ip_list_token`: A token the robot can use to push to the registry (this is in place of using a password, which GitHub no longer supports).
 
 [**Previous Step:** Installing the OS](/docs/setup/01-install-os){: .btn .btn--inverse .align-left}
-[**Next Step:** Calibration & Flashing](/docs/setup/03-firmware){: .btn .btn--inverse .align-right}
+[**Next Step:** Calibration & Flashing](/docs/setup/03-calibration){: .btn .btn--inverse .align-right}

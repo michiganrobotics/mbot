@@ -30,24 +30,47 @@ li.nav-open button.subnav-expand i {
   justify-content: space-around;
 }
 
-/* For the firmware selector */
+/* Buttons */
 
-.firmware-selector {
+.btn.big {
+  font-size: large;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 200px;
+}
+  .btn.big:last-child {
+    margin-right: 0;
+  }
+  .btn.big > i {
+    font-size: xx-large;
+    padding-top: 0.25em;
+  }
+
+.btn.inactive {
+  background-color: #6f777d;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* Table selectors */
+
+.table-selector {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 1.3em;
 }
 
-.firmware-selector > .row {
+.table-selector > .row {
   display: flex;
   width: 100%;
   margin-bottom: 5px;
   box-sizing: border-box;
 }
-  .firmware-selector > .row:last-child {
+  .table-selector > .row:last-child {
     margin-bottom: 0;
   }
-  .firmware-selector > .row.hidden {
+  .table-selector > .row.hidden {
     display: none;
   }
 
@@ -57,19 +80,10 @@ li.nav-open button.subnav-expand i {
 }
 
 .label-cell {
-  flex: 0 0 235px; /* Fixed width for label cells, adjust as needed */
+  flex: 0 0 200px; /* Fixed width for label cells, adjust as needed */
   font-weight: bold;
   text-align: left;
-  padding-left: 20px;
 }
-
-.info-icon {
-  margin-left: 5px;
-  font-size: 16px;
-}
-  a.info-icon {
-    color: #3d4144;
-  }
 
 .option-cell {
   flex: 1; /* Distribute remaining space equally */
@@ -85,6 +99,28 @@ li.nav-open button.subnav-expand i {
 
   .option-cell.selected {
     background-color: #add8e6;
+  }
+
+/* For the Getting Started selector */
+
+.starting-selector > .row > .label-cell {
+  flex: 0 0 75%; /* Fixed width for label cells, adjust as needed */
+  /* padding-left: 20px; */
+}
+
+/* For the firmware selector */
+
+.firmware-selector > .row > .label-cell {
+  flex: 0 0 250px; /* Fixed width for label cells, adjust as needed */
+  padding-left: 20px;
+}
+
+.info-icon {
+  margin-left: 5px;
+  font-size: 16px;
+}
+  a.info-icon {
+    color: #3d4144;
   }
 
 .message {

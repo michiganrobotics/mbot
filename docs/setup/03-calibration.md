@@ -2,15 +2,18 @@
 layout: single
 title: "MBot Setup: Calibrating & Flashing"
 toc: true
+
+# Versions for the firmware.
+mbot_firmware_version: v1.0.0
 ---
 
 Each robot needs to be individually calibrated in order to control it. Once it's calibrated, the firmware can be flashed onto the robot. You will need to flash programs onto the Pico to calibrate and load the firmware onto your robot.
 
 ## 1. Download the Firmware
 
-First, download the correct firmware type for your MBot. You will need to select the type (if you aren't sure which type of MBot you have, see [Hardware](/docs/hardware) ) and some details on the configuration. Use the selector below to pick your type, then download the correct firmware files.
+First, download the correct firmware type for your MBot. You will need to select the type (if you aren't sure which type of MBot you have, see [Hardware](/docs/hardware)) and some details on the configuration. Use the selector below to pick your type, then download the correct firmware files.
 
-<div class="firmware-selector">
+<div class="table-selector firmware-selector">
     <div class="row">
       <div class="label-cell">MBot Type</div>
       <div class="option-cell" onclick="selectType(this, 'CLASSIC')">Classic</div>
@@ -33,10 +36,28 @@ First, download the correct firmware type for your MBot. You will need to select
     </div>
 </div>
 
-**TODO:** Add links to the firmware.
-{: .notice--danger}
+<div style="text-align: center;">
+    <a href="#" id="btn-calibration" class="btn big download inactive">
+        Calibration <br/> <i class="fas fa-ruler"></i>
+    </a>
+    <a href="#" id="btn-firmware" class="btn big download inactive">
+        Firmware <br/> <i class="fas fa-cogs"></i>
+    </a>
+    <a href="#" id="btn-motor-test" class="btn big download inactive">
+        Motor Test <br/> <i class="fas fa-cog"></i>
+    </a>
+    <a href="https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.mbot_firmware_version }}/mbot_encoder_test.uf2" id="btn-motor-test" class="btn big download btn--info">
+        Encoder Test <br/> <i class="fas fa-eye"></i>
+    </a>
+</div>
 
-<div class="message" id="message"></div>
+Or, on the robot, type:
+<div class="language-bash highlighter-rouge">
+<div id="wget-command" class="highlight">
+    <pre class="highlight"><code>wget [MAKE A SELECTION]
+wget [MAKE A SELECTION]</code></pre>
+</div>
+</div>
 
 ### What's my encoder resolution?
 {: .no_toc }
@@ -134,9 +155,9 @@ sudo mbot-upload-firmware flash mbot-<TYPE>.uf2
 
 
 <script>
-    let MBOT_TYPE = "CLASSIC";
-    let ENC_RES = 48;
-    let OMNI_WHEEL_DIAMETER = 96;
+    let MBOT_TYPE = "";
+    let ENC_RES = -1;
+    let OMNI_WHEEL_DIAMETER = -1;
 
     function selectOption(cell) {
         // Deselect previously selected cell in the row
@@ -157,7 +178,7 @@ sudo mbot-upload-firmware flash mbot-<TYPE>.uf2
         MBOT_TYPE = val;
 
         // Update the message display
-        updateMessages();
+        updateLinks();
 
         // Check if "Option B" is selected
         toggleOmniElements(MBOT_TYPE == "OMNI");
@@ -170,7 +191,7 @@ sudo mbot-upload-firmware flash mbot-<TYPE>.uf2
         ENC_RES = val;
 
         // Update the message display
-        updateMessages();
+        updateLinks();
     }
 
     function selectWheelDiameter(cell, val) {
@@ -180,16 +201,78 @@ sudo mbot-upload-firmware flash mbot-<TYPE>.uf2
         OMNI_WHEEL_DIAMETER = val;
 
         // Update the message display
-        updateMessages();
+        updateLinks();
     }
 
-    function updateMessages() {
-      var messageDiv = document.getElementById('message');
-      var messages = "MBot Type: " + MBOT_TYPE + " Encoder Resolution: " + ENC_RES;
-      if (MBOT_TYPE === "OMNI") {
-        messages += " Wheel Diameter: " + OMNI_WHEEL_DIAMETER;
-      }
-      messageDiv.innerHTML = messages;
+    function updateLinks() {
+        var btnCalibration = document.getElementById('btn-calibration');
+        var btnFirmware = document.getElementById('btn-firmware');
+        var btnMotorTest = document.getElementById('btn-motor-test');
+        const root_url = "https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.mbot_firmware_version }}/";
+
+        // If the MBot Type is selected, we can add the link to the motor test.
+        if (MBOT_TYPE.length > 0) {
+            if (btnMotorTest.classList.contains('inactive')) {
+                    btnMotorTest.classList.remove('inactive');
+                    btnMotorTest.classList.add('btn--info');
+                }
+            if (MBOT_TYPE === "OMNI") {
+                btnMotorTest.href = root_url + "mbot_omni_motor_test.uf2";
+            }
+            else if (MBOT_TYPE === "CLASSIC") {
+                btnMotorTest.href = root_url + "mbot_classic_motor_test.uf2";
+            }
+        }
+        // Check if the selections are all made.
+        let selection_made = MBOT_TYPE.length > 0 && ENC_RES > 0;
+        if (MBOT_TYPE === "OMNI") {
+            selection_made = selection_made && OMNI_WHEEL_DIAMETER > 0;
+        }
+
+        if (selection_made) {
+            if (btnCalibration.classList.contains('inactive')) {
+                btnCalibration.classList.remove('inactive');
+                btnCalibration.classList.add('btn--info');
+            }
+
+            if (btnFirmware.classList.contains('inactive')) {
+                btnFirmware.classList.remove('inactive');
+                btnFirmware.classList.add('btn--info');
+            }
+
+            var wgetCommand = document.getElementById('wget-command').querySelector('code');
+
+            if (MBOT_TYPE === "CLASSIC") {
+                const calib_file = "mbot_calibrate_classic_{{ page.mbot_firmware_version }}_enc" + ENC_RES + ".uf2";
+                const main_file = "mbot_classic_{{ page.mbot_firmware_version }}_enc" + ENC_RES + ".uf2";
+                btnCalibration.href = root_url + calib_file;
+                btnFirmware.href = root_url + main_file;
+
+                // Update the wget command text
+                wgetCommand.textContent = `wget ${root_url + calib_file}\nwget ${root_url + main_file}`;
+            }
+            else if (MBOT_TYPE === "OMNI") {
+                const suffix = "_enc" + ENC_RES + "_w" + OMNI_WHEEL_DIAMETER + "mm";
+                const calib_file = "mbot_calibrate_omni_{{ page.mbot_firmware_version }}" + suffix + ".uf2";
+                const main_file = "mbot_omni_{{ page.mbot_firmware_version }}" + suffix + ".uf2";
+                btnCalibration.href = root_url + calib_file;
+                btnFirmware.href = root_url + main_file;
+
+                // Update the wget command text
+                wgetCommand.textContent = `wget ${root_url + calib_file}\nwget ${root_url + main_file}`;
+            }
+        }
+        else {
+            if (!btnCalibration.classList.contains('inactive')) {
+                btnCalibration.classList.remove('btn--info');
+                btnCalibration.classList.add('inactive');
+            }
+
+            if (!btnFirmware.classList.contains('inactive')) {
+                btnFirmware.classList.remove('btn--info');
+                btnFirmware.classList.add('inactive');
+            }
+        }
     }
 
     function toggleOmniElements(show) {
