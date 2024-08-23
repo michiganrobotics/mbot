@@ -70,7 +70,7 @@ There are three possible encoders, each with a different resolution. Check the b
   <img src="/assets/images/setup/encoder-20.jpg" alt="Motors with encoder resolution 20." style="width: 30%;"/>
 </div>
 
-**Tip:** The encoder with resolution 48 has a sensor protruding parallel to the board. The encoder with resolution 40 has a *blue* board, while the encoder with resolution 20 has a *green* board.
+**Tip:** The encoder with resolution 48 has a sensor protruding perpendicular to the board. The encoder with resolution 40 has a *blue* board, while the encoder with resolution 20 has a *green* board.
 {: .notice--info}
 
 <div class="show-omni hidden" markdown=1>
