@@ -108,6 +108,18 @@ li.nav-open button.subnav-expand i {
   /* padding-left: 20px; */
 }
 
+span.step-arrow {
+  font-size: xx-large;
+  color: #646769;
+}
+
+#custom-workflow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adds space between the buttons */
+}
+
 /* For the firmware selector */
 
 .firmware-selector > .row > .label-cell {
