@@ -204,7 +204,7 @@ To get started with MBot, both hardware and software set-ups are required. Pleas
                     }
                     else {
                         if (MBOT_TYPE === "CLASSIC") {
-                            workflowDiv.appendChild(createButton("Build", "/docs/hardware/classic/build", "fas fa-shopping-bag"));
+                            workflowDiv.appendChild(createButton("Build", "/docs/hardware/classic/building", "fas fa-shopping-bag"));
                             workflowDiv.appendChild(createArrow());
                             workflowDiv.appendChild(createButton("Assemble", "/docs/hardware/classic/assembly", "fas fa-tools"));
                             workflowDiv.appendChild(createArrow());
@@ -214,7 +214,7 @@ To get started with MBot, both hardware and software set-ups are required. Pleas
                             instructionsReady = true;
                         }
                         else if (MBOT_TYPE === "OMNI") {
-                            workflowDiv.appendChild(createButton("Build", "/docs/hardware/omni/build", "fas fa-shopping-bag"));
+                            workflowDiv.appendChild(createButton("Build", "/docs/hardware/omni/building", "fas fa-shopping-bag"));
                             workflowDiv.appendChild(createArrow());
                             workflowDiv.appendChild(createButton("Assemble", "/docs/hardware/omni/assembly", "fas fa-tools"));
                             workflowDiv.appendChild(createArrow());
