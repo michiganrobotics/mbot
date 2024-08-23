@@ -5,10 +5,15 @@ toc: true
 
 # Versions for the code to checkout.
 lcm_base_version: v1.0.0
-rplidar_version: v1.0.0
+firmware_version: v1.0.0
+rplidar_version: 1.0.0
 web_app_version: v1.3.0
+lcm_monitor_version: v1.0.0
 mbot_bridge_version: v1.0.0
 mbot_autonomy_version: v1.0.0
+
+# Public image links
+mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/5s7t0tnf2bqjifuchb5ia/2024-08-22-mbot-base-bookworm.img.gz?rlkey=pvy1z6mb0ybgj5o0cf1p7yv7x&st=t395qrqn&dl=0
 ---
 
 **Students:** You should not need to set up an image from scratch! Check with your instructor for the link to the OS image for your class. Then, start the setup process by [installing the image](/docs/setup/01-install-os).
@@ -27,9 +32,9 @@ This guide is intended to help you set up a new Raspberry Pi image from the base
 
 ## 1. Flash the image
 
-1. Download the base MBot Raspberry Pi image `mbot-rpi-base-v1.img.xz` from this [link](https://www.dropbox.com/scl/fi/f9jijqd5jctr3jmo62873/mbot-RPi5-base-Aug24.img.xz?rlkey=eqbjgdkby7md3tfei1vl742ep&st=kqrqg87g&dl=0).
-    - We use a custom image with RPiOS based on Debian 12 Bookworm
-2. Download [Balena Etcher](https://etcher.balena.io/) then flash the OS image to your SD card. Plug in the SD card to your laptop using SD card reader then following the steps in Balena Etcher.
+1. Download the base MBot Raspberry Pi image from this [link]({{ page.mbot_base_rpi_os_link }}){:target="_blank"}.
+    We use a custom image with RPiOS based on Debian 12 Bookworm. It has been configured with the [MBot System Utilities instructions](https://github.com/mbot-project/mbot_sys_utils/blob/main/README.md){:target="_blank"}.
+2. Download [Balena Etcher](https://etcher.balena.io/){:target="_blank"} then flash the OS image to your SD card. Plug in the SD card to your laptop using SD card reader then following the steps in Balena Etcher.
 
 You now have an SD card with the OS image flashed on it for the Raspberry Pi. Keep the card in your laptop for now and proceed to the next step.
 
@@ -169,10 +174,31 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
     git checkout {{ page.lcm_base_version }}
     ./scripts/install.sh
     ```
+
+3. **Install the firmware upload script.** This script lets you flash the firmware over the command line.
+    First, you need to install dependencies for the tool.
+    ```bash
+    git clone https://github.com/MBot-Project-Development/pico_sdk.git
+    export PICO_SDK_PATH=$PWD/pico_sdk
+    wget https://github.com/raspberrypi/picotool/archive/refs/tags/1.1.1.zip
+    unzip 1.1.1.zip
+    cd picotool-1.1.1
+    mkdir build && cd build
+    cmake .. && make
+    sudo make install
+    ```
+    Then, download the upload script and install it:
+    ```bash
+    wget https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.firmware_version }}/mbot-upload-firmware
+    chmod +x mbot-upload-firmware
+    sudo cp mbot-upload-firmware /usr/local/bin/
+    ```
+    You can now remove `1.1.1.zip`, `picotool-1.1.1/`, and `pico_sdk` if desired.
+
 3. **Install the MBot Web App.** The web app is a useful tool for commanding the robot from your laptop's browser.
     1. Download the latest web app release and unpack it:
         ```bash
-        wget https://github.com/MBot-Project-Development/mbot_web_app/releases/download/{{ page.web_app_version }}/mbot_web_app-{{ page.web_app_version }}.tar.gz
+        wget https://github.com/mbot-project/mbot_web_app/releases/download/{{ page.web_app_version }}/mbot_web_app-{{ page.web_app_version }}.tar.gz
         tar -xvzf mbot_web_app-{{ page.web_app_version }}.tar.gz
         ```
     2. Install the web app dependencies:
@@ -193,7 +219,6 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 4. **Install the RPLidar driver.** To install the Lidar driver, do:
     ```bash
     cd ~/mbot_ws/rplidar_lcm_driver/
-    git checkout {{ page.rplidar_version }}
     ./scripts/install.sh
     ```
     This will pull some code dependencies, compile and install the code, and install a service to start the driver on startup.
@@ -206,7 +231,21 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
     ```
     This installs the scripts and services needed to run the MBot Bridge Server and installs the MBot API and its dependencies.
 
-6. **Optional: Install the MBot Autonomy code.** *TODO: Update instructions with binaries.* The autonomy code includes SLAM and a motion controller program. Install it with:
+6. **Optional: Install the LCM Monitor:** The web-based LCM monitor is a useful tool for viewing all the published LCM channels and their data in the browser. To install it:
+    1. Download the latest release and unpack it:
+        ```bash
+        wget https://github.com/mbot-project/mbot_lcm_monitor/releases/download/{{ page.lcm_monitor_version }}/mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz
+        tar -xvzf mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz
+        ```
+    2. Install the app:
+        ```bash
+        cd mbot_lcm_monitor-{{ page.lcm_monitor_version }}/
+        ./deploy_app.sh --no-rebuild
+        ```
+    3. Follow the printed instructions (which you can also find in `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/README.txt`) to configure NGINX.
+    4. It's now safe to delete the folder `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/` and the tar file `mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz`.
+
+7. **Optional: Install the MBot Autonomy code.** *TODO: Update instructions with binaries.* The autonomy code includes SLAM and a motion controller program. Install it with:
     ```bash
     cd ~/mbot_ws/mbot_autonomy/
     git checkout {{ page.mbot_autonomy_version }}
