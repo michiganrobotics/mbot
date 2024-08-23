@@ -6,7 +6,7 @@ toc: true
 # Public image links
 mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/5s7t0tnf2bqjifuchb5ia/2024-08-22-mbot-base-bookworm.img.gz?rlkey=pvy1z6mb0ybgj5o0cf1p7yv7x&st=t395qrqn&dl=0
 mbot_full_classic_rpi_os_link: ""
-mbot_full_omni_rpi_os_link: ""
+mbot_full_omni_rpi_os_link: https://www.dropbox.com/scl/fi/11c4q6zhhv6rpcvvm47sd/2024-08-22-mbot-full-omni-bookworm.img.gz?rlkey=7zrekoep72wvqpq0p9xj0xwcf&st=2ikaw15b&dl=0
 ---
 
 To configure a new robot, you must first flash a new SD card with the robot's image.
@@ -26,7 +26,7 @@ Standard images for the MBot can be downloaded from here:
     <a href="{{ page.mbot_base_rpi_os_link }}" class="btn btn--info" target="_blank">
         <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Base Image
     </a>
-    <a href="{{ page.mbot_full_classic_rpi_os_link }}" class="btn btn--info" target="_blank">
+    <a href="{{ page.mbot_full_classic_rpi_os_link }}" class="btn btn--info">
         <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Full Image (Classic)
     </a>
     <a href="{{ page.mbot_full_omni_rpi_os_link }}" class="btn btn--info" target="_blank">
