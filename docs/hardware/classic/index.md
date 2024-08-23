@@ -13,4 +13,4 @@ Ready to build your own MBot Classic? If you have all the parts, head to the [As
 
 Need to get the hardware? See our [Building Guide](/docs/hardware/classic/building) for the design files and list of parts.
 
-Ready to start programming? See the [Software Setup](https://rob550-docs.github.io/docs/staff-guide/dev-setup-pi5-classic.html).
+Ready to start programming? See the [Software Setup](/docs/setup/).

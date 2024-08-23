@@ -58,7 +58,11 @@ The following information can be configured in the `mbot_config.txt` file:
 * `new_wifi_ssid`: The name of the WiFi network you would like your robot to join.
 * `new_wifi_password`: The password for the network.
 
-**IP Registry Configuration.** Your course staff will tell you which IP registry your robot should use. This is where you will check for your robot's IP to access it when it turns on. It will publish using a GitHub account which must have write access to this registry.
+**IP Registry Configuration.** An IP registry is one way to get your robot's IP when it turns on. If configured, the robot will publish its IP to the registry using a GitHub account which must have write access to this registry.
+
+**Not using a registry?** Leave these as is.
+{: .notice--info}
+
 * `mbot_ip_list_url`: The URL for the IP registry on GitHub, ending with `.git`.
 * `mbot_ip_list_user`: The username of the GitHub account the robot uses to publish its IP.
 * `mbot_ip_list_token`: A token the robot can use to push to the registry (this is in place of using a password, which GitHub no longer supports).

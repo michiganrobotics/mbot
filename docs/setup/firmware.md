@@ -39,7 +39,7 @@ No accessible RP2040 devices in BOOTSEL mode were found.
 
 Luckily, we can *manually* boot the Pico into `BOOTSEL` mode, then run the script again. Follow these steps:
 1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
-    ![BOOTSEL Button](/assets/images/setup/bootsel-location.jpg){:style="width:800px;" .align-center}
+    ![BOOTSEL Button](/assets/images/setup/bootsel-location.png){:style="width:800px;" .align-center}
 2. Hold down both "RST" and "BOOTSEL"
 3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
 4. Run the upload script:

@@ -4,7 +4,7 @@ title: What's my MBot's IP?
 toc: true
 ---
 
-Your robot's *IP address* is a set of numbers in this form: `XX.XX.XX.XX` (but the `XX`'s are replaced with numbers) that tells other computers on the network how to communicate with the robot. We need this IP to access the robot's web app and to [program the robot](/docs/tutorials/programming).
+Your robot's *IP address* is a set of numbers in this form: `XX.XX.XX.XX` (but the `XX`'s are replaced with numbers) that tells other computers on the network how to communicate with the robot. We need this IP to access the robot's web app and to [program the robot with VSCode](/docs/tutorials/vscode).
 
 There are three ways to get the robot's IP, depending on your hardware and your setup:
 

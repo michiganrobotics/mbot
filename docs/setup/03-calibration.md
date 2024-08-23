@@ -100,14 +100,16 @@ The calibration script detects the motor and encoder polarity and then calibrate
 {: .notice--warning}
 
 To calibrate the robot, do:
-```bash
-sudo mbot-upload-firmware flash mbot_calibrate_<TYPE>.uf2
-```
+<div class="language-bash highlighter-rouge" >
+<div id="calibrate-command" class="highlight">
+    <pre class="highlight"><code>sudo mbot-upload-firmware flash mbot_calibrate_&lt;TYPE&gt;.uf2</code></pre>
+</div>
+</div>
 
 **Got an error?** You may need to [manually put the board into Flashing mode](#manual-flashing-mode) before you run the above command.
 {: .notice--info}
 
-The Pico will reboot automatically, and will then run its calibration routine. *Don't touch the robot while it does this procedure.* The calibration procedure looks like this:
+The Pico will reboot automatically, and will then run its calibration routine. *Don't touch the robot while it does this procedure.* The calibration procedure looks like this for the Omni robot:
 
 <iframe class="aligh-center" width="560" height="315" src="https://www.youtube.com/embed/Fl2M0zanTJc?si=LukUDRFrAkW_Dnkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -120,7 +122,7 @@ $ No accessible RP2040 devices in BOOTSEL mode were found.
 you may not have the ability to automatically put your MBot Control Board in "flashing" mode. You need to manually put the robot in flashing more before you run the calibration command.
 
 1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
-    ![BOOTSEL Button](/assets/images/setup/bootsel-location.jpg){:style="width:800px;" .align-center}
+    ![BOOTSEL Button](/assets/images/setup/bootsel-location.png){:style="width:800px;" .align-center}
 2. Hold down both "RST" and "BOOTSEL"
 3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
 4. Run the upload script again.
@@ -133,9 +135,11 @@ you may not have the ability to automatically put your MBot Control Board in "fl
 {: .notice--info}
 
 To flash the MBot Control Board with the firmware, do:
-```bash
-sudo mbot-upload-firmware flash mbot-<TYPE>.uf2
-```
+<div class="language-bash highlighter-rouge" >
+<div id="firmware-command" class="highlight">
+    <pre class="highlight"><code>sudo mbot-upload-firmware flash mbot-&lt;TYPE&gt;.uf2</code></pre>
+</div>
+</div>
 
 ## 4. Test your Setup
 

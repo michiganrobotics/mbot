@@ -84,6 +84,8 @@ function updateLinks() {
         }
 
         var wgetCommand = document.getElementById('wget-command').querySelector('code');
+        var calibrateCommand = document.getElementById('calibrate-command').querySelector('code');
+        var firmwareCommand = document.getElementById('firmware-command').querySelector('code');
 
         if (MBOT_TYPE === "CLASSIC") {
             const calib_file = `mbot_calibrate_classic_${mbotFirmwareVersion}_enc${ENC_RES}.uf2`;
@@ -93,6 +95,8 @@ function updateLinks() {
 
             // Update the wget command text
             wgetCommand.textContent = `wget ${root_url + calib_file}\nwget ${root_url + main_file}`;
+            calibrateCommand.textContent = `sudo mbot-upload-firmware flash ${calib_file}`;
+            firmwareCommand.textContent = `sudo mbot-upload-firmware flash ${main_file}`;
         }
         else if (MBOT_TYPE === "OMNI") {
             const suffix = `enc${ENC_RES}_w${OMNI_WHEEL_DIAMETER}mm`;
@@ -103,6 +107,8 @@ function updateLinks() {
 
             // Update the wget command text
             wgetCommand.textContent = `wget ${root_url + calib_file}\nwget ${root_url + main_file}`;
+            calibrateCommand.textContent = `sudo mbot-upload-firmware flash ${calib_file}`;
+            firmwareCommand.textContent = `sudo mbot-upload-firmware flash ${main_file}`;
         }
     }
     else {
