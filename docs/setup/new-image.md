@@ -92,69 +92,14 @@ In order to connect to the MBot in the next steps, you will need a way of knowin
 3. **If you need to manually log in to WiFi:** Connect your robot to a monitor, keyboard and mouse. Log in to WiFi manually. Restart the robot.
 
     **If you set up a WiFi connection in [Step 2](#2-configure-the-image):** Skip to #4.
-4. Allow a minute or so for the robot to initialize. Once the initialization is complete, get the MBot's IP address from the MBot display or from the IP registry.
+4. Allow a few minutes for the robot to initialize (this is slow on first boot). Once the initialization is complete, get the MBot's IP address from the MBot display or from the IP registry.
 
-## 4. Connect using VSCode Remote
-
-In this step, we are going to establish remote access using the VSCode extension. After this setup, you will be able to access the Raspberry Pi remotely using your laptop.
-
-1. Open VSCode on your laptop, and install the `Remote - SSH` extension
-
-    <a class="image-link" href="/assets/images/setup/vscode_ssh1.png">
-    <img src="/assets/images/setup/vscode_ssh1.png" alt=" " style="max-width:600px;"/>
-    </a>
-
-2. After installing the `Remote - SSH` extension, a new "Remote Explorer" icon will appear on the side panel. This is where you can add the SSH connection to your mbot. Click the New Remote `+` icon as shown below:
-
-    <a class="image-link" href="/assets/images/setup/vscode_ssh2.png">
-    <img src="/assets/images/setup/vscode_ssh2.png" alt=" " style="max-width:600px;"/>
-    </a>
-
-3. When the prompt window pops up, enter the connection command: `ssh mbot@your_mbot_ip_address` as shown below.
-
-    <a class="image-link" href="/assets/images/setup/vscode_ssh3.png">
-    <img src="/assets/images/setup/vscode_ssh3.png" alt=" " style="max-width:500px;"/>
-    </a>
-
-4. Select the default config file. Note that different operating systems may have different paths, but this isn't necessarily a problem. Here in the image, we select the one that contains your username.
-
-    <a class="image-link" href="/assets/images/setup/vscode_ssh4.png">
-    <img src="/assets/images/setup/vscode_ssh4.png" alt=" " style="max-width:500px;"/>
-    </a>
-
-5. Navigate to the "Remote Explorer" tab and click the refresh button. You should see your MBot's IP address listed under the SSH section, indicating that your connection has been saved.
-    - **To start a remote connection:** Click on "Connect in New Window" and enter the password `i<3robots!`. After this, your SSH session should be up and running.
-    - **To end a remote connection:** Click on the tab at the bottom left corner of the VS Code window labeled SSH: xx.x.xxx.xx. A pop-up menu will appear with the option to "close remote connection".
-
-
-At this point, you should be able to connect to your MBot using VSCode extension.
-{: .notice--info }
-
-
-## 5. Change the password
-
-For network security, we encourage you to change your password once you have set up your MBot. The default password is `i<3robots!`, which everyone uses. You should pick a unique password for your fleet. Here's how to change your MBot's password:
-
-1. Open a VSCode terminal in the VSCode Remote session to the robot on your laptop.
-2. Enter this command: `passwd`. You will be prompted to enter your current password.
-3. Next, you will be asked to enter your new password and retype it to confirm.
-4. If the passwords match, you will see a message indicating that your password has been updated successfully.
-
-The output will look like this:
-```bash
-$  passwd
-Changing password for mbot.
-Current password:
-New password:
-Retype new password:
-passwd: password updated successfully
-```
-
-## 6. Install the MBot Code
+## 4. Install the MBot Code
 
 This step will pull all the code utilities for the MBot Web App, SLAM, sensor drivers, and communication with the MBot Control Board.
+For this part, you should first [connect to your robot using VSCode](/docs/tutorials/vscode) and open a VSCode terminal.
 
-1. **Clone the necessary repos.** You will need the following repos (you will need access to them):
+1. **Clone the necessary repos.** You will need the following repos:
     * [MBot LCM Base](https://github.com/mbot-project/mbot_lcm_base){:target="_blank"}
     * [RP Lidar Driver](https://github.com/mbot-project/rplidar_lcm_driver){:target="_blank"}
     * [MBot Bridge](https://github.com/mbot-project/mbot_bridge){:target="_blank"}
@@ -178,6 +123,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 3. **Install the firmware upload script.** This script lets you flash the firmware over the command line.
     First, you need to install dependencies for the tool.
     ```bash
+    cd ~/mbot_ws/
     git clone https://github.com/MBot-Project-Development/pico_sdk.git
     export PICO_SDK_PATH=$PWD/pico_sdk
     wget https://github.com/raspberrypi/picotool/archive/refs/tags/1.1.1.zip
@@ -189,6 +135,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
     ```
     Then, download the upload script and install it:
     ```bash
+    cd ~/mbot_ws/
     wget https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.firmware_version }}/mbot-upload-firmware
     chmod +x mbot-upload-firmware
     sudo cp mbot-upload-firmware /usr/local/bin/
@@ -198,6 +145,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 3. **Install the MBot Web App.** The web app is a useful tool for commanding the robot from your laptop's browser.
     1. Download the latest web app release and unpack it:
         ```bash
+        cd ~/mbot_ws/
         wget https://github.com/mbot-project/mbot_web_app/releases/download/{{ page.web_app_version }}/mbot_web_app-{{ page.web_app_version }}.tar.gz
         tar -xvzf mbot_web_app-{{ page.web_app_version }}.tar.gz
         ```
@@ -234,6 +182,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
 6. **Optional: Install the LCM Monitor:** The web-based LCM monitor is a useful tool for viewing all the published LCM channels and their data in the browser. To install it:
     1. Download the latest release and unpack it:
         ```bash
+        cd ~/mbot_ws/
         wget https://github.com/mbot-project/mbot_lcm_monitor/releases/download/{{ page.lcm_monitor_version }}/mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz
         tar -xvzf mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz
         ```
@@ -245,7 +194,7 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
     3. Follow the printed instructions (which you can also find in `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/README.txt`) to configure NGINX.
     4. It's now safe to delete the folder `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/` and the tar file `mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz`.
 
-7. **Optional: Install the MBot Autonomy code.** *TODO: Update instructions with binaries.* The autonomy code includes SLAM and a motion controller program. Install it with:
+7. **Optional: Install the MBot Autonomy code.** The autonomy code includes SLAM and a motion controller program. *You need access to this repository to download it.* Install it with:
     ```bash
     cd ~/mbot_ws/mbot_autonomy/
     git checkout {{ page.mbot_autonomy_version }}
@@ -256,21 +205,25 @@ This step will pull all the code utilities for the MBot Web App, SLAM, sensor dr
     **Warning:** If you are using the classic, there is a known issue where `motion_controller` interfers with other scripts. You may want to disable `mbot-motion-controller.service`.
     {: .notice--warning}
 
+## 5. Change the password
+
+For network security, we encourage you to change your password once you have set up your MBot. The default password is `i<3robots!`, which everyone uses. You should pick a unique password for your fleet. Here's how to change your MBot's password:
+
+1. Open a VSCode terminal in the VSCode Remote session to the robot on your laptop.
+2. Enter this command: `passwd`. You will be prompted to enter your current password.
+3. Next, you will be asked to enter your new password and retype it to confirm.
+4. If the passwords match, you will see a message indicating that your password has been updated successfully.
+
+The output will look like this:
+```bash
+$  passwd
+Changing password for mbot.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+```
 
 ## Testing your setup
 
 You test your setup by [calibrating the robot and flashing the firmware onto the MBot Control Board](/docs/setup/03-firmware). Then you should be able to [drive your robot](/docs/tutorials/drive).
-
----
-
-## Generating an image
-
-If you followed this guide to create a base image for your whole fleet of robots, follow these steps.
-
-### Cleaning up your current image
-
-You should first clean up your current image by deleting any data you don't want on all the robots in your fleet. Choose these as necessary:
-* **Delete the source code.** You may want to delete the whole folder `~/mbot_ws` now that all the files are installed.
-* **Remove your credentials from the WiFi network.** If you logged into your personal account on the WiFi, you should delete the connection to remove your credentials.
-* **Set default configurations.** Set the robot hostname to a good default for your fleet in `mbot_config.txt`, and remove any WiFi information that does not involve the whole fleet. If your fleet will share an IP registry, leave that in.
-* **Remove session-specific files.** You can safely delete `~/.vscode-server`.
