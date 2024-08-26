@@ -36,6 +36,8 @@ docs:
             url: "/docs/hardware/omni/assembly/"
           - title: "Building"
             url: "/docs/hardware/omni/building/"
+      - title: "Hardware Troubleshooting"
+        url: /docs/hardware/troubleshooting/
 
   - title: "Setup"
     url: /docs/setup/
@@ -69,6 +71,8 @@ docs:
         url: /docs/tutorials/no-machine/
       - title: "The MBot Bridge API"
         url: /docs/tutorials/bridge/
+      - title: "Mapping & Localization"
+        url: /docs/tutorials/mapping/
 
   # - title: Tutorials
   #   children:
