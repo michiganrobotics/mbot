@@ -1,8 +1,15 @@
 /* Custom CSS. */
 
-/* Hide submenu by default */
+/* Adding a line under headings. */
+h1.line, h2.line, h3.line {
+  display: inline-block;
+  border-bottom: solid 3px #FFCB05;
+  padding: 0 0.75em 0.5em 0;
+}
+
+/* Third subnav level */
 nav ul ul ul {
-  display: none;
+  display: none;  /* Hide submenu by default */
   padding-left: 20px;
   font-size: large;
 }
@@ -144,4 +151,68 @@ span.step-arrow {
 /* Other displays in this file might override this one. Leave it at the bottom. */
 .hidden {
   display: none;
+}
+
+/* API Styling */
+ul.api {
+  list-style: none;
+  padding: 0;
+}
+ul.api li {
+  border-top: solid 1px #00274c33;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+ul.api li > * {
+  margin-left: 1em;
+}
+ul.api li > p {
+  margin-bottom: 1em;
+}
+ul.api li > p:last-child {
+  margin-bottom: 0;
+}
+
+ul.api li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+ul.api li:last-child {
+  padding-bottom: 0;
+}
+ul.api li > p.fn {
+  color: #00274C;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  background: #c4ddf578;
+  border-radius: 0.375em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  font-size: 0.85em;
+}
+
+ul.api li > p.sub-head {
+  color: #3d4449;
+  font-weight: 600;
+  background: #f5f6f7;
+  font-size: 0.85em;
+  padding: 0.25em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+ul.api li > ul.params {
+  margin-left: 2em;
+}
+ul.api li > ul.params li {
+  padding: 0;
+  border-top: 0;
+  margin-bottom: 0;
+}
+ul.api li > ul.params li > * {
+  margin-left: 0;
 }
