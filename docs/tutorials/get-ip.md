@@ -19,7 +19,7 @@ There are three ways to get the robot's IP, depending on your hardware and your 
 
 If your robot has an OLED display connected to the Raspberry Pi, it will automatically show the robot's IP. Read the IP from the display as shown here:
 
-![Get IP - Display](/assets/images/TODO.png){:style="width:500px;" .align-center}
+![Get IP - Display](/assets/images/tutorials/mbot-oled-ip.jpg){:style="width:500px;" .align-center}
 
 ## Getting the IP from the MBot IP Registry
 
