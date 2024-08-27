@@ -59,6 +59,14 @@ wget [MAKE A SELECTION]</code></pre>
 </div>
 </div>
 
+To get the tests:
+<div class="language-bash highlighter-rouge" >
+<div id="wget-command-tests" class="highlight">
+    <pre class="highlight"><code>wget https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.mbot_firmware_version }}/mbot_encoder_test.uf2
+wget [MAKE A SELECTION]</code></pre>
+</div>
+</div>
+
 ### What's my encoder resolution?
 {: .no_toc }
 

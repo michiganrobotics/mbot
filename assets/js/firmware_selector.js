@@ -55,15 +55,24 @@ function updateLinks() {
 
     // If the MBot Type is selected, we can add the link to the motor test.
     if (MBOT_TYPE.length > 0) {
+        // Make the motor test button active.
         if (btnMotorTest.classList.contains('inactive')) {
-                btnMotorTest.classList.remove('inactive');
-                btnMotorTest.classList.add('btn--info');
-            }
+            btnMotorTest.classList.remove('inactive');
+            btnMotorTest.classList.add('btn--info');
+        }
+
+        // Update the links to motor test.
+        var wgetCommandTests = document.getElementById('wget-command-tests').querySelector('code');
+        const encoder_file = "mbot_encoder_test.uf2";
         if (MBOT_TYPE === "OMNI") {
-            btnMotorTest.href = root_url + "mbot_omni_motor_test.uf2";
+            const file_name = "mbot_omni_motor_test.uf2";
+            btnMotorTest.href = root_url + file_name;
+            wgetCommandTests.textContent = `wget ${root_url + file_name}\nwget ${root_url + encoder_file}`;
         }
         else if (MBOT_TYPE === "CLASSIC") {
-            btnMotorTest.href = root_url + "mbot_classic_motor_test.uf2";
+            const file_name = "mbot_classic_motor_test.uf2";
+            btnMotorTest.href = root_url + file_name;
+            wgetCommandTests.textContent = `wget ${root_url + file_name}\nwget ${root_url + encoder_file}`;
         }
     }
     // Check if the selections are all made.
