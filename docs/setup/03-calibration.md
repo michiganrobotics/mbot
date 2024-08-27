@@ -41,13 +41,13 @@ First, download the correct firmware type for your MBot. You will need to select
         Calibration <br/> <i class="fas fa-ruler"></i>
     </a>
     <a href="#" id="btn-firmware" class="btn big download inactive">
-        Firmware <br/> <i class="fas fa-cogs"></i>
+        Firmware <br/> <i class="fas fa-microchip"></i>
     </a>
     <a href="#" id="btn-motor-test" class="btn big download inactive">
-        Motor Test <br/> <i class="fas fa-cog"></i>
+        Motor Test <br/> <i class="fas fa-truck-monster"></i>
     </a>
     <a href="https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.mbot_firmware_version }}/mbot_encoder_test.uf2" id="btn-motor-test" class="btn big download btn--info">
-        Encoder Test <br/> <i class="fas fa-eye"></i>
+        Encoder Test <br/> <i class="fas fa-stopwatch"></i>
     </a>
 </div>
 
