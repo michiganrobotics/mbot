@@ -43,9 +43,14 @@ Your course staff will provide this information to you. You will also need a way
 
     ![Open mbot_config.txt](/assets/images/setup/mbot_config_contents.png){:style="width:600px;" .align-center}
 
-    See the [MBot Configuration](#mbot-configuration) section for details about how to edit this file.
+    See the [MBot Configuration](#mbot-configuration) section for details about how to edit this file. When you are done making the changes, don't forget to **save and close the file**.
 
     **Students:** Check with your course staff for configuration information for your class.
+    {: .notice--warning}
+
+5. **Eject the SD card.** Once ejected, you can remove the SD card from your computer and put it back in the robot's Raspberry Pi.
+
+    **Warning:** Don't skip the step to eject the SD card *before* removing it from your computer! Otherwise, you may corrupt the card.
     {: .notice--warning}
 
 ## MBot Configuration
