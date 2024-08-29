@@ -1,0 +1,27 @@
+/* ==========================================================================
+   MBot custom skin
+   ========================================================================== */
+
+$gray: #7a8288 !default;
+$dark-gray: mix(#000, $gray, 50%) !default;
+$darker-gray: mix(#000, $gray, 60%) !default;
+$light-gray: mix(#fff, $gray, 50%) !default;
+$lighter-gray: mix(#fff, $gray, 90%) !default;
+$um-maize: #FFCB05;
+$um-blue: #00274C;
+
+$primary-color: $um-maize !default;
+$success-color: #3fa63f !default;
+$warning-color: #d67f05 !default;
+$danger-color: #ee5f5b !default;
+$info-color: #2F65A7 !default;  //#3b9cba
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
+
+/* Colors */
+$text-color: #3d4144 !default;
+$link-color: #2F65A7 !default;
+$link-color-hover: mix(#000, $link-color, 25%) !default;
+$link-color-visited: mix(#fff, $link-color, 15%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;

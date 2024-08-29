@@ -1,5 +1,23 @@
 /* Custom CSS. */
 
+/* Color adjustments to match MBot skin. */
+
+.toc .nav__title {
+  background: #6f777d;
+}
+
+.nav__list .nav__items a:hover {
+  color: #00274C;
+}
+
+.search__toggle {
+  color: #00274C;
+
+  &:hover {
+    color: #FFCB05;
+  }
+}
+
 /* Adding a line under headings. */
 h1.line, h2.line, h3.line {
   display: inline-block;

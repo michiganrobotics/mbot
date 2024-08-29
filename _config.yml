@@ -43,6 +43,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 masthead_title           : " "
 # breadcrumbs            : false # true, false (default)
 enable_copy_code_button  : true  # For copy button on code blocks.
+minimal_mistakes_skin: "mbot" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Search configuration.
 search: true
