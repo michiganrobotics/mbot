@@ -123,7 +123,9 @@ li.nav-open button.subnav-expand i {
   }
 
   .option-cell.selected {
-    background-color: #add8e6;
+    background-color: #D86018;
+    color: #fff;
+    font-weight: 500;
   }
 
 /* For the Getting Started selector */
