@@ -26,7 +26,7 @@ Standard images for the MBot can be downloaded from here:
     <a href="{{ page.mbot_base_rpi_os_link }}" class="btn btn--info" target="_blank">
         <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Base Image
     </a>
-    <a href="{{ page.mbot_full_classic_rpi_os_link }}" class="btn btn--info">
+    <a href="{{ page.mbot_full_classic_rpi_os_link }}" class="btn btn--info inactive">
         <i class="fas fa-download"></i>&nbsp;&nbsp; MBot Full Image (Classic)
     </a>
     <a href="{{ page.mbot_full_omni_rpi_os_link }}" class="btn btn--info" target="_blank">
@@ -36,6 +36,9 @@ Standard images for the MBot can be downloaded from here:
 
 **Which image should I use?** The "Full" images have all the MBot code installed, so you can start driving, making maps, and programming your robot out of the box! The "Base" image has no MBot code on it. You will need to [setup the image](/docs/setup/new-image) with any code that you need.
 {: .notice--info}
+
+**Note** *Classic Full Image coming soon!*
+{: .notice--danger}
 
 ## Instructions
 

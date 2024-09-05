@@ -12,8 +12,8 @@ Got a fully assembled MBot? You're in the right place! Follow the guides below t
 {: .notice--info}
 
 The guides in this section will help you:
-1. Install an image onto the MBot's Raspberry Pi,
-2. Calibrate your robot,
-3. Flash the firmware onto the MBot Control Board.
+1. [Install an image onto the MBot's Raspberry Pi](/docs/setup/01-install-os/),
+2. [Configure your MBot](/docs/setup/02-configuration/),
+3. [Calibrate and flash the firmware onto the MBot Control Board](/docs/setup/03-calibration/).
 
 [**Next Step:** Install the OS](/docs/setup/01-install-os){: .btn .btn--inverse .align-right}

@@ -104,42 +104,44 @@ We will now flash the calibration script onto the Pico to calibrate it before we
 
 The calibration script detects the motor and encoder polarity and then calibrates the motor coefficients. The robot will move around for this step so you will need clear space on the floor (preferably on the same type of surface that you plan to use the robots on).
 
-**Warning:** *Do not run the calibration script with the MBot on a table!!*
+### Manual Flashing Mode
+
+Before we flash the robot, we must put it in flashing mode. To do this, follow these steps:
+
+1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
+    ![BOOTSEL Button](/assets/images/setup/bootsel-location.png){:style="width:800px;" .align-center}
+2. Hold down both "RST" and "BOOTSEL"
+3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
+
+**Can I skip this step?** Some robots may be able to automatically put the robots in flashing mode, so the above step can be skipped.
+Read through the guide on [Automatic Boot Mode](/docs/setup/firmware/#automatic-boot-mode) to find out more.
+{: .notice--info}
+
+### Flashing the Calibration Code
+
+**Warning:** *Do not run the calibration script with the MBot on a table!!* Before you run the command below, place the robot on the floor with some space around it.
 {: .notice--warning}
 
-To calibrate the robot, do:
+To calibrate the robot, with the robot in flashing mode, do:
 <div class="language-bash highlighter-rouge" >
 <div id="calibrate-command" class="highlight">
     <pre class="highlight"><code>sudo mbot-upload-firmware flash mbot_calibrate_&lt;TYPE&gt;.uf2</code></pre>
 </div>
 </div>
 
-**Got an error?** You may need to [manually put the board into Flashing mode](#manual-flashing-mode) before you run the above command.
+**Got an error?** If you get the error: `No accessible RP2040 devices in BOOTSEL mode were found` you may need to [manually put the board into Flashing mode](#manual-flashing-mode) before you run the above command.<br/><br/>
+**Still getting an error?** You may have a problem with [Automatic Boot Mode](/docs/setup/firmware/#automatic-boot-mode). See that guide for troubleshooting tips.
 {: .notice--info}
 
 The Pico will reboot automatically, and will then run its calibration routine. *Don't touch the robot while it does this procedure.* The calibration procedure looks like this for the Omni robot:
 
 <iframe class="aligh-center" width="560" height="315" src="https://www.youtube.com/embed/Fl2M0zanTJc?si=LukUDRFrAkW_Dnkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Manual Flashing Mode
-
-If you get the error:
-```bash
-$ No accessible RP2040 devices in BOOTSEL mode were found.
-```
-you may not have the ability to automatically put your MBot Control Board in "flashing" mode. You need to manually put the robot in flashing more before you run the calibration command.
-
-1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
-    ![BOOTSEL Button](/assets/images/setup/bootsel-location.png){:style="width:800px;" .align-center}
-2. Hold down both "RST" and "BOOTSEL"
-3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
-4. Run the upload script again.
-
 ## 3. Flash the Firmware
 
 **Flash the MBot Firmware onto the Pico.** The calibration script will have saved parameters onto the Pico's memory. We can now flash the firmware that will run on the Pico during operation.
 
-**Do you need to manually put your MBot Control Board in Flashing Mode?** If you needed to manually put the board in flashing mode during calibration, you will need to do this again before running the next command. See [the manual flashing instructions above](#manual-flashing-mode).
+**Put your board in boot mode:** If you needed to manually put the board in flashing mode during calibration, you will need to do this again before running the next command. See [the manual flashing instructions above](#manual-flashing-mode).
 {: .notice--info}
 
 To flash the MBot Control Board with the firmware, do:
