@@ -11,6 +11,8 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
   <img src="/assets/images/hardware/omni/omni.jpg" alt="" style="max-width:200px;" class="align-center"/>
 </a>
 
+**Warning:** Parts of this guide may be out of date. Check back soon!
+{: .notice--danger}
 
 ## Bottom Assembly
 

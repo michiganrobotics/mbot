@@ -16,6 +16,9 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
     <img src="/assets/images/hardware/classic/mbot1.jpg" alt="" style="max-width:200px;"/>
 </a>
 
+**Warning:** Parts of this guide may be out of date. Check back soon!
+{: .notice--danger}
+
 ## Soldering Encoder
 
 | Components      |# |
