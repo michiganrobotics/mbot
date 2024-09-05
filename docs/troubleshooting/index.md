@@ -18,7 +18,8 @@ These more detailed troubleshooting guides are available:
 {: .line}
 
 Here are some common issues and how to fix them:
-* [My robot is not driving or driving crooked](#my-robot-is-not-driving-or-driving-crooked)
+* [My robot is not driving](#my-robot-is-not-driving)
+* [My robot is driving crooked](#my-robot-is-driving-crooked)
 * [I can't flash the MBot Control Board](#i-cant-flash-the-mbot-control-board)
 * [My robot won't connect to WiFi](#my-robot-wont-connect-to-wifi)
 * [Mapping isn't working](#mapping-isnt-working)
@@ -28,11 +29,32 @@ Here are some common issues and how to fix them:
 
 ---
 
-### My robot is not driving or driving crooked
+### My robot is not driving
 
 After you [calibrate and flash your robot](/docs/setup/03-calibration/), you should test your robot by [driving it using the web app](/docs/tutorials/drive).
 
-The robot will not drive *perfectly* straight, but it should be pretty close! If your robot is **not moving** or your robot is **driving "wonky"**, see the [Hardware Troubleshooting Guide](/docs/troubleshooting/hardware).
+If the robot wheels *do not turn at all*, here are some things to check:
+1. **Did you flash the correct firmware?** For the robot to be teleoperated from the web app, you need to have flashed the firmware. You can get the code from the [Calibration & Flashing Guide](/docs/setup/03-calibration/).
+
+    **Make sure flashing succeeded without errors!** When you run the `mbot-upload-firmware` command, you should not see any errors. If you are getting errors, see ["I can't flash the MBot Control Board"](#i-cant-flash-the-mbot-control-board).
+    {: .notice--info}
+
+2. **Are the cables connected correctly?** You should have these connections for the MBot Control Board to work and communicate with the Raspberry Pi:
+    * A USB cable connecting the MBot Control Board (USB-C) to the Raspberry Pi (USB).
+    * A Y-shaped barrel cable with one end connected to the battery pack and the other connected to the MBot Control Board.
+
+    For details and illustrations, see the Assembly Guide for your platform in the [Hardware](/docs/hardware) section.
+
+**Still not working?** If you still can't drive your robot, you may have a hardware problem. Check that the device `/dev/mbot_tty` exists and check for errors in the service `mbot-lcm-serial.service` (see the [Software Guide]((/docs/troubleshooting/software/#checking-service-status)) for instructions). You may have to replace the USB cable or the Pico.
+{: .notice--info}
+
+---
+
+### My robot is driving crooked
+
+After you [calibrate and flash your robot](/docs/setup/03-calibration/), you should test your robot by [driving it using the web app](/docs/tutorials/drive).
+
+The robot will not drive *perfectly* straight, but it should be pretty close! If your robot is **driving "wonky"**, see the [Hardware Troubleshooting Guide](/docs/troubleshooting/hardware).
 
 ---
 
