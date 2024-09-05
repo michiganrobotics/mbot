@@ -18,6 +18,15 @@ docs:
         url: /docs/basics/
       - title: "Troubleshooting"
         url: /docs/troubleshooting/
+        children:
+          - title: "Overview"
+            url: /docs/troubleshooting/
+          - title: "Hardware Problems"
+            url: /docs/troubleshooting/hardware/
+          - title: "Software Problems"
+            url: /docs/troubleshooting/software/
+          - title: "Networking Problems"
+            url: /docs/troubleshooting/networking/
 
   - title: "Hardware"
     url: /docs/hardware/
@@ -38,8 +47,6 @@ docs:
             url: "/docs/hardware/omni/building/"
       - title: "MBot Control Board"
         url: /docs/hardware/mbot-control-board/
-      - title: "Hardware Troubleshooting"
-        url: /docs/hardware/troubleshooting/
 
   - title: "Setup"
     url: /docs/setup/

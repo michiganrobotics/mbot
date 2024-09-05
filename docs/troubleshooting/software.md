@@ -1,39 +1,12 @@
 ---
 layout: single
-title: Troubleshooting
+title: MBot Software Troubleshooting Guide
 toc: true
 ---
 
-Got a problem with your MBot? You're in the right place! Check out the [Common Problems](#common-problems) to get started.
+If you are having issues with software, this guide introduces some tools to help pinpoint your issue.
 
-## Common Problems
-{: .line}
-
-### My robot is not driving or driving crooked
-
-After you [calibrate and flash your robot](/docs/setup/03-calibration/), you should test your robot by [driving it using the web app](/docs/tutorials/drive).
-
-The robot will not drive *perfectly* straight, but it should be pretty close! If your robot is **not moving** or your robot is **driving "wonky"**, see the [Hardware Troubleshooting Guide](/docs/hardware/troubleshooting).
-
-### My robot won't connect to WiFi
-
-If your robot is not connecting to WiFi or not reporting its IP, check the [Networking Tips](#networking-problems) below.
-
-### Mapping isn't working
-
-If you are toggling localization on and then it is immediately toggling off again, something is going wrong with SLAM. See the [Mapping & Localization Debugging Tips](#mapping--localization-problems) below for help.
-
-## Hardware Problems
-{: .line}
-
-If your robot is *not driving*, or your robot is *driving "wonky"*, see the [Hardware Troubleshooting Guide](/docs/hardware/troubleshooting).
-
-## Software Problems
-{: .line}
-
-If you believe you have a software problem, try some of the tips below.
-
-### Viewing LCM Channels
+## Viewing LCM Channels
 
 If some function of the robot isn't working, it's often helpful to look at the *LCM channels* on the Raspberry Pi. If certain channels are missing, that provides a clue about which program might not be working. There are two ways to see the LCM channels:
 
@@ -63,7 +36,7 @@ If some function of the robot isn't working, it's often helpful to look at the *
 
 ---
 
-### Checking Service Status
+## Checking Service Status
 
 Background processes are run on the robot on startup using Linux *services*. If something is not working or not responding on the robot, you check whether the corresponding services are running. You can also check the service logs for any errors or messages of interest. To check the status of a service, do:
 ```bash
@@ -85,7 +58,7 @@ This will show you all the log messages for the service for the current boot (ot
     Then download file <code>~/Desktop/out.txt</code> onto your computer and send it to staff along with a description of your problem. This will contain all the system logs for your bot.
 </div>
 
-#### Networking Services
+### Networking Services
 
 The following services run *once* on startup, to set the networking. They should have exited successfully after running:
 *  `mbot-start-network.service`
@@ -93,7 +66,7 @@ The following services run *once* on startup, to set the networking. They should
 
 These services also have additional logs generated which are stored in the directory `/var/log/mbot/`. If you have a problem with the IP publishing script or networking, also look at these logs.
 
-#### MBot Services
+### MBot Services
 
 The following services run the code that the robot needs. The service of interest depends on your problem.
 
@@ -102,24 +75,3 @@ The following services run the code that the robot needs. The service of interes
 * `mbot-bridge.service`: This runs the MBot Bridge server needed to use the [MBot Bridge API](/docs/tutorials/bridge). Check this service if you are getting errors about websocket connections when using the API.
 * `mbot-slam.service`: This runs SLAM. Check this service if SLAM is not responding.
 * `mbot-motion-controller.service`: This generates motion commands to follow paths. Check this if you are publishing a path but the robot is not following it correctly.
-
----
-
-### Mapping & Localization Problems
-
-If you are toggling localization on and then it is immediately toggling off again, or if no map is being made in mapping mode, something is going wrong with SLAM.
-
-Check the following, in this order:
-1. **Is your Lidar plugged in?** SLAM needs the Lidar scan to work!
-2. **Can you drive your robot?** If not, it is likely that odometry is not working either, and SLAM needs odometry to work. See the [Hardware Troubleshooting Guide](/docs/hardware/troubleshooting) to fix it.
-
-Lidar spinning and Robot Control Board working but SLAM still isn't working? Try these steps:
-3. **Restart your robot.** If any program got into a funny state or crashed, a reboot will fix it. If the problem persists, follow the next steps.
-4. [**Check the logs and services**](#checking-service-status). These instructions also tell you how to get a log to send to course staff for help if your problems persist.
-5. [**Check LCM channels**](#viewing-lcm-channels). If you can't find the issue in the services, you might check that all the correct data is being published. Do you see the Lidar scan and odometry data coming in?
-
-## Networking Problems
-{: .line}
-
-<i class="fas fa-tools"></i>&nbsp;&nbsp;*Coming soon!*
-{: .notice--danger}
