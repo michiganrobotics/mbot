@@ -53,7 +53,7 @@ replacing `<MY-FIRMWARE>` with the name of the firmware file you downloaded.
 To use automatic boot mode, the appropriate pins on the MBot Control Board need to be connected to the Raspberry Pi.
 This picture shows the connection on the MBot Control Board that is required (the white and green wires):
 
-![The cable needed to automatically flash the MBot Control Board](/assets/images/setup/flash_pico_wire.jpg){:style="max-width:400px;" .align-center}
+![The cable needed to automatically flash the MBot Control Board](/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg){:style="max-width:400px;" .align-center}
 
 **Warning:** Automatic boot mode is in beta mode, and may not always work. If you have the correct cable but still get an error, unplug the connector with the white and green wires from the MBot Control Board and use the [manual boot method](#1-manual-boot-mode).
 {: .notice--warning}
