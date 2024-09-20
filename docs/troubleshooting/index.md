@@ -71,7 +71,7 @@ If you see this error, the firmware *did not flash correctly*. Here are some thi
 2. **Do you have automatic flashing set up?** If you are using the `RST` and `BOOTSEL` buttons to put the Pico into Boot Mode and still getting the error above, you may have a *known issue* with automatic flashing (this feature is new and may not always work!).
 
     Check if you have these cables connected to the MBot Control Board (the green and white wires).
-    ![The cable needed to automatically flash the MBot Control Board](/assets/images/setup/flash_pico_wire.jpg){:style="max-width:400px;" .align-center}
+    ![The cable needed to automatically flash the MBot Control Board](/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg){:style="max-width:400px;" .align-center}
 
     If so, **unplug the connector from the MBot Control Board** to disable automatic flashing. Put the board in Boot Mode manually (see the [Firmware Flashing Tutorial](/docs/setup/firmware/#1-manual-boot-mode) for instructions), then try again.
 
