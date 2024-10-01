@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Mbot Classic Bottom Plate Guide
+title: MBot Classic Bottom Plate Guide
 last_modified_at: 2024-09-11 19:22:48 -0500
 author: shaw
 toc: true
@@ -11,10 +11,6 @@ This guide is for Differential Drive MBot Classic bottom plate assembly. At the 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg">
     <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg" alt="MBot Classic Bottom Plate" style="max-width:500px;"/>
 </a>
-
-<!-- ### Contents
-* TOC
-{:toc} -->
 
 ## 1. Mount the caster
 

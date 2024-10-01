@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Mbot Classic Top Plate Guide
+title: MBot Classic Top Plate Guide
 last_modified_at: 2024-09-11 19:22:48 -0500
 author: shaw
 toc: true
