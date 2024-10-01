@@ -1,10 +1,11 @@
 ---
 layout: single
 title: MBot Classic (Jetson Nano) Documentation
+search: false
 toc: true
 ---
 
-**Warning:** The MBot Classic with Jetson Nano has been deprecated. Try the [MBot Classic with RPi 5](/docs/classic) instead!
+**Warning:** The MBot Classic with Jetson Nano has been deprecated. Try the [MBot Classic with RPi 5](/docs/hardware/classic) instead!
 {: .notice--danger}
 
 <a class="image-link">

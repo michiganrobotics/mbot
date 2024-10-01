@@ -2,6 +2,7 @@
 layout: single
 title: Generating an Image for your Course
 toc: true
+search: false
 ---
 
 *Coming soon!*
