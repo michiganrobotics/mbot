@@ -9,23 +9,18 @@ toc: true
 {: .important}
 This guide is for Differential Drive MBot Classic.
 
-### Contents
-* TOC
-{:toc}
-
-
 ## 1. Assemble 3 plates
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
-|  3-heads jumper wire cable |1| 
-|  4-40 thumb screw 3/8” |8| 
+|  3-heads jumper wire cable |1|
+|  4-40 thumb screw 3/8” |8|
 
 1. Plug the 2-pin header into the control board.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg">
         <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg" alt="" style="max-width:400px;"/>
-    </a> 
+    </a>
     - White cable to RUN
     - Green cable to BTLD
 
@@ -33,7 +28,7 @@ This guide is for Differential Drive MBot Classic.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble2.png">
         <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble2.png" alt="" style="max-width:400px;"/>
-    </a> 
+    </a>
 
 2. Plug the 6-pin connector into the Raspberry Pi pins.
 
@@ -48,17 +43,17 @@ This guide is for Differential Drive MBot Classic.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble4.png">
         <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble4.png" alt="" style="max-width:350px;"/>
-    </a> 
+    </a>
 
     Then, use the thumb screws to attach the top plate to the middle plate and secure the screws to the standoffs.
 
 ## 2. Final Wiring
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
-|  12V Power Bank |1| 
-|  DC power “Y” cable with rounded ends |1| 
-|  USB-C Cable |2| 
+|  12V Power Bank |1|
+|  DC power “Y” cable with rounded ends |1|
+|  USB-C Cable |2|
 
 - "Y" Cable: Connects the power bank to the Robotics Control Board, providing power to the control board.
 - USB-C Cable: Connects the power bank to the Raspberry Pi, supplying power to the Pi.
@@ -69,14 +64,17 @@ Raspberry Pi 5 power supply slot is on the side:
 
 <a class="image-link" href="https://cdn.shopify.com/s/files/1/0254/1191/1743/files/5047-5048_description-raspberry-pi-5-features.jpg?v=1695822743">
     <img src="https://cdn.shopify.com/s/files/1/0254/1191/1743/files/5047-5048_description-raspberry-pi-5-features.jpg?v=1695822743" alt="" style="max-width:400px;"/>
-</a> 
+</a>
 
 
 The final result should look like this:
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/2-final-wiring1.png">
     <img src="/assets/images/hardware/classic/assembly/wiring/2-final-wiring1.png" alt="" style="max-width:400px;"/>
-</a> 
+</a>
 
 
-Now you have a complete version of MBot!
+Now you have a complete version of MBot. You are ready to set up the software and make the robot move!
+
+[**Previous Step:** Top Plate](/docs/hardware/classic/assembly/mbot-classic-top-plate){: .btn .btn--inverse .align-left}
+[**Next Step:** Software Setup](/docs/setup/){: .btn .btn--inverse .align-right}

@@ -6,25 +6,26 @@ author: shaw
 toc: true
 ---
 {: .important}
-This guide is for Differential Drive MBot Classic.
+This guide is for Differential Drive MBot Classic bottom plate assembly. At the end of this guide, you should have a fully assembled bottom plate that looks like this:
 
-{: .warning}
-You might have encoders that are not covered in this guide. Here we only included resolution 40 encoder.
+<a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg">
+    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg" alt="MBot Classic Bottom Plate" style="max-width:500px;"/>
+</a>
 
-### Contents
+<!-- ### Contents
 * TOC
-{:toc}
+{:toc} -->
 
-## 1. Mount the caster 
+## 1. Mount the caster
 
-| Components               |# | 
+| Components               |# |
 |:-----------------------  |:-|
 | Metal ball               |1 |
 | Bottom Acrylic Sheet     |1 |
 | 1/8" spacer              |1 |
 | 1/16" spacer             |1 |
 | M2 hex nuts              |2 |
-| M2 x 12mm screw          |2 | 
+| M2 x 12mm screw          |2 |
 | Caster housing           |1 |
 
 
@@ -39,10 +40,10 @@ Gather all required components and assemble them as depicted in the images below
 
 ## 2. Mount the motor brackets
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
-| M2.5 x 8mm Screws        |8| 
-| Motor Mount (3D printed) |2| 
+| M2.5 x 8mm Screws        |8|
+| Motor Mount (3D printed) |2|
 | M2.5 threaded inserts    |8|
 
 1. Insert the threaded inserts into the motor mount's bottom plate, you need soldering iron for this to heat up the inserts.
@@ -56,11 +57,14 @@ Gather all required components and assemble them as depicted in the images below
 
 ## 3. Mount the motors
 
-### Soldering Encoder
+**Note:** You might have encoders that are not covered in this guide. This guide covers encoders with resolution 40.
+{: .notice--warning}
+
+### Soldering Encoders
 
 **If your motor does not come with a pre-attached encoder,** you will need to solder an encoder onto the motor yourself.
 
-| Components      |# | 
+| Components      |# |
 |:--------------- |:-|
 | Motor           |2 |
 | Encoder         |2 |
@@ -78,11 +82,11 @@ First, before assembling all the parts, you need to solder the encoder to the mo
     <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder4.jpg" title="Soldering encoder 4"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder4.jpg" width="200" height="200"></a>
 </div>
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
-| M2.5 x 6mm Nylock Screws        |4| 
-| Gear Motors w/ Wiring & Encoders |2| 
-| 6-PIN jumper wires |2| 
+| M2.5 x 6mm Nylock Screws        |4|
+| Gear Motors w/ Wiring & Encoders |2|
+| 6-PIN jumper wires |2|
 
 **If your motor has pre-attached encoder,** firstly connect the jumper wires to the motor's pin as shown in the 1st image. Note that you need to align unthreaded holes in motor vertically to the holes in the motor mount, while the wires should face the back of the MBot as shown in the second figure.
 
@@ -95,10 +99,10 @@ First, before assembling all the parts, you need to solder the encoder to the mo
 
 ## 4. Mount the short 1.5” aluminum standoffs
 
-| Components               |# | 
+| Components               |# |
 |:-----------------------  |:-|
 | 4-40 x 1.5inch standoffs  |4 |
-| 4-40 x 3/8inch screws  |4 | 
+| 4-40 x 3/8inch screws  |4 |
 
 Gather all the components and assemble as shown in the images below.
 
@@ -109,28 +113,28 @@ Gather all the components and assemble as shown in the images below.
 
 ## 5. Attach the wheels
 
-| Components               |# | 
+| Components               |# |
 |:-----------------------  |:-|
 | Scooter Wheels 84 X 24 mm  |2 |
 | M3x20mm screws |6|
 | Wheel adapter  |2|
 | Set screws     |2|
-| Hex Key        |1| 
+| Hex Key        |1|
 
 Note that we will not use the M3x14mm screws that came with the wheel adaptor, as they are not long enough, instead we are going to use M3x20mm screws here.
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel1.jpg">
-<img src="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel1.jpg" alt="" style="max-width:300px;"/>
+<img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel1.jpg" alt="" style="max-width:300px;"/>
 </a>
 
-Follow the steps below: 
-1. First, press fit the machined wheel adaptor into one side of the wheels, ensuring a part of it sticks out. 
-2. Then press fit the flat metal piece into the opposite side, aligning the three holes. 
-3. Insert the M3x20mm screws to secure the parts together, as demonstrated in the second image. 
+Follow the steps below:
+1. First, press fit the machined wheel adaptor into one side of the wheels, ensuring a part of it sticks out.
+2. Then press fit the flat metal piece into the opposite side, aligning the three holes.
+3. Insert the M3x20mm screws to secure the parts together, as demonstrated in the second image.
 4. Using the 2mm Hex wrench screw the set screws that come with the wheel adaptor kit into the wheel adaptors as shown in the 3rd and 4th image.
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel2.jpg">
-    <img src="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel2.jpg" alt="" style="max-width:500px;"/>
+    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel2.jpg" alt="" style="max-width:500px;"/>
 </a>
 
 Then you can directly put the wheel on, use the hex key to tight the wheels. Note that it is necessary to leave a bit of space between the wheel and the screw head of the motor, as depicted in the image below, otherwise the wheel hub will rub against the screws holding the motor causing excess friction or jamming the motors.
@@ -142,12 +146,12 @@ Then you can directly put the wheel on, use the hex key to tight the wheels. Not
 
 ## 6. Assemble the Control Board
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
 | Robotics Control Board   |1|
 | MBot PICO+               |1|
-| M2.5 8mm Nylon Standoffs |4| 
-| M2.5 x 6mm Screws        |4| 
+| M2.5 8mm Nylon Standoffs |4|
+| M2.5 x 6mm Screws        |4|
 | Jumper Cap (Shorting block)  |1|
 
 1. Put the jumper cap on. Notice that in the 2nd image there are 3 pins squared together. Since we are using 12V, make sure to position the jumper cap over the VM and 12V pins, as demonstrated in the 3rd image.
@@ -165,11 +169,11 @@ Then you can directly put the wheel on, use the hex key to tight the wheels. Not
     </div>
 
 
-## 7. Connect the wires to Robotics Control Board.  
+## 7. Connect the wires to Robotics Control Board.
 
 The rainbow cables have the following signals:
 
-| Wire Color   | Signal     | 
+| Wire Color   | Signal     |
 |:-------------|:-----------|
 | Red          | Encoder B  |
 | Orange       | Encoder A  |
@@ -181,7 +185,7 @@ The rainbow cables have the following signals:
 1. Examine the pins. In the case illustrated in the image, both the left and right motor have the green wire connected to the GND pin. We will use this info to connect to the Robotics Control Board.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire1.jpg">
-    <img src="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire1.jpg" alt="" style="max-width:400px;"/>
+    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire1.jpg" alt="" style="max-width:400px;"/>
     </a>
 2. Thread the wires through the bottom plate, following the configuration in the image below, ensuring they won't interfere with the encoder's magnet.
 3. Identify the GND pin on the Robotics Control Board and connect the wires to it accordingly. In this case, the green wire is connected to the GND pin. Note that you should connect the left wheel to M0 slot, right wheel to M1 slot as shown in the image.
@@ -193,21 +197,23 @@ The rainbow cables have the following signals:
 
 ## 8. Attach the Control Board to the bottom plate
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
-| M2.5 x 6mm Screws        |4| 
+| M2.5 x 6mm Screws        |4|
 
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg">
-    <img src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg" alt="" style="max-width:300px;"/>
+    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg" alt="" style="max-width:300px;"/>
 </a>
 
 
 If you have successfully assembled the bottom plate, the result should look like this:
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg">
-    <img src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg" alt="" style="max-width:300px;"/>
+    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg" alt="" style="max-width:300px;"/>
 </a>
 
 
 Now you can move to the [middle plate assembly guide](/docs/hardware/classic/assembly/mbot-classic-middle-plate)!
+
+[**Next Step:** Middle Plate](/docs/hardware/classic/assembly/mbot-classic-middle-plate){: .btn .btn--inverse .align-right}

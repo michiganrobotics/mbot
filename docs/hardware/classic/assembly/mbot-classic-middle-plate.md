@@ -8,11 +8,6 @@ toc: true
 {: .important}
 This guide is for Differential Drive MBot Classic.
 
-
-### Contents
-* TOC
-{:toc}
-
 ## 1. Assemble the main plate
 
 | Components     | #         | Details|
@@ -23,7 +18,7 @@ This guide is for Differential Drive MBot Classic.
 | M2.5 x 6mm Screws        |8| Use with Nylon standsoffs |
 | 2.5” Aluminum standoffs  |4| Longest standoffs |
 | M2.5 x 8mm Screws        |4| Use the the 2.5” standoffs|
-| M2.5 X 30mm Standoffs    |4| Second shortest standoffs | 
+| M2.5 X 30mm Standoffs    |4| Second shortest standoffs |
 | M2.5 x 6mm Screws        |8| Use with the 30mm standoffs|
 | Zip tie                  |4|
 | battery slot pieces       |4| U shaped pieces |
@@ -57,17 +52,17 @@ This guide is for Differential Drive MBot Classic.
 
 ## 2. Attach the camera
 
-| Components     | #         | 
+| Components     | #         |
 |:-------------|:---- -------|
-| Camera mount |1| 
+| Camera mount |1|
 | Camera       |1 |
 | 15-to-22 pin camera cable (one end is narrower, and the other is wider)|  1 |
 | Transparent spacer for camera|1|
-| M2 x 6mm Screws        |4| 
-| M2.5 x 8mm Screws     |2| 
+| M2 x 6mm Screws        |4|
+| M2.5 x 8mm Screws     |2|
 | M2.5 threaded inserts |2|
 
-Note that the OLED mount and the camera mount are both white and look similar, but they are different!  
+Note that the OLED mount and the camera mount are both white and look similar, but they are different!
 
 1. Insert the threaded inserts into the camera mount, you need soldering iron for this to heat up the inserts.
 2. Attach the camera mount below the middle plate with the screw slot facing upwards, as shown in the image.
@@ -94,3 +89,6 @@ Note that the OLED mount and the camera mount are both white and look similar, b
 
 
 Now, let's move on to the [top section](/docs/hardware/classic/assembly/mbot-classic-top-plate).
+
+[**Previous Step:** Bottom Plate](/docs/hardware/classic/assembly/mbot-classic-bottom-plate){: .btn .btn--inverse .align-left}
+[**Next Step:** Top Plate](/docs/hardware/classic/assembly/mbot-classic-top-plate){: .btn .btn--inverse .align-right}
