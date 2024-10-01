@@ -25,14 +25,29 @@ h1.line, h2.line, h3.line {
   padding: 0 0.75em 0.5em 0;
 }
 
-/* Third subnav level */
+/* Third and fourth subnav level */
 nav ul ul ul {
   display: none;  /* Hide submenu by default */
   padding-left: 20px;
   font-size: large;
 }
 
+nav ul ul ul ul {
+  display: none;  /* Hide subsubmenu by default */
+}
+
+/* Hide subsubnavs, even if higher level is open. */
+ul li.nav-open ul ul {
+  display: none;
+}
+
+/* Show subnavs, if open. */
 ul li.nav-open ul {
+  display: block;
+}
+
+/* Show subsubmenus, if open. */
+ul li.nav-open ul li.nav-open ul {
   display: block;
 }
 
@@ -44,7 +59,7 @@ button.subnav-expand {
   cursor: pointer;
 }
 
-li.nav-open button.subnav-expand i {
+li.nav-open > button.subnav-expand i {
   transform: rotate(180deg);
 }
 

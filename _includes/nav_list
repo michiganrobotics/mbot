@@ -15,6 +15,7 @@
 
         {% if nav.children != null %}
         <ul>
+          <!-- Detect if we are currently on any page, sub page, or sub sub page of this section. -->
             {% for child in nav.children %}
             {% assign isSubOpen = false %}
             {% if child.url == page.url %}
@@ -24,6 +25,13 @@
             {% for sub_child in child.children %}
                 {% if sub_child.url == page.url %}
                 {% assign isSubOpen = true %}
+                {% endif %}
+                {% if sub_child.children != null %}
+                {% for sub_sub_child in sub_child.children %}
+                    {% if sub_sub_child.url == page.url %}
+                    {% assign isSubOpen = true %}
+                    {% endif %}
+                {% endfor %}
                 {% endif %}
             {% endfor %}
             {% endif %}
@@ -35,9 +43,33 @@
                 </button>
                 <ul>
                 {% for subchild in child.children %}
-                    <li>
-                        <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %}>{{ subchild.title }}</a>
-                    </li>
+                    <!-- Detect whether this subpage or any sub sub pages are open. -->
+                    {% assign isSubSubOpen = false %}
+                    {% if subchild.url == page.url %}
+                    {% assign isSubSubOpen = true %}
+                    {% endif %}
+                    {% if subchild.children != null %}
+                    {% for sub_sub_child in subchild.children %}
+                        {% if sub_sub_child.url == page.url %}
+                        {% assign isSubSubOpen = true %}
+                        {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    <li {% if isSubSubOpen %} class="nav-open"{% endif %}>
+                      <a href="{{ subchild.url | relative_url }}"{% if subchild.url == page.url %} class="active"{% endif %}>{{ subchild.title }}</a>
+                      {% if subchild.children != null %}
+                      <button class="subnav-expand" onclick="this.parentElement.classList.toggle('nav-open')">
+                          <i class="fas fa-chevron-down"></i>
+                      </button>
+                      <ul>
+                      {% for subsubchild in subchild.children %}
+                          <li>
+                              <a href="{{ subsubchild.url | relative_url }}"{% if subsubchild.url == page.url %} class="active"{% endif %}>{{ subsubchild.title }}</a>
+                          </li>
+                      {% endfor %}
+                      </ul>
+                      {% endif %}
+                  </li>
                 {% endfor %}
                 </ul>
                 {% endif %}

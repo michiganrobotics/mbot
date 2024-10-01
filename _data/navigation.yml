@@ -36,6 +36,15 @@ docs:
         children:
           - title: "Assembly"
             url: "/docs/hardware/classic/assembly/"
+            children:
+              - title: "Bottom Plate"
+                url: "/docs/hardware/classic/assembly/mbot-classic-bottom-plate/"
+              - title: "Middle Plate"
+                url: "/docs/hardware/classic/assembly/mbot-classic-middle-plate/"
+              - title: "Top Plate"
+                url: "/docs/hardware/classic/assembly/mbot-classic-top-plate/"
+              - title: "Wiring"
+                url: "/docs/hardware/classic/assembly/mbot-wiring/"
           - title: "Building"
             url: "/docs/hardware/classic/building/"
       - title: "MBot Omni"
