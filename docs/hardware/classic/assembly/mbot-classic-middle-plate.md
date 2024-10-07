@@ -5,8 +5,12 @@ last_modified_at: 2024-09-11 19:22:48 -0500
 author: shaw
 toc: true
 ---
-{: .important}
-This guide is for Differential Drive MBot Classic.
+
+This guide is for Differential Drive MBot Classic middle plate assembly. At the end of this guide, you should have a fully assembled middle plate that looks like this:
+
+<a class="image-link" href="/assets/images/hardware/classic/assembly/middlePlate/0-middle-finish.jpg">
+    <img src="/assets/images/hardware/classic/assembly/middlePlate/0-middle-finish.jpg" alt="" style="max-width:500px;"/>
+</a>
 
 ## 1. Assemble the main plate
 

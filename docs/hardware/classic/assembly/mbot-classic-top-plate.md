@@ -6,8 +6,11 @@ author: shaw
 toc: true
 ---
 
-{: .important}
-This guide is for Differential Drive MBot Classic.
+This guide is for Differential Drive MBot Classic top plate assembly. At the end of this guide, you should have a fully assembled top plate that looks like this:
+
+<a class="image-link" href="/assets/images/hardware/classic/assembly/topPlate/0-top-finish.jpg">
+    <img src="/assets/images/hardware/classic/assembly/topPlate/0-top-finish.jpg" alt="" style="max-width:500px;"/>
+</a>
 
 ## 1. RPLidar
 1. Attach RPLidar USB Interface to top plate

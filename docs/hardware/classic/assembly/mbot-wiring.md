@@ -6,8 +6,10 @@ author: shaw
 toc: true
 ---
 
-{: .important}
-This guide is for Differential Drive MBot Classic.
+This guide is for Differential Drive MBot Classic final wiring assembly. At the end of this guide, you should have a fully assembled mbot that looks like this:
+<a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/0-mbot.jpg">
+    <img src="/assets/images/hardware/classic/assembly/wiring/0-mbot.jpg" alt="" style="height:400px;"/>
+</a>
 
 ## 1. Assemble 3 plates
 
@@ -24,7 +26,7 @@ This guide is for Differential Drive MBot Classic.
     - White cable to RUN
     - Green cable to BTLD
 
-    Next, pull the cable out through the front hole on the left side of the middle plate. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
+    Next, pull the cable out through the hole on the left side of the middle plate. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble2.png">
         <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble2.png" alt="" style="max-width:400px;"/>
