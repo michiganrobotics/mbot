@@ -11,8 +11,8 @@ author: shaw
 
 This guide will walk you through the steps needed to assemble the MBot Classic.
 
-<a class="image-link" href="/assets/images/hardware/classic/mbot1.jpg">
-    <img src="/assets/images/hardware/classic/mbot1.jpg" alt="" style="max-width:200px;"/>
+<a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/0-mbot.jpg">
+    <img src="/assets/images/hardware/classic/assembly/wiring/0-mbot.jpg" alt="" style="max-width:200px;"/>
 </a>
 
 - Step 1: Assemble the bottom plate - [Link](/docs/hardware/classic/assembly/mbot-classic-bottom-plate)
