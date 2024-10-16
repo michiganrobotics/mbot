@@ -4,7 +4,7 @@ title: "MBot Setup: Installing the OS"
 toc: true
 
 # Public image links
-mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/5s7t0tnf2bqjifuchb5ia/2024-08-22-mbot-base-bookworm.img.gz?rlkey=pvy1z6mb0ybgj5o0cf1p7yv7x&st=t395qrqn&dl=0
+mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/tyyslhj3fz7dd2y6267mp/2024-10-16-mbot-base-bookworm.img.gz?rlkey=4k3qe7knhqhabw4g17n9feukj&st=e6qx4gxb&dl=0
 mbot_full_classic_rpi_os_link: ""
 mbot_full_omni_rpi_os_link: https://www.dropbox.com/scl/fi/11c4q6zhhv6rpcvvm47sd/2024-08-22-mbot-full-omni-bookworm.img.gz?rlkey=7zrekoep72wvqpq0p9xj0xwcf&st=2ikaw15b&dl=0
 ---

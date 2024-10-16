@@ -5,7 +5,7 @@ toc: true
 
 # Versions for the code to checkout.
 lcm_base_version: v1.0.0
-firmware_version: v1.0.0
+firmware_version: v1.1.0
 rplidar_version: 1.0.0
 web_app_version: v1.3.0
 lcm_monitor_version: v1.0.0
@@ -13,7 +13,7 @@ mbot_bridge_version: v1.0.0
 mbot_autonomy_version: v1.0.0
 
 # Public image links
-mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/5s7t0tnf2bqjifuchb5ia/2024-08-22-mbot-base-bookworm.img.gz?rlkey=pvy1z6mb0ybgj5o0cf1p7yv7x&st=t395qrqn&dl=0
+mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/tyyslhj3fz7dd2y6267mp/2024-10-16-mbot-base-bookworm.img.gz?rlkey=4k3qe7knhqhabw4g17n9feukj&st=e6qx4gxb&dl=0
 ---
 
 **Students:** You should not need to set up an image from scratch! Check with your instructor for the link to the OS image for your class. Then, start the setup process by [installing the image](/docs/setup/01-install-os).
