@@ -104,14 +104,14 @@ For this part, you should first [connect to your robot using VSCode](/docs/tutor
     * [RP Lidar Driver](https://github.com/mbot-project/rplidar_lcm_driver){:target="_blank"}
     * [MBot Bridge](https://github.com/mbot-project/mbot_bridge){:target="_blank"}
 
-  In a terminal on the MBot (using a VSCode Remote session), do:
-  ```bash
-  mkdir ~/mbot_ws
-  cd ~/mbot_ws
-  git clone https://github.com/mbot-project/mbot_lcm_base.git
-  git clone https://github.com/mbot-project/rplidar_lcm_driver.git
-  git clone https://github.com/mbot-project/mbot_bridge.git
-  ```
+    In a terminal on the MBot (using a VSCode Remote session), do:
+    ```bash
+    mkdir ~/mbot_ws
+    cd ~/mbot_ws
+    git clone https://github.com/mbot-project/mbot_lcm_base.git
+    git clone https://github.com/mbot-project/rplidar_lcm_driver.git
+    git clone https://github.com/mbot-project/mbot_bridge.git
+    ```
 
 2. **Install the base MBot code.** This includes the message types and serial server which communicates between the MBot Control Board and the RPi using LCM. The install script will compile the code and install it onto the robot. It will also install a service to automatically start the serial server on startup.
     ```bash
@@ -119,28 +119,6 @@ For this part, you should first [connect to your robot using VSCode](/docs/tutor
     git checkout {{ page.lcm_base_version }}
     ./scripts/install.sh
     ```
-
-3. **Install the firmware upload script.** This script lets you flash the firmware over the command line.
-    First, you need to install dependencies for the tool.
-    ```bash
-    cd ~/mbot_ws/
-    git clone https://github.com/MBot-Project-Development/pico_sdk.git
-    export PICO_SDK_PATH=$PWD/pico_sdk
-    wget https://github.com/raspberrypi/picotool/archive/refs/tags/1.1.1.zip
-    unzip 1.1.1.zip
-    cd picotool-1.1.1
-    mkdir build && cd build
-    cmake .. && make
-    sudo make install
-    ```
-    Then, download the upload script and install it:
-    ```bash
-    cd ~/mbot_ws/
-    wget https://github.com/mbot-project/mbot_firmware/releases/download/{{ page.firmware_version }}/mbot-upload-firmware
-    chmod +x mbot-upload-firmware
-    sudo cp mbot-upload-firmware /usr/local/bin/
-    ```
-    You can now remove `1.1.1.zip`, `picotool-1.1.1/`, and `pico_sdk` if desired.
 
 3. **Install the MBot Web App.** The web app is a useful tool for commanding the robot from your laptop's browser.
     1. Download the latest web app release and unpack it:
