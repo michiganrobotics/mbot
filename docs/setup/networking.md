@@ -69,7 +69,20 @@ sh SecureW2_JoinNow.run
 
 If the MBot *fails to connect to any known WiFi network*, it will create its own WiFi access point.
 
-*Coming soon!*
-
 **Tip:** If you don't need WiFi on your robot, you can use the access point to connect to the robot and avoid connecting to WiFi. For example, if you are running a demo and don't need to download any files or access GitHub, or if you are okay with copying any files or code from your laptop to the robot.
 {: .notice--info}
+
+1. **Find the access point:** To find the access point, click on the WiFi icon on your laptop and look at the list of available connections. You should see a network called `[MBOT-HOSTNAME]-AP`, where `[MBOT-HOSTNAME]` is replaced with the hostname of your robot.
+
+    **Tip:** It can take a few minutes for the robot to create the access point, and for your computer to register it. Be patient while waiting for the access point to appear! You can also use your phone to check if the access point is available.
+    {: .notice--info}
+
+2. **Connect to the robot's access point:** Connect your laptop to the WiFi network hosted by the robot using your network manager. By default, the password for the WiFi network (not for the robot!) is `iloverobots`. You can also get the password of the network from the configuration file in the key `mbot_ap_password`. See the [configuration guide](https://mbot.robotics.umich.edu/docs/setup/02-configuration/) for details.
+
+    **Note:** Your laptop will now be connected to the *robot's network*. You will not have WiFi on your computer while you are connected to the robot this way.
+    {: .notice--info}
+
+3. **Connect to the robot:** You can now connect to the robot using `[MBOT-HOSTNAME].local` instead of the IP address (replacing `[MBOT-HOSTNAME]` with your MBot's hostname). You can use [NoMachine](/docs/tutorials/no-machine) or [VSCode](/docs/tutorials/vscode) to connect.
+
+    **Note:** You will have to create *a new connection* in VSCode or NoMachine when you connect with a different address. Make sure you pick the connection that matches the robot's IP address.
+    {: .notice--info}
