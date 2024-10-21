@@ -10,17 +10,23 @@ The main MBot firmware for the supported hardware, as well as calibration and te
 
 ## Flashing Firmware
 
-To flash firmware onto the MBot Control Board, you will need to download the firmware file onto the MBot's Raspberry Pi. This will have a `.uf2` extension.
+To flash the firmware onto the MBot Control Board, either download the firmware file to the Raspberry Pi, or compile it from the source code. The firmware file will have a .uf2 extension.
 
 ### 1. Manual Boot Mode
 
-In order for the `mbot-upload-firmware` script to flash new firmware, it needs to be able to automatically reboot the Pico in `BOOTSEL` mode. To do this, the appropriate pins on the MBot Control Board need to be connected to the Raspberry Pi.
+For the `mbot-upload-firmware` script to flash new firmware, the Pico must be in `BOOTSEL` mode. To do this, follow these steps:
+1. First, ensure that the white/green jumper wires in the image are **disconnected** from your Pico.
 
-Follow these steps:
-1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
-    ![BOOTSEL Button](/assets/images/setup/bootsel-location.png){:style="width:800px;" .align-center}
-2. Hold down both "RST" and "BOOTSEL"
-3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
+    <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg">
+    <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg" alt="" style="max-width:300px;"/>
+    </a>
+2. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
+
+    <a class="image-link" href="/assets/images/setup/bootsel-location.png">
+    <img src="/assets/images/setup/bootsel-location.png" alt="BOOTSEL Button" style="max-width:600px;"/>
+    </a>
+3. Hold down both "RST" and "BOOTSEL"
+4. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
 
 **Tip:** Make sure to always manually put the Pico in `BOOTSEL` mode *before* flashing the Pico with the `mbot-upload-firmware` script.
 {: .notice--info}
@@ -31,7 +37,7 @@ From a terminal on the MBot's Raspberry Pi, do:
 ```bash
 sudo mbot-upload-firmware flash <MY-FIRMWARE>.uf2
 ```
-replacing `<MY-FIRMWARE>` with the name of the firmware file you downloaded.
+replacing `<MY-FIRMWARE>` with the name of the firmware file you downloaded. If you compiled from the source code, the file should be located in the `build` folder.
 
 **Getting an error?** If you see a message that says `No accessible RP2040 devices in BOOTSEL mode were found` when you run the script, you need to [manually put your Pico into boot mode](#1-manual-boot-mode) before you run the command. <br/><br/>
 **Getting an error even after putting the Pico in boot mode?** Read through the [Automatic Boot Mode section](#automatic-boot-mode).
@@ -46,7 +52,7 @@ The `mbot-upload-firmware` script has the ability to automatically reboot the Pi
 ```bash
 sudo mbot-upload-firmware flash <MY-FIRMWARE>.uf2
 ```
-replacing `<MY-FIRMWARE>` with the name of the firmware file you downloaded.
+replacing `<MY-FIRMWARE>` with the name of the firmware file you downloaded. If you compiled from the source code, the file should be located in the `build` folder.
 
 ### Is automatic boot mode enabled on my robot?
 
