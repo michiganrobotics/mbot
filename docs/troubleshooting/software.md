@@ -2,6 +2,7 @@
 layout: single
 title: MBot Software Troubleshooting Guide
 toc: true
+last_modified_at: 2024-09-05
 ---
 
 If you are having issues with software, this guide introduces some tools to help pinpoint your issue.
@@ -75,3 +76,4 @@ The following services run the code that the robot needs. The service of interes
 * `mbot-bridge.service`: This runs the MBot Bridge server needed to use the [MBot Bridge API](/docs/tutorials/bridge). Check this service if you are getting errors about websocket connections when using the API.
 * `mbot-slam.service`: This runs SLAM. Check this service if SLAM is not responding.
 * `mbot-motion-controller.service`: This generates motion commands to follow paths. Check this if you are publishing a path but the robot is not following it correctly.
+

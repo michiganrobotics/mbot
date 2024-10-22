@@ -1,7 +1,7 @@
 ---
 layout: single
 title: MBot Classic Middle Plate Guide
-last_modified_at: 2024-09-11 19:22:48 -0500
+last_modified_at: 2024-10-07
 author: shaw
 toc: true
 ---
@@ -96,3 +96,4 @@ Now, let's move on to the [top section](/docs/hardware/classic/assembly/mbot-cla
 
 [**Previous Step:** Bottom Plate](/docs/hardware/classic/assembly/mbot-classic-bottom-plate){: .btn .btn--inverse .align-left}
 [**Next Step:** Top Plate](/docs/hardware/classic/assembly/mbot-classic-top-plate){: .btn .btn--inverse .align-right}
+

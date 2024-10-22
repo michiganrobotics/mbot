@@ -2,6 +2,7 @@
 layout: single
 title: Networking on the MBot
 toc: true
+last_modified_at: 2024-10-16
 ---
 
 In order to control and program your MBot from your laptop, we will need the robot and laptop to be connected to the same WiFi network. We will then be able to connect to it with [VSCode](/docs/tutorials/vscode) or [NoMachine](/docs/tutorials/no-machine).
@@ -86,3 +87,4 @@ If the MBot *fails to connect to any known WiFi network*, it will create its own
 
     **Note:** You will have to create *a new connection* in VSCode or NoMachine when you connect with a different address. Make sure you pick the connection that matches the robot's IP address.
     {: .notice--info}
+

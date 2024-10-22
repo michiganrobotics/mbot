@@ -2,6 +2,7 @@
 layout: single
 title: What's my MBot's IP?
 toc: true
+last_modified_at: 2024-08-27
 ---
 
 Your robot's *IP address* is a set of numbers in this form: `XX.XX.XX.XX` (but the `XX`'s are replaced with numbers) that tells other computers on the network how to communicate with the robot. We need this IP to access the robot's web app and to [program the robot with VSCode](/docs/tutorials/vscode).
@@ -50,3 +51,4 @@ If your network allows it, you can set static IPs for the MBots in your fleet an
 
 **Note:** Many enterprise networks, like MWireless at Michigan, do not allow static IPs.
 {: .notice--info}
+

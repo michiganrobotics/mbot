@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Using NoMachine
+last_modified_at: 2024-08-19
 ---
 
 NoMachine is a tool for viewing the MBot's remote desktop from your laptop. The MBot images come with NoMachine pre-installed.
@@ -22,3 +23,4 @@ To connect to the MBot in NoMachine, you will need the robot's IP. To connect in
 Then, connect to the robot in NoMachine using the robot's *username* and *password* (the default username is `mbot` and the password is `i<3robots!`):
 
 ![NoMachine Connect Host](/assets/images/setup/nomachine-login.jpg){:style="width:800px;" .align-center}
+

@@ -4,7 +4,7 @@ title: MBot Classic
 grand_parent: Getting Started
 parent: Hardware
 nav_order: 2
-last_modified_at: 2023-09-12 19:22:48 -0500
+last_modified_at: 2024-10-01
 author: shaw
 search: false
 ---
@@ -161,3 +161,4 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 ## Final Assembly
 
 **Insert a finished mbot here**
+

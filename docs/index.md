@@ -1,6 +1,7 @@
 ---
 layout: single
 title: MBot Documentation
+last_modified_at: 2024-08-23
 ---
 
 The MBot is a robotic platform designed for education.
@@ -14,3 +15,4 @@ This website has helpful guides for beginner to advanced users of the MBot.
 
 **Warning:** This documentation is under development! It is subject to change and you may find some bugs. If you find a bug, [create an issue](https://github.com/michiganrobotics/mbot/issues/new) or email [um-mbothelp@umich.edu](mailto:um-mbothelp@umich.edu) for support.
 {: .notice--danger}
+

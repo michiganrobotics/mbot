@@ -2,6 +2,7 @@
 layout: single
 title: Tutorials
 toc: true
+last_modified_at: 2024-08-26
 ---
 
 Check out our tutorials to get started programming your MBot.
@@ -23,3 +24,4 @@ Check out our tutorials to get started programming your MBot.
 
 **Warning:** This documentation is under development! It is subject to change and you may find some bugs. If you find a bug, [create an issue](https://github.com/michiganrobotics/mbot/issues/new) or email [um-mbothelp@umich.edu](mailto:um-mbothelp@umich.edu) for support.
 {: .notice--danger}
+

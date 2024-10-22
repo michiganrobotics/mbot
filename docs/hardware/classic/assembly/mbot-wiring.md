@@ -1,7 +1,7 @@
 ---
 layout: single
 title: MBot Classic Wiring Guide
-last_modified_at: 2024-09-11 19:22:48 -0500
+last_modified_at: 2024-10-07
 author: shaw
 toc: true
 ---
@@ -80,3 +80,4 @@ Now you have a complete version of MBot. You are ready to set up the software an
 
 [**Previous Step:** Top Plate](/docs/hardware/classic/assembly/mbot-classic-top-plate){: .btn .btn--inverse .align-left}
 [**Next Step:** Software Setup](/docs/setup/){: .btn .btn--inverse .align-right}
+

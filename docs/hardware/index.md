@@ -17,6 +17,8 @@ configurations:
     url: "/docs/hardware/omni/"
     btn_label: "Get Started"
     btn_class: "btn--primary"
+last_modified_at: 2024-09-11
 ---
 
 {% include feature_row id="configurations" %}
+

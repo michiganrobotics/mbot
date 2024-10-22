@@ -1,6 +1,7 @@
 ---
 layout: single
 title: MBot Classic Hardware Documentation
+last_modified_at: 2024-08-23
 ---
 
 The MBot Classic is a differential drive robot with a Raspberry Pi 5.
@@ -14,3 +15,4 @@ Ready to build your own MBot Classic? If you have all the parts, head to the [As
 Need to get the hardware? See our [Building Guide](/docs/hardware/classic/building) for the design files and list of parts.
 
 Ready to start programming? See the [Software Setup](/docs/setup/).
+

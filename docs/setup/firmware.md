@@ -2,6 +2,7 @@
 layout: single
 title: "MBot Setup: Flashing the MBot Control Board"
 toc: true
+last_modified_at: 2024-10-21
 ---
 
 The MBot Control Board uses a Raspberry Pi Pico microcontroller for its processing. You can *flash firmware* onto the microcontroller in order to program it.
@@ -77,3 +78,4 @@ To manually flash firmware, you will need the firmware downloaded onto the devic
         ![Pico device in NoMachine](/assets/images/setup/pop-up-plug-in.png){:style="width:800px;" .centered }
 3. Open the USB device in the file explorer.
 4. Drag and drop the firmware you want to flash (it should end with a `.uf2` extension) into the folder. The Pico will reboot automatically, and will then run the script you flashed.
+

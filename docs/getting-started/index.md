@@ -3,7 +3,7 @@ layout: single
 title: Getting Started
 nav_order: 3
 has_children: true
-last_modified_at: 2023-09-08 16:37:48 -0500
+last_modified_at: 2024-08-23
 feature_row:
   - image_path: assets/images/mbot_aug23_photoshoot.jpg
     alt: "placeholder image 1"
@@ -249,3 +249,4 @@ To get started with MBot, both hardware and software set-ups are required. Pleas
     }
 
 </script>
+

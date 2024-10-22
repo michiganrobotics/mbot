@@ -2,6 +2,7 @@
 layout: single
 title: MBot Troubleshooting Guide
 toc: true
+last_modified_at: 2024-09-20
 ---
 
 Got a problem with your MBot? You're in the right place! This section has detailed guides to help you troubleshoot and fix the most common MBot problems.
@@ -100,3 +101,4 @@ Lidar spinning and Robot Control Board working but SLAM still isn't working? Try
 3. **Restart your robot.** If any program got into a funny state or crashed, a reboot will fix it. If the problem persists, follow the next steps.
 4. [**Check the logs and services**](/docs/troubleshooting/software/#checking-service-status). These instructions also tell you how to get a log to send to course staff for help if your problems persist.
 5. [**Check LCM channels**](/docs/troubleshooting/software/#viewing-lcm-channels). If you can't find the issue in the services, you might check that all the correct data is being published. Do you see the Lidar scan and odometry data coming in?
+

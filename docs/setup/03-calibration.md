@@ -5,6 +5,7 @@ toc: true
 
 # Versions for the firmware.
 mbot_firmware_version: v1.1.0
+last_modified_at: 2024-10-16
 ---
 
 Each robot needs to be individually calibrated in order to control it. Once it's calibrated, the firmware can be flashed onto the robot. You will need to flash programs onto the Pico to calibrate and load the firmware onto your robot.
@@ -166,3 +167,4 @@ To flash the MBot Control Board with the firmware, do:
     const mbotFirmwareVersion = "{{ page.mbot_firmware_version }}";
 </script>
 <script src="{{ '/assets/js/firmware_selector.js' | relative_url }}"></script>
+

@@ -2,6 +2,7 @@
 layout: single
 title: The MBot Bridge API
 toc: true
+last_modified_at: 2024-08-26
 ---
 
 The MBot Bridge API is a simple interface to control the robot and read its data. The API is available in both [C++](#mbot-c-api) and [Python](#mbot-python-api).
@@ -264,3 +265,4 @@ The following functions can be used to read robot commands. None of the reading 
     {: .sub-head}
 
     A string containing the robot's hostname.
+

@@ -3,6 +3,7 @@ layout: single
 title: MBot Classic (Jetson Nano) Documentation
 search: false
 toc: true
+last_modified_at: 2024-10-01
 ---
 
 **Warning:** The MBot Classic with Jetson Nano has been deprecated. Try the [MBot Classic with RPi 5](/docs/hardware/classic) instead!
@@ -40,3 +41,4 @@ toc: true
 <!-- ## System Setup
 - [Software setup guide](https://rob550-docs.github.io/docs/botlab/setup-guide/mbot-system-setup.html)
 - [Github Repo](https://github.com/mbot-project) -->
+

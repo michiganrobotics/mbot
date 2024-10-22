@@ -2,6 +2,7 @@
 layout: single
 title: Build your Own MBot Classic
 toc: true
+last_modified_at: 2024-08-12
 ---
 
 Want to build your own MBot Classic from scratch? On this page, you'll find the design files and Bill of Materials needed to build your very own MBot.
@@ -28,3 +29,4 @@ Want to build your own MBot Classic from scratch? On this page, you'll find the 
 ### Bill of Materials
 
 - [List of Components needed to build the MBot Classic](https://docs.google.com/spreadsheets/d/e/2PACX-1vS7C7Ihd4johpeZGAauQtoXg-p-wTMKtaLudPkOynFAVTpiVApPRE6XmYgAk9ICQTBNwOSDSgDIIbGC/pubhtml?gid=1261504099&single=true)
+

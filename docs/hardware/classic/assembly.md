@@ -4,7 +4,7 @@ title: MBot Classic
 grand_parent: Getting Started
 parent: Hardware
 nav_order: 2
-last_modified_at: 2024-09-11 19:22:48 -0500
+last_modified_at: 2024-10-07
 author: shaw
 ---
 
@@ -21,3 +21,4 @@ This guide will walk you through the steps needed to assemble the MBot Classic.
 - Final: Connect all the parts and cables - [Wiring Guide](/docs/hardware/classic/assembly/mbot-wiring)
 
 [**Start:** Bottom Plate](/docs/hardware/classic/assembly/mbot-classic-bottom-plate){: .btn .btn--inverse .align-right}
+

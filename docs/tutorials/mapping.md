@@ -2,6 +2,7 @@
 layout: single
 title: Mapping & Localization
 toc: true
+last_modified_at: 2024-08-26
 ---
 
 This tutorial will go over how to build a map of your current environment using SLAM.
@@ -67,3 +68,4 @@ If you want to download your map for testing off the robot, click on the **Downl
 This video tutorial goes through the process outlined above.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LzMrtliWKR8?si=mJmqGSr2yx0oF7xy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+

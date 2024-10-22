@@ -2,6 +2,7 @@
 layout: single
 title: "MBot Setup: Configuring your Image"
 toc: true
+last_modified_at: 2024-08-28
 ---
 
 **Note:** Configuring your image only works for the official MBot images. If you are using a different image (like a standard Raspberry Pi image), you will need to [setup your image](/docs/setup/new-image) before configuration.
@@ -74,3 +75,4 @@ The following information can be configured in the `mbot_config.txt` file:
 
 [**Previous Step:** Installing the OS](/docs/setup/01-install-os){: .btn .btn--inverse .align-left}
 [**Next Step:** Calibration & Flashing](/docs/setup/03-calibration){: .btn .btn--inverse .align-right}
+

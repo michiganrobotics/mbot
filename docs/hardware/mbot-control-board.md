@@ -2,6 +2,7 @@
 layout: single
 title: The MBot Control Board
 toc: true
+last_modified_at: 2024-08-27
 ---
 
 The MBot Control Board is the backbone of an MBot platform. It uses the Raspberry Pi Pico microcontroller as a backbone and handles motor and low-level sensor control. The board communicates with the Raspberry Pi via a serial connection.
@@ -19,3 +20,4 @@ The MBot Control Board is the backbone of an MBot platform. It uses the Raspberr
 [Open PDF in new tab](/assets/files/Schematic_MBotControlBoard_V1.0.pdf){:target="_blank" .btn .btn--info }
 
 <iframe src="/assets/files/Schematic_MBotControlBoard_V1.0.pdf" style="width:100%; height:400px;" frameborder="0"></iframe>
+

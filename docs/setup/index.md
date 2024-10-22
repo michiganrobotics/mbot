@@ -1,6 +1,7 @@
 ---
 layout: single
 title: MBot Setup and Configuration
+last_modified_at: 2024-09-05
 ---
 
 Got a fully assembled MBot? You're in the right place! Follow the guides below to help you get your robot ready to program.
@@ -17,3 +18,4 @@ The guides in this section will help you:
 3. [Calibrate and flash the firmware onto the MBot Control Board](/docs/setup/03-calibration/).
 
 [**Next Step:** Install the OS](/docs/setup/01-install-os){: .btn .btn--inverse .align-right}
+

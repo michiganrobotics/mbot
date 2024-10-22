@@ -1,7 +1,7 @@
 ---
 layout: single
 title: MBot Classic Bottom Plate Guide
-last_modified_at: 2024-09-11 19:22:48 -0500
+last_modified_at: 2024-10-01
 author: shaw
 toc: true
 ---
@@ -213,3 +213,4 @@ If you have successfully assembled the bottom plate, the result should look like
 Now you can move to the [middle plate assembly guide](/docs/hardware/classic/assembly/mbot-classic-middle-plate)!
 
 [**Next Step:** Middle Plate](/docs/hardware/classic/assembly/mbot-classic-middle-plate){: .btn .btn--inverse .align-right}
+

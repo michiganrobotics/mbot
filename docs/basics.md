@@ -2,6 +2,7 @@
 layout: single
 title: "MBot Basics"
 toc: true
+last_modified_at: 2024-08-21
 ---
 
 The default robot username and password are:
@@ -30,3 +31,4 @@ To turn the robot off, first type `sudo shutdown now` in the terminal of the rob
 
 **Tip:** When you aren't using the Lidar, unplug the Micro USB cord from its board to disconnect it from the Raspberry Pi. When it spins, it draws a lot of power and drains the battery quickly.
 {: .notice--info}
+

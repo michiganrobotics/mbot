@@ -5,6 +5,7 @@ toc: true
 
 # Versions for the firmware.
 mbot_firmware_version: v1.0.0
+last_modified_at: 2024-09-05
 ---
 
 When you have [calibrated and flashed your MBot](/docs/setup/03-calibration), the robot should [drive from the web app](/docs/tutorials/drive). While it won't drive in *perfectly* straight lines, it should be pretty close!
@@ -143,3 +144,4 @@ If all your encoders are reading values, the next step is to check that the valu
 You should see that the number of ticks on each encoder is fairly similar. If one is *lower* than the others, the encoder magnet may be slightly too far away from the sensor.
 
 **The fix:** Use your fingers to gently push the black magnet closer to the board (but don't let it touch the board). Then, try the test again and see if the problem is fixed.
+
