@@ -10,7 +10,7 @@ rplidar_version: 1.0.0
 web_app_version: v1.3.0
 lcm_monitor_version: v1.0.0
 mbot_bridge_version: v1.0.0
-mbot_autonomy_version: v1.0.0
+mbot_autonomy_version: v1.1.0
 
 # Public image links
 mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/tyyslhj3fz7dd2y6267mp/2024-10-16-mbot-base-bookworm.img.gz?rlkey=4k3qe7knhqhabw4g17n9feukj&st=e6qx4gxb&dl=0
@@ -172,16 +172,20 @@ For this part, you should first [connect to your robot using VSCode](/docs/tutor
     3. Follow the printed instructions (which you can also find in `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/README.txt`) to configure NGINX.
     4. It's now safe to delete the folder `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/` and the tar file `mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz`.
 
-7. **Optional: Install the MBot Autonomy code.** The autonomy code includes SLAM and a motion controller program. *You need access to this repository to download it.* Install it with:
-    ```bash
-    cd ~/mbot_ws/mbot_autonomy/
-    git checkout {{ page.mbot_autonomy_version }}
-    ./scripts/install.sh -t <TYPE>
-    ```
-    Replace `<TYPE>` with `DIFF` for the classic, or `OMNI` for the Omni. Again, this installs the binaries and services needed to run SLAM and the motor controller.
+7. **Optional: Install the MBot Autonomy code.** The autonomy code includes SLAM and a motion controller program. The autonomy source code is private, but you can install the public compiled binaries and services.
 
-    **Warning:** If you are using the classic, there is a known issue where `motion_controller` interfers with other scripts. You may want to disable `mbot-motion-controller.service`.
-    {: .notice--warning}
+    Get the code with:
+    ```bash
+    cd ~/mbot_ws/
+    wget https://github.com/mbot-project/mbot_autonomy_bins/archive/refs/tags/{{ page.mbot_autonomy_version }}.tar.gz
+    tar -xvzf {{ page.mbot_autonomy_version }}.tar.gz
+    cd mbot_autonomy_bins-{{ page.mbot_autonomy_version | remove_first: 'v' }}
+    ```
+    Then, install for your MBot type:
+    ```bash
+    ./install.sh -t <TYPE>
+    ```
+    Replace `<TYPE>` with `DIFF` for the Classic, or `OMNI` for the Omni.
 
 ## 5. Change the password
 
