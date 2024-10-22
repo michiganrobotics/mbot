@@ -2,6 +2,7 @@
 layout: single
 title: MBot Command Line Tool
 toc: true
+last_modified_at: 2024-10-22
 ---
 
 > This guide provides an overview of all command line tools in the MBot ecosystem.
@@ -135,3 +136,4 @@ When you are looking for the answers to:
 
 ### Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zSHahiZNv_A?si=GBOBaFaTz3UKvp6r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+

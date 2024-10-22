@@ -4,11 +4,26 @@
 
 # Define the directory containing the Markdown files
 DOCS_DIR="docs"
+# This is a small hack to ignore the initial commit where all the last modified dates were updated.
+IGNORE_COMMIT=172d7a
+
+# Function to get the last relevant commit date
+get_last_relevant_commit_date() {
+    local file=$1
+    # Iterate through commits until a relevant one is found
+    git log --format="%H %ci" -- "$file" | while read -r hash date time tz; do
+
+        if [[ $hash != $IGNORE_COMMIT* ]]; then
+            echo "$date"
+            break
+        fi
+    done
+}
 
 # Loop through all Markdown files recursively in the directory and its subdirectories
 find "$DOCS_DIR" -type f -name "*.md" | while read -r file; do
-    # Get the last commit date of the file in "YYYY-MM-DD" format
-    last_modified_date=$(git log -1 --format="%ci" -- "$file" | cut -d ' ' -f 1)
+    # Get the last relevant commit date of the file in "YYYY-MM-DD" format
+    last_modified_date=$(get_last_relevant_commit_date "$file")
 
     # Use awk to process the frontmatter and determine if an update is needed
     needs_update=$(awk -v date="$last_modified_date" '
