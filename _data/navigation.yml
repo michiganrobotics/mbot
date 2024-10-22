@@ -91,7 +91,8 @@ docs:
         url: /docs/tutorials/bridge/
       - title: "Mapping & Localization"
         url: /docs/tutorials/mapping/
-
+      - title: "MBot Command Line Tool"
+        url: /docs/tutorials/mbot-cli-tool/
   # - title: Tutorials
   #   children:
   #     - title: "MBot Tutorials"
