@@ -18,7 +18,6 @@ gem 'github-pages', group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-last-modified-at"
 end
 gem "jekyll-remote-theme"
 gem "jekyll-include-cache", group: :jekyll_plugins
@@ -40,7 +39,3 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.7"
 
 gem 'magnific-popup-rails', '~> 1.1'
-
-group :jekyll_plugins do
-  gem "jekyll-last-modified-at"
-end

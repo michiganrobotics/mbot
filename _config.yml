@@ -161,7 +161,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-last-modified-at
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -205,5 +204,4 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-  - jekyll-last-modified-at
   - jekyll-include-cache
