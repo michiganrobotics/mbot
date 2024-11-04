@@ -2,7 +2,7 @@
 layout: single
 title: MBot Troubleshooting Guide
 toc: true
-last_modified_at: 2024-09-20
+last_modified_at: 2024-11-04
 ---
 
 Got a problem with your MBot? You're in the right place! This section has detailed guides to help you troubleshoot and fix the most common MBot problems.
@@ -22,6 +22,7 @@ Here are some common issues and how to fix them:
 * [My robot is not driving](#my-robot-is-not-driving)
 * [My robot is driving crooked](#my-robot-is-driving-crooked)
 * [I can't flash the MBot Control Board](#i-cant-flash-the-mbot-control-board)
+* [My MBot Control Board keeps disconnecting](#my-mbot-control-board-keeps-disconnecting) (you periodically lose the ability to drive the robot or lose access to odometry)
 * [My robot won't connect to WiFi](#my-robot-wont-connect-to-wifi)
 * [Mapping isn't working](#mapping-isnt-working)
 
@@ -83,6 +84,35 @@ If you see this error, the firmware *did not flash correctly*. Here are some thi
 
 ---
 
+### My MBot Control Board keeps disconnecting
+
+**Note:** This section is specifically for *intermittent* disconnections, meaning sometimes you can control the robot, and sometimes you can't. If your MBot Control Board is *never* connecting (you can never drive the robot or read odometry), see [My robot is not driving](#my-robot-is-not-driving).
+{: .notice--info}
+
+Here are some signs that your MBot Control Board is periodically disconnecting:
+* Your robot occasionally loses access to odometry,
+* Your robot sometimes stops being drivable,
+* Your robot gets stuck driving at some velocity you sent it but then loses control and can't be controlled.
+
+If you are experiencing these issues, you may have a **low battery** or a **bad battery**.
+
+**How do I fix it?** You should replace your battery with a new, fully charged one. If your battery is very old (multiple years), you may consider retiring it and replacing it with a brand new battery.
+
+**How do I check if my MBot Control Board is disconnecting?** Monitor the LCM channels and check to see whether the channels published by the MBot Control Board (these are the IMU data, encoder data, and odometry) *stop publishing data* when the problem is occurring. There are two ways to look at the channel:
+1. Use the LCM Monitor web tool by going to `http://<MBOT-IP>/spy` in your browser, replacing all of `<MBOT-IP>` with your MBot's IP (see [What's my MBot's IP?](/docs/tutorials/get-ip) if you don't know your IP).
+
+    **Not seeing the LCM Monitor App?** It may not be installed. You can install it following [these instructions](https://github.com/mbot-project/mbot_lcm_monitor/?tab=readme-ov-file#installing-from-the-latest-release-recommended){:target="_blank"}.
+    {: .notice--info}
+
+2. If you are [connected in NoMachine](/docs/tutorials/no-machine/), open a terminal and type `lcm-spy`.
+
+The MBot Control Board channels (IMU, encoder, odometry) will stop coming in if the board is disconnected (you can look at the "count" property to see if the data is coming in).
+
+**Note:** This is much more likely to happen with MBots that use the Raspberry Pi 5 (instead of the Raspberry Pi 4). The Raspberry Pi 5 draws much more power, so you may see this happen when more power is demanded, like when driving the motors and while the Lidar is spinning.
+{: .notice--info}
+
+---
+
 ### My robot won't connect to WiFi
 
 If your robot is not connecting to WiFi or not reporting its IP, check the [Networking Troubleshooting Guide](/docs/troubleshooting/networking).
@@ -101,4 +131,3 @@ Lidar spinning and Robot Control Board working but SLAM still isn't working? Try
 3. **Restart your robot.** If any program got into a funny state or crashed, a reboot will fix it. If the problem persists, follow the next steps.
 4. [**Check the logs and services**](/docs/troubleshooting/software/#checking-service-status). These instructions also tell you how to get a log to send to course staff for help if your problems persist.
 5. [**Check LCM channels**](/docs/troubleshooting/software/#viewing-lcm-channels). If you can't find the issue in the services, you might check that all the correct data is being published. Do you see the Lidar scan and odometry data coming in?
-
