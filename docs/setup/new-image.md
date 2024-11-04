@@ -14,7 +14,7 @@ mbot_autonomy_version: v1.1.0
 
 # Public image links
 mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/tyyslhj3fz7dd2y6267mp/2024-10-16-mbot-base-bookworm.img.gz?rlkey=4k3qe7knhqhabw4g17n9feukj&st=e6qx4gxb&dl=0
-last_modified_at: 2024-10-22
+last_modified_at: 2024-11-04
 ---
 
 **Students:** You should not need to set up an image from scratch! Check with your instructor for the link to the OS image for your class. Then, start the setup process by [installing the image](/docs/setup/01-install-os).
@@ -209,5 +209,4 @@ passwd: password updated successfully
 
 ## Testing your setup
 
-You test your setup by [calibrating the robot and flashing the firmware onto the MBot Control Board](/docs/setup/03-firmware). Then you should be able to [drive your robot](/docs/tutorials/drive).
-
+You test your setup by [calibrating the robot and flashing the firmware onto the MBot Control Board](/docs/setup/03-calibration/). Then you should be able to [drive your robot](/docs/tutorials/drive).
