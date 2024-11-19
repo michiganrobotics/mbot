@@ -53,38 +53,12 @@ Gather all required components and assemble them as depicted in the images below
 
 ## 3. Mount the motors
 
-**Note:** You might have encoders that are not covered in this guide. This guide covers encoders with resolution 40.
+**Note:** You might have encoders that are not covered in this guide. This guide covers encoders with resolution 48.
 {: .notice--warning}
 
-### Soldering Encoders
+Don't know which encoder you are using? - Check this [page](/docs/setup/03-calibration/#whats-my-encoder-resolution)
 
-**If your motor does not come with a pre-attached encoder,** you will need to solder an encoder onto the motor yourself.
-
-| Components      |# |
-|:--------------- |:-|
-| Motor           |2 |
-| Encoder         |2 |
-| Magnets         |2 |
-
-First, before assembling all the parts, you need to solder the encoder to the motor, as demonstrated in the 2nd image below. The 3rd image displays the soldering result, and the 4th image shows the magnet's placement. Please note that you should avoid positioning the magnet too close to the encoder or too far away, maintain a reasonable gap.
-
-<div class="popup-gallery">
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder1.jpg" title="Soldering encoder 1"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder1.jpg" width="200" height="200"></a>
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder2.jpg" title="Soldering encoder 2"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder2.jpg" width="210" height="200"></a>
-</div>
-
-<div class="popup-gallery">
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder3.jpg" title="Soldering encoder 3"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder3.jpg" width="200" height="200"></a>
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder4.jpg" title="Soldering encoder 4"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-solder-encoder4.jpg" width="200" height="200"></a>
-</div>
-
-| Components     | #         |
-|:-------------|:---- -------|
-| M2.5 x 6mm Nylock Screws        |4|
-| Gear Motors w/ Wiring & Encoders |2|
-| 6-PIN jumper wires |2|
-
-**If your motor has pre-attached encoder,** firstly connect the jumper wires to the motor's pin as shown in the 1st image. Note that you need to align unthreaded holes in motor vertically to the holes in the motor mount, while the wires should face the back of the MBot as shown in the second figure.
+The new 48 resolution motor has encoder pre-attached. Firstly connect the jumper wires to the motor's pin as shown in the 1st image. Note that you need to align unthreaded holes in motor vertically to the holes in the motor mount, while the wires should face the back of the MBot as shown in the second figure.
 
 <div class="popup-gallery">
     <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount1.jpg" title="Mount motor 1"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount1.jpg" width="200" height="200"></a>
@@ -120,7 +94,7 @@ Gather all the components and assemble as shown in the images below.
 Note that we will not use the M3x14mm screws that came with the wheel adaptor, as they are not long enough, instead we are going to use M3x20mm screws here.
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel1.jpg">
-<img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel1.jpg" alt="" style="max-width:300px;"/>
+<img src="/assets/images/hardware/classic/assembly/bottomPlate/5-assemblewheel1.jpg" alt="" style="max-width:300px;"/>
 </a>
 
 Follow the steps below:
@@ -166,29 +140,11 @@ Then you can directly put the wheel on, use the hex key to tight the wheels. Not
 
 
 ## 7. Connect the wires to Robotics Control Board.
+Identify the GND pin on the Robotics Control Board and connect the wires to it accordingly. The white wire should be connected to the GND pin. Note that you should connect the left wheel to M0 slot, right wheel to M1 slot as shown in the image.
 
-The rainbow cables have the following signals:
-
-| Wire Color   | Signal     |
-|:-------------|:-----------|
-| Red          | Encoder B  |
-| Orange       | Encoder A  |
-| Yellow       | 3.3 V    |
-| Green        | GND    |
-| Blue         | Motor-    |
-| Black       | Motor+    |
-
-1. Examine the pins. In the case illustrated in the image, both the left and right motor have the green wire connected to the GND pin. We will use this info to connect to the Robotics Control Board.
-
-    <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire1.jpg">
-    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire1.jpg" alt="" style="max-width:400px;"/>
-    </a>
-2. Thread the wires through the bottom plate, following the configuration in the image below, ensuring they won't interfere with the encoder's magnet.
-3. Identify the GND pin on the Robotics Control Board and connect the wires to it accordingly. In this case, the green wire is connected to the GND pin. Note that you should connect the left wheel to M0 slot, right wheel to M1 slot as shown in the image.
-
-    <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire2.jpg">
-    <img src="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire2.jpg" alt="" style="max-width:300px;"/>
-    </a>
+<a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire.jpg">
+<img src="/assets/images/hardware/classic/assembly/bottomPlate/7-motor-wire.jpg" alt="" style="max-width:300px;"/>
+</a>
 
 
 ## 8. Attach the Control Board to the bottom plate
@@ -197,20 +153,11 @@ The rainbow cables have the following signals:
 |:-------------|:---- -------|
 | M2.5 x 6mm Screws        |4|
 
-
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg">
-    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg" alt="" style="max-width:300px;"/>
+    <img src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg" alt="" style="max-width:300px;"/>
 </a>
 
-
-If you have successfully assembled the bottom plate, the result should look like this:
-
-<a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg">
-    <img class="align-center" src="/assets/images/hardware/classic/assembly/bottomPlate/8-finish2.jpg" alt="" style="max-width:300px;"/>
-</a>
-
-
-Now you can move to the [middle plate assembly guide](/docs/hardware/classic/assembly/mbot-classic-middle-plate)!
+Now you can move to the middle plate assembly guide!
 
 [**Next Step:** Middle Plate](/docs/hardware/classic/assembly/mbot-classic-middle-plate){: .btn .btn--inverse .align-right}
 

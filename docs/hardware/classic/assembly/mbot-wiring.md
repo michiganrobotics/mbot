@@ -18,7 +18,7 @@ This guide is for Differential Drive MBot Classic final wiring assembly. At the 
 |  3-heads jumper wire cable |1|
 |  4-40 thumb screw 3/8” |8|
 
-1. Plug the 2-pin header into the control board.
+1. **(Optional)** Plug the 2-pin header into the control board. This step is in beta for the automatic firmawre flash method (see [link](/docs/setup/firmware/#automatic-boot-mode)). You'll get more details about this during the firmware flashing step, so it's up to you whether to plug it in now or skip it for now.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg">
         <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg" alt="" style="max-width:400px;"/>
@@ -57,17 +57,14 @@ This guide is for Differential Drive MBot Classic final wiring assembly. At the 
 |  DC power “Y” cable with rounded ends |1|
 |  USB-C Cable |2|
 
-- "Y" Cable: Connects the power bank to the Robotics Control Board, providing power to the control board.
-- USB-C Cable: Connects the power bank to the Raspberry Pi, supplying power to the Pi.
-- USB-C Cable: Connects the Robotics Control Board to the Raspberry Pi for communication between the Pi and the control board.
-- Lidar's USB: Connects to the Raspberry Pi's USB port.
+- "Y" Shape Power Cable: Connect one barrel plug to the control board and the other to the battery. This powers the control board.
+- USB-C Cable: Plug the Type A end into the battery and the Type C end into the power supply slot on the side of the Raspberry Pi 5. This connection powers the Raspberry Pi.
 
-Raspberry Pi 5 power supply slot is on the side:
-
-<a class="image-link" href="https://cdn.shopify.com/s/files/1/0254/1191/1743/files/5047-5048_description-raspberry-pi-5-features.jpg?v=1695822743">
+    <a class="image-link" href="https://cdn.shopify.com/s/files/1/0254/1191/1743/files/5047-5048_description-raspberry-pi-5-features.jpg?v=1695822743">
     <img src="https://cdn.shopify.com/s/files/1/0254/1191/1743/files/5047-5048_description-raspberry-pi-5-features.jpg?v=1695822743" alt="" style="max-width:400px;"/>
-</a>
-
+    </a>
+- USB-C Cable: Plug the Type A end into one of the Raspberry Pi's USB ports and the Type C end into the PICO on the bottom board. This connection enables communication between the Raspberry Pi and the Robotics Control Board.
+- Lidar's USB: Connect the Lidar's USB cable to one of the Raspberry Pi's USB ports.
 
 The final result should look like this:
 
