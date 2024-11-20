@@ -94,8 +94,9 @@ This cable allows communication with the OLED and controls the run and bootload 
 Assemble the 3-heads wire as depicted in the image. **Color and order matters!** Your assembled wire should look exactly like the image indicated.
 
 <div class="popup-gallery">
-<a href="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires1.jpg" title="Assemble the jumper wires 1"><img src="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires1.jpg" width="200" height="200"></a>
-<a href="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" width="400" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" title="Assemble the jumper wires 1"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" width="200" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" width="200" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" width="400" height="200"></a>
 </div>
 
 After assembling the wires, do not plug them in yet.

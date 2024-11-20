@@ -3,23 +3,21 @@ layout: single
 title: MBot Omni Assembly Guide
 author: abhishek
 toc: true
-last_modified_at: 2024-09-05
+last_modified_at: 2024-11-19
 ---
 
 This guide will walk you through the steps needed to assemble the MBot Omni. The MBot Omni Bot is comprised of 3 sections: the [bottom plate](#bottom-assembly), [middle plate](#middle-assembly) and the [top plate](#top-assembly). Each of these plates are assembled separately first, before attaching them together to create the MBot Omni.
 
 <a class="image-link" href="/assets/images/hardware/omni/omni.jpg">
-  <img src="/assets/images/hardware/omni/omni.jpg" alt="" style="max-width:200px;" class="align-center"/>
+  <img src="/assets/images/hardware/omni/omni.jpg" alt="MBot Omni Finish" style="max-width:500px;"/>
 </a>
-
-**Warning:** Parts of this guide may be out of date. Check back soon!
-{: .notice--danger}
 
 ## Bottom Assembly
 
-<a class="image-link" href="/assets/images/hardware/omni/bottomPlate.jpg">
-  <img src="/assets/images/hardware/omni/bottomPlate.jpg" alt="" style="max-width:500px;"/>
-</a>
+<div class="popup-gallery">
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300" height="200"></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300" height="200"></a>
+</div>
 
 ### Required Components
 - 1 X Bottom Acrylic Plate
@@ -32,14 +30,12 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 - 4 X 1.5in Aluminum 4-40 Standoffs
 
 
-
-### Assembly Steps
+### 1. Assemble the motors
 1. Align unthreaded holes in motor vertically to the holes in the motor mount, with the motor connector on the left side of the mount (while facing motor shaft), and fasten two (2) M2.5x5 bolts to secure motor to mount. NOTE: connector GND pin should be at the top
 
     <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/2.jpg">
     <img src="/assets/images/hardware/omni/bottomPlate/2.jpg" alt="" style="max-width:500px;"/>
     </a>
-
 
 2.  Connect motor harness to motor pins, ensuring the green wire is connected to the GND pin
 
@@ -49,13 +45,16 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 
 3. Repeat Steps 1 & 2 to for the remaining 2 Motors & Motor Mounts.
 
-4. Next we will assembly the Robotics Control Board.
+### 2. Attach control board
+
+
+1. Next we will assembly the Robotics Control Board.
 
     <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/4.jpg">
     <img src="/assets/images/hardware/omni/bottomPlate/4.jpg" alt="" style="max-width:500px;"/>
     </a>
 
-5. Fasten four (4) M2.5x5 bolts through PCB mounting holes and into M2.5x8 nylon standoffs.
+2. Fasten four (4) M2.5x5 bolts through PCB mounting holes and into M2.5x8 nylon standoffs.
 
     <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/5.jpg">
     <img src="/assets/images/hardware/omni/bottomPlate/5.jpg" alt="" style="max-width:500px;"/>
@@ -85,6 +84,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     <img src="/assets/images/hardware/omni/bottomPlate/10.jpg" alt="" style="max-width:500px;"/>
     </a>
 
+### 3. Attach the wheels
 9. Slide the three (3) Omni wheel assemblies onto the motor shafts, leaving a nominal gap between the couplers and the motor mount screw heads, and fasten by tightening the two hex-head bolts on the coupler.
 
     <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/11.jpg">
@@ -103,12 +103,13 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     <img src="/assets/images/hardware/omni/bottomPlate/12b.jpg" alt="" style="max-width:500px;"/>
     </a>
 
-12. Fasten four (4) #4-40x1.5” aluminum standoffs to the top-side of the yellow acrylic plate with four (4) #4-40x0.5” bolts.
+### 4. Put on standoffs
+Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom plate using four (4) #4-40x0.5” bolts. Note that the two standoffs at the back are intentionally asymmetrical—it’s part of the design.
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/13.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/13.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
+<div class="popup-gallery">
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300" height="200"></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300" height="200"></a>
+</div>
 
 
 ## Middle Assembly
@@ -126,7 +127,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 - 4 X 1.5in Aluminum 4-40 Standoffs
 
 
-### Assembly Steps
+### 1. Prepare the Pi 4
 
 1. Carefully peel off the protective plastic on both sides of the thermal pads that come packaged with the heatsink case.  Stick them onto the three chips shown on the Raspberry Pi, or directly onto the heatsink.  There are 3 spots for the thermal pads and the thermal pads are precut to the required shape.
 
@@ -159,6 +160,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     <img src="/assets/images/hardware/omni/middlePlate/6.jpg" alt="" style="max-width:400px;"/>
     </a>
 
+### 2. Prepare the camera and camera mount
 6. Fasten the camera PCB to the 3D-printed camera mount with two (2) M2x8 bolts threading directly into the 3D-printed material (only 2 necessary, diagonal orientation preferred)
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/7.jpg">
@@ -177,6 +179,7 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     <img src="/assets/images/hardware/omni/middlePlate/9.jpg" alt="" style="max-width:400px;"/>
     </a>
 
+### 3. Attach Pi4 and camera to the middle plate
 9. Fasten Raspberry Pi/Camera assembly onto the top of the blue acrylic plate by threading two (2) M2.5x20 bolts from the bottom-side through to the corresponding holes on the Raspberry Pi case/heatsink.
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/10.jpg">
@@ -197,44 +200,55 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 
 ## Top Assembly
 
-<a class="image-link" href="/assets/images/hardware/omni/topPlate/1.jpg">
-<img src="/assets/images/hardware/omni/topPlate/1.jpg" alt="" style="max-width:400px;"/>
+<a class="image-link" href="/assets/images/hardware/omni/topPlate/top-finish.jpg">
+<img src="/assets/images/hardware/omni/topPlate/top-finish.jpg" alt="" style="max-width:400px;"/>
 </a>
 
-### Required Components
-- 1 X Bottom Plate
-- 1 X RPLidar A1 with USB Interface
-- 1 X Zip tie
-- 1 X Micro USB Cable
+### 1. Attach the Lidar to the top plate
 
+| Components     | #         |
+|:-------------|:---- -------|
+| Bottom Plate |1|
+| RPLidar A1 with USB Interface  |1|
+| Zip tie |1|
+| Micro USB Cable|1|
 
-### Assembly Steps
+<div class="popup-gallery">
+<a href="/assets/images/hardware/omni/topPlate/lidar1.jpg" title=""><img src="/assets/images/hardware/omni/topPlate/lidar1.jpg" width="300"></a>
+<a href="/assets/images/hardware/omni/topPlate/lidar2.jpg" title=""><img src="/assets/images/hardware/omni/topPlate/lidar2.jpg" width="300"></a>
+<a href="/assets/images/hardware/omni/topPlate/lidar3.jpg" title=""><img src="/assets/images/hardware/omni/topPlate/lidar3.jpg" width="300"></a>
+<a href="/assets/images/hardware/omni/topPlate/lidar4.jpg" title=""><img src="/assets/images/hardware/omni/topPlate/lidar4.jpg" width="300"></a>
+</div>
 
-1. Fish the RPLidar USB Interface through the opening in the top plate and align with holes shown below.
-
-    <a class="image-link" href="/assets/images/hardware/omni/topPlate/2.jpg">
-    <img src="/assets/images/hardware/omni/topPlate/2.jpg" alt="" style="max-width:600px;"/>
-    </a>
-
+1. Fish the RPLidar USB Interface (the little green board with micro usb slot) through the opening in the top plate and align with holes shown in the image.
 2. Using two M2 screws and nuts, screw the USB interface on the bottom side of the top plate.
-
-    <a class="image-link" href="/assets/images/hardware/omni/topPlate/3.jpg">
-    <img src="/assets/images/hardware/omni/topPlate/3.jpg" alt="" style="max-width:600px;"/>
-    </a>
-
 3. Place the RPLidar on top of the top plate and align with the holes as shown below.  Using four 2.5MX8 mm screw, secure the RPLidar to the top plate.
-
-    <a class="image-link" href="/assets/images/hardware/omni/topPlate/4.jpg">
-    <img src="/assets/images/hardware/omni/topPlate/4.jpg" alt="" style="max-width:600px;"/>
-    </a>
-
 4. Attach a MircoUSB cable to the USB interface. Using a Zip tie secure the USB cable to the top plate.
 
-    <a class="image-link" href="/assets/images/hardware/omni/topPlate/5.jpg">
-    <img src="/assets/images/hardware/omni/topPlate/5.jpg" alt="" style="max-width:600px;"/>
-    </a>
 
-## Final Assembly
+### 2. OLED Screen
+
+| Components     | #         |
+|:-------------|:---- -------|
+| OLED screen |1|
+| OLED mount  |1|
+| M2 x 8mm screws  |4|
+| M2.5 x 8mm screws |2|
+| M2.5 threaded inserts |2|
+
+1. Insert the threaded inserts into the OLED mount, you need soldering iron for this to heat up the inserts.
+    <div class="popup-gallery">
+    <a href="/assets/images/hardware/classic/assembly/topPlate/2-oled-mount1.jpg" title="Inserts in mount 1"><img src="/assets/images/hardware/classic/assembly/topPlate/2-oled-mount1.jpg" width="200" height="225"></a>
+    <a href="/assets/images/hardware/classic/assembly/topPlate/2-oled-mount2.jpg" title="Inserts in mount 2"><img src="/assets/images/hardware/classic/assembly/topPlate/2-oled-mount2.jpg" width="200" height="200"></a>
+    </div>
+2. Secure the OLED screen to the mount using four M2 x 8mm screws.
+3. Attach the mount to the right side of the robot using M2.5 x 8mm screws.
+    <div class="popup-gallery">
+    <a href="/assets/images/hardware/classic/assembly/topPlate/2-oled1.jpg" title="Attach OLED 1"><img src="/assets/images/hardware/classic/assembly/topPlate/2-oled1.jpg" width="200" height="225"></a>
+    <a href="/assets/images/hardware/omni/topPlate/lidar1.jpg" title="Attach OLED 2"><img src="/assets/images/hardware/omni/topPlate/lidar1.jpg" width="190" height="200"></a>
+    </div>
+
+## Final Assembly and Wiring
 {: .line}
 
 ### Required Components
@@ -250,7 +264,30 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 <img src="/assets/images/hardware/omni/final/1.jpg" alt="" style="max-width:600px;"/>
 </a>
 
-### Assembly Steps
+### 1. Assemble 3-heads jumper wire cable
+
+| Components     | #         |
+|:-------------|:-----------|
+| jumper wires (Black/Red/Yellow/Blue/Green/White)   |6|
+| Crimp connector housings (3/4/6 pins)   |3|
+
+You will need to build the OLED/Bootloader cable assembly as shown. This cable has three heads, which plug into the following:
+- Raspberry Pi header (6-pin header)
+- OLED module (4-pin header)
+- Control board (3-pin header)
+
+This cable allows communication with the OLED and controls the run and bootload modes on the control board.
+
+Assemble the 3-heads wire as depicted in the image. **Color and order matters!** Your assembled wire should look exactly like the image indicated.
+
+<div class="popup-gallery">
+<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" title="Assemble the jumper wires 1"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" width="200" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" width="200" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" width="400" height="200"></a>
+</div>
+
+
+### 2. Assemble 3 plates
 
 1. With four (4) thumbscrews, fasten the middle blue acrylic plate to the standoffs of the bottom yellow acrylic plate after aligning the camera to the frontward orientation of the robot. NOTE: You may have to remove the USB-C connector to fasten the 4th thumbscrew, just remember to re-connect after fastened.
 
@@ -288,3 +325,4 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     <img src="/assets/images/hardware/omni/final/7.jpg" alt="" style="max-width:600px;"/>
     </a>
 
+### 3. Final wiring

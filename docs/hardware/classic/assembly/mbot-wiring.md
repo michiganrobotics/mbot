@@ -1,7 +1,7 @@
 ---
 layout: single
 title: MBot Classic Wiring Guide
-last_modified_at: 2024-10-07
+last_modified_at: 2024-11-19
 author: shaw
 toc: true
 ---
