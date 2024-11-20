@@ -39,6 +39,26 @@ The most common cause of this is a *bad encoder reading*. During calibration, th
 If you are trying to drive your robot and *no wheels are turning* after you have [calibrated and flashed the robot](/docs/setup/03-calibration/), you might have a problem with the MBot Control Board.
 [Check the board and its connections](#checking-the-mbot-control-board) to fix the problem.
 
+### The pi won't boot up, LED flashing red
+The LED light, labeled "STAT," is located next to the SD slot. "4 long flashes followed by 5 short flashes" indicates
+"Fatal Firmware Error". This may happen if the SD card has another operating system flashed on it, causing the Raspberry Pi to boot from it and get confused.
+- More error patterns can be found in the [official doc](https://www.raspberrypi.com/documentation/computers/configuration.html#led-warning-flash-codes).
+
+To solve this issue, you need a SD card reader and a Laptop.
+1. Download Raspberry Pi Imager from [Raspberry Pi Official Website](https://www.raspberrypi.com/software/).
+2. Open the Imager and select the following options:
+- Raspberry Pi Device: "Raspberry Pi 5"
+- Operating System: "Misc utility images" > "Bootloader (Pi 5 family)" > "SD Card Boot"
+- Choose Storage: Select your SD card
+3. Once the SD card is flashed, insert it into your Raspberry Pi.
+4. Turn the power on and check if the Raspberry Pi is working:
+    1. External Monitor Method: Connect your Pi to a monitor and power it on. If the screen turns completely green, your Pi is back to life.
+    2. LED Light Method: Power on the Pi and watch the LED. If the green light blinks continuously, your Pi is functioning properly.
+
+Now, you can turn off the battery, and flash the proper image to the SD card.
+
+Always remember to ensure the SD card has the correct image before booting up the MBot.
+{: .notice--info}
 
 ## Checking the MBot Control Board
 {: .line}
