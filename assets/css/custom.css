@@ -165,7 +165,7 @@ span.step-arrow {
 /* For the firmware selector */
 
 .firmware-selector > .row > .label-cell {
-  flex: 0 0 250px; /* Fixed width for label cells, adjust as needed */
+  flex: 0 0 260px; /* Fixed width for label cells, adjust as needed */
   padding-left: 20px;
 }
 
