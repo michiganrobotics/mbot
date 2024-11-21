@@ -3,7 +3,7 @@ layout: single
 title: MBot Omni Assembly Guide
 author: abhishek
 toc: true
-last_modified_at: 2024-11-19
+last_modified_at: 2024-11-21
 ---
 
 Only the section "Final Assembly and Wiring" is updated. The rest is still under editing.
@@ -343,3 +343,4 @@ Assemble the 3-heads wire as depicted in the image. **Color and order matters!**
     </div>
 
 Now you have a complete version of MBot. You are ready to set up the software and make the robot move!
+
