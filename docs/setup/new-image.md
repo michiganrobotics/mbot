@@ -4,17 +4,17 @@ title: "MBot Setup: Setting up a new image (Advanced)"
 toc: true
 
 # Versions for the code to checkout.
-lcm_base_version: v1.0.0
-firmware_version: v1.1.0
+lcm_base_version: v1.1.0
+firmware_version: v1.2.0
 rplidar_version: 1.0.0
-web_app_version: v1.3.0
-lcm_monitor_version: v1.0.0
-mbot_bridge_version: v1.0.0
+web_app_version: v2.0.0
+lcm_monitor_version: v1.1.0
+mbot_bridge_version: v1.1.0
 mbot_autonomy_version: v1.1.0
 
 # Public image links
-mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/tyyslhj3fz7dd2y6267mp/2024-10-16-mbot-base-bookworm.img.gz?rlkey=4k3qe7knhqhabw4g17n9feukj&st=e6qx4gxb&dl=0
-last_modified_at: 2024-11-04
+mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/psz70s9ja5syyhhk82dv3/2024-11-20-mbot-base-bookworm.img.gz?rlkey=71fy1nf2hqf6s8fq2r81za9lk&st=syabrkuu&dl=0
+last_modified_at: 2024-11-21
 ---
 
 **Students:** You should not need to set up an image from scratch! Check with your instructor for the link to the OS image for your class. Then, start the setup process by [installing the image](/docs/setup/01-install-os).
@@ -121,7 +121,15 @@ For this part, you should first [connect to your robot using VSCode](/docs/tutor
     ./scripts/install.sh
     ```
 
-3. **Install the MBot Web App.** The web app is a useful tool for commanding the robot from your laptop's browser.
+3. **Install the MBot Bridge and API.** The MBot Bridge includes a server that bridges student code with the MBot software, as well as APIs in C++ and Python. Install it with:
+    ```bash
+    cd ~/mbot_ws/mbot_bridge/
+    git checkout {{ page.mbot_bridge_version }}
+    ./scripts/install.sh
+    ```
+    This installs the scripts and services needed to run the MBot Bridge Server and installs the MBot API and its dependencies.
+
+4. **Install the MBot Web App.** The web app is a useful tool for commanding the robot from your laptop's browser.
     1. Download the latest web app release and unpack it:
         ```bash
         cd ~/mbot_ws/
@@ -143,20 +151,12 @@ For this part, you should first [connect to your robot using VSCode](/docs/tutor
     **Checkpoint:** The web app should now be available by going to your browser and typing in the robot's IP address.
     {: .notice--info}
 
-4. **Install the RPLidar driver.** To install the Lidar driver, do:
+5. **Install the RPLidar driver.** To install the Lidar driver, do:
     ```bash
     cd ~/mbot_ws/rplidar_lcm_driver/
     ./scripts/install.sh
     ```
     This will pull some code dependencies, compile and install the code, and install a service to start the driver on startup.
-
-5. **Install the MBot Bridge and API.** The MBot Bridge includes a server that bridges student code with the MBot software, as well as APIs in C++ and Python. Install it with:
-    ```bash
-    cd ~/mbot_ws/mbot_bridge/
-    git checkout {{ page.mbot_bridge_version }}
-    ./scripts/install.sh
-    ```
-    This installs the scripts and services needed to run the MBot Bridge Server and installs the MBot API and its dependencies.
 
 6. **Optional: Install the LCM Monitor:** The web-based LCM monitor is a useful tool for viewing all the published LCM channels and their data in the browser. To install it:
     1. Download the latest release and unpack it:

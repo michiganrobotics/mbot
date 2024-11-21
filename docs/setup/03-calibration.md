@@ -4,8 +4,8 @@ title: "MBot Setup: Calibrating & Flashing"
 toc: true
 
 # Versions for the firmware.
-mbot_firmware_version: v1.1.0
-last_modified_at: 2024-10-28
+mbot_firmware_version: v1.2.0
+last_modified_at: 2024-11-21
 ---
 
 Each robot needs to be individually calibrated in order to control it. Once it's calibrated, the firmware can be flashed onto the robot. You will need to flash programs onto the Pico to calibrate and load the firmware onto your robot.
