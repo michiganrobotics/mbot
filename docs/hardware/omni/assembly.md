@@ -6,6 +6,10 @@ toc: true
 last_modified_at: 2024-11-19
 ---
 
+Only the section "Final Assembly and Wiring" is updated. The rest is still under editing.
+{: .notice--warning}
+
+
 This guide will walk you through the steps needed to assemble the MBot Omni. The MBot Omni Bot is comprised of 3 sections: the [bottom plate](#bottom-assembly), [middle plate](#middle-assembly) and the [top plate](#top-assembly). Each of these plates are assembled separately first, before attaching them together to create the MBot Omni.
 
 <a class="image-link" href="/assets/images/hardware/omni/omni.jpg">
@@ -14,75 +18,62 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 
 ## Bottom Assembly
 
+<a class="image-link" href="/assets/images/hardware/omni/bottomPlate/bottom-finish.jpg">
+<img src="/assets/images/hardware/omni/bottomPlate/bottom-finish.jpg" alt="" style="max-width:300px;"/>
+</a>
+
+| Components     | #         |
+|:-------------  |:--------- |
+|Bottom Acrylic Plate   |1|
+|DC Motors with Encoders|3|
+|3D Printed Motor Mounts|3|
+|[Motor Cables](/docs/hardware/omni/omni-motor-cables)|3|
+|Robotics Control Board|1|
+|2.5M-8mm Nylon Standoffs|4|
+|1.5in Aluminum 4-40 Standoffs|4|
+|Omni-wheel Sets|3|
+
+
+### 1. Mount the motors
+
+| Components     | #         |
+|:-------------|:---- -------|
+| M2.5 x 5mm Screws        |6|
+|12 V DC Motors with Encoders|3|
+|3D Printed Motor Mounts|3|
+
+The new 48 resolution motor has encoder pre-attached, which is the one you should use. Don't know which encoder you have? - Check this [page](/docs/setup/03-calibration/#whats-my-encoder-resolution)
+
+Align the motor's unthreaded holes vertically with the motor mount holes, secure the motor to the mount using two (2) M2.5x5 bolts, as shown in the red-highlighted area.
+
+Repeat this process for all three motors.
+
+<a class="image-link" href="/assets/images/hardware/omni/bottomPlate/1-motor-mount.jpg">
+<img src="/assets/images/hardware/omni/bottomPlate/1-motor-mount.jpg" alt="" style="max-width:300px;"/>
+</a>
+
+### 2. Attach control board
 <div class="popup-gallery">
     <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300" height="200"></a>
     <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300" height="200"></a>
 </div>
 
-### Required Components
-- 1 X Bottom Acrylic Plate
-- 3 X 6V DC Motors with Encoders
-- 3 X 3D Printed Motor Mounts
-- [3 X Motor Cables](/docs/hardware/omni/omni-motor-cables)
-- 1 X Robotics Control Board
-- 4 X 2.5M-8mm Nylon Standoffs
-- 3 X Omni-wheel Sets
-- 4 X 1.5in Aluminum 4-40 Standoffs
-
-
-### 1. Assemble the motors
-1. Align unthreaded holes in motor vertically to the holes in the motor mount, with the motor connector on the left side of the mount (while facing motor shaft), and fasten two (2) M2.5x5 bolts to secure motor to mount. NOTE: connector GND pin should be at the top
-
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/2.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/2.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
-2.  Connect motor harness to motor pins, ensuring the green wire is connected to the GND pin
-
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/3.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/3.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
-3. Repeat Steps 1 & 2 to for the remaining 2 Motors & Motor Mounts.
-
-### 2. Attach control board
-
 
 1. Next we will assembly the Robotics Control Board.
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/4.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/4.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
 2. Fasten four (4) M2.5x5 bolts through PCB mounting holes and into M2.5x8 nylon standoffs.
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/5.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/5.jpg" alt="" style="max-width:500px;"/>
-    </a>
 
 5. Insert either male end of the DC battery cable into PCB power receptacle, and micro-USB connector into PICO microcontroller.
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/6.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/6.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
 6. We will now attach the motors and the Robotics Control Board to the bottom acrylic plate.
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/7.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/7.jpg" alt="" style="max-width:500px;"/>
-    </a>
 
 7. Fasten three (3) motor assemblies to the bottom-side of the yellow acrylic plate with four (4) M2.5x8 bolts each, threading into the heat-set inserts on the mounts. NOTE: the “front” or “forward” direction of the robot as shown.
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/8.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/8.jpg" alt="" style="max-width:500px;"/>
-    </a>
 
 8. Fasten the PCB assembly to the top-side of the yellow acrylic plate with four (4) M2.5x8 bolts, threading into the nylon standoffs attached to the PCB
 
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/10.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/10.jpg" alt="" style="max-width:500px;"/>
-    </a>
 
 ### 3. Attach the wheels
 9. Slide the three (3) Omni wheel assemblies onto the motor shafts, leaving a nominal gap between the couplers and the motor mount screw heads, and fasten by tightening the two hex-head bolts on the coupler.
@@ -113,9 +104,8 @@ Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom pl
 
 
 ## Middle Assembly
-
-<a class="image-link" href="/assets/images/hardware/omni/middlePlate/13.jpg">
-<img src="/assets/images/hardware/omni/middlePlate/13.jpg" alt="" style="max-width:400px;"/>
+<a class="image-link" href="/assets/images/hardware/omni/middlePlate/middle-finish.jpg">
+<img src="/assets/images/hardware/omni/middlePlate/middle-finish.jpg" alt="" style="max-width:300px;"/>
 </a>
 
 ### Required Components
@@ -251,19 +241,6 @@ Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom pl
 ## Final Assembly and Wiring
 {: .line}
 
-### Required Components
-- 1 X Top Assembly
-- 1 X Middle Assembly
-- 1 X Bottom Assembly
-- 8 X 4-40 Thumbscrews
-- 1 X USB-C Cable
-- 1 X Micro USB Cable
-- 1X TalentCell Battery with Power Cable
-
-<a class="image-link" href="/assets/images/hardware/omni/final/1.jpg">
-<img src="/assets/images/hardware/omni/final/1.jpg" alt="" style="max-width:600px;"/>
-</a>
-
 ### 1. Assemble 3-heads jumper wire cable
 
 | Components     | #         |
@@ -289,40 +266,80 @@ Assemble the 3-heads wire as depicted in the image. **Color and order matters!**
 
 ### 2. Assemble 3 plates
 
-1. With four (4) thumbscrews, fasten the middle blue acrylic plate to the standoffs of the bottom yellow acrylic plate after aligning the camera to the frontward orientation of the robot. NOTE: You may have to remove the USB-C connector to fasten the 4th thumbscrew, just remember to re-connect after fastened.
+| Components     | #         |
+|:-------------  |:--------- |
+|Top Assembly|1|
+|Middle Assembly|1|
+|Bottom Assembly|1|
+|4-40 Thumbscrews|8|
+|USB-C Cable|2|
+|TalentCell Battery with Power Cable|1|
+|Assembled 3-heads jumper wire cable|1|
 
-    <a class="image-link" href="/assets/images/hardware/omni/final/2.jpg">
-    <img src="/assets/images/hardware/omni/final/2.jpg" alt="" style="max-width:600px;"/>
+<a class="image-link" href="/assets/images/hardware/omni/wiring/2-components.jpg">
+    <img src="/assets/images/hardware/omni/wiring/2-components.jpg" alt="" style="max-width:400px;"/>
+</a>
+
+1. Plug the 6-pin connector into the Raspberry Pi pins.
+
+    According to the image below, the red cable should be connected to Pin 1 (the number inside the circle, not the number marked on the side), and the white cable should be connected to Pin 11. Plug into the Pi as shown in the image.
+    <div class="popup-gallery">
+    <a href="https://pinout-ai.s3.eu-west-2.amazonaws.com/raspberry-pi-5-gpio-pinout-diagram.webp" title=""><img src="https://pinout-ai.s3.eu-west-2.amazonaws.com/raspberry-pi-5-gpio-pinout-diagram.webp" width="800" height="200"></a>
+    <a href="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" title=""><img src="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" width="350"></a>
+    <a href="/assets/images/hardware/omni/wiring/2-plug-jumper-wire.jpg" title=""><img src="/assets/images/hardware/omni/wiring/2-plug-jumper-wire.jpg" width="350"></a>
+    </div>
+
+
+2. **(Optional)** Pull the 2-pin header thru the hole and plug into the control board. This step is in beta for the automatic firmawre flash method (see [link](/docs/setup/firmware/#automatic-boot-mode)). You'll get more details about this during the firmware flashing step, so it's up to you whether to plug it in now or skip it for now.
+
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/2-plug-bootloader.jpg">
+        <img src="/assets/images/hardware/omni/wiring/2-plug-bootloader.jpg" alt="" style="max-width:400px;"/>
+    </a>
+    - White cable to RUN
+    - Green cable to BTLD
+
+3. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/2-middle-to-bottom.jpg">
+        <img src="/assets/images/hardware/omni/wiring/2-middle-to-bottom.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-2. Sit the battery into its designated area with the on/off switch pointing toward the front of the robot, and connect the DC power connector from the bottom plate PCB and USB-C from the Raspberry Pi.
-
-    <a class="image-link" href="/assets/images/hardware/omni/final/3.jpg">
-    <img src="/assets/images/hardware/omni/final/3.jpg" alt="" style="max-width:600px;"/>
+4. Connect the 4PIN connector to the OLED, ensuring that the pins align with the marked positions, black wire to GND pin. And also put the battery in the battery slot.
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/2-jumper-to-oled.jpg">
+        <img src="/assets/images/hardware/omni/wiring/2-jumper-to-oled.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-3. Connect the bottom plate USB cable to a USB port on the Raspberry Pi
-
-    <a class="image-link" href="/assets/images/hardware/omni/final/4.jpg">
-    <img src="/assets/images/hardware/omni/final/4.jpg" alt="" style="max-width:600px;"/>
-    </a>
-
-4. With four (4) thumbscrews, fasten the top yellow acrylic plate assembly to the standoffs of the middle blue acrylic plate after aligning the LiDAR USB cable to the rearward orientation of the robot.
-
-    <a class="image-link" href="/assets/images/hardware/omni/final/5.jpg">
-    <img src="/assets/images/hardware/omni/final/5.jpg" alt="" style="max-width:600px;"/>
-    </a>
-
-5. Connect the LiDAR USB cable from the top plate assembly to a port on the Raspberry Pi
-
-    <a class="image-link" href="/assets/images/hardware/omni/final/6.jpg">
-    <img src="/assets/images/hardware/omni/final/6.jpg" alt="" style="max-width:600px;"/>
-    </a>
-
-6. The final assembly should appear as shown.
-
-    <a class="image-link" href="/assets/images/hardware/omni/final/7.jpg">
-    <img src="/assets/images/hardware/omni/final/7.jpg" alt="" style="max-width:600px;"/>
+5. Then, use the thumb screws to attach the top plate to the middle plate and secure the screws to the standoffs.
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/2-top-to-middle.jpg">
+        <img src="/assets/images/hardware/omni/wiring/2-top-to-middle.jpg" alt="" style="max-width:400px;"/>
     </a>
 
 ### 3. Final wiring
+1. Connect LiDAR to the Pi.
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/3-lidar-to-pi.jpg">
+        <img src="/assets/images/hardware/omni/wiring/3-lidar-to-pi.jpg" alt="" style="max-width:400px;"/>
+    </a>
+
+2. Connect Pi and Pico using USB-C Cable.
+
+    Plug the Type A end into one of the Raspberry Pi's USB ports and the Type C end into the PICO on the bottom board.
+
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/3-pico-to-pi.jpg">
+        <img src="/assets/images/hardware/omni/wiring/3-pico-to-pi.jpg" alt="" style="max-width:400px;"/>
+    </a>
+3. Connect Pi to the battery.
+
+    Plug the Type A end into the battery and the Type C end into the power supply slot on the side of the Raspberry Pi 4. This connection powers the Raspberry Pi.
+
+    <a class="image-link" href="/assets/images/hardware/omni/wiring/3-pi-to-battery.jpg">
+        <img src="/assets/images/hardware/omni/wiring/3-pi-to-battery.jpg" alt="" style="max-width:400px;"/>
+    </a>
+4. Connect Control board to battery.
+
+    Connect one barrel plug to the control board and the other to the battery. This powers the control board.
+
+    <div class="popup-gallery">
+    <a href="/assets/images/hardware/omni/wiring/3-pico-to-battery1.jpg" title=""><img src="/assets/images/hardware/omni/wiring/3-pico-to-battery1.jpg" width="200" height="200"></a>
+    <a href="/assets/images/hardware/omni/wiring/3-pico-to-battery2.jpg" title=""><img src="/assets/images/hardware/omni/wiring/3-pico-to-battery2.jpg" width="200" height="200"></a>
+    </div>
+
+Now you have a complete version of MBot. You are ready to set up the software and make the robot move!

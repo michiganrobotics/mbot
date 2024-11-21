@@ -42,7 +42,9 @@ Gather all required components and assemble them as depicted in the images below
 | Motor Mount (3D printed) |2|
 | M2.5 threaded inserts    |8|
 
-1. Insert the threaded inserts into the motor mount's bottom plate, you need soldering iron for this to heat up the inserts.
+1. If the two holes at the bottom of the motor mount don’t have threaded inserts, you’ll need to install them yourself. Here’s how:
+    1. Heat the inserts with a soldering iron until they’re warm enough to melt into the plastic.
+    2. Push the heated inserts into the holes until they sit flush. Allow them to cool and solidify before proceeding.
 2. Assemble them as illustrated in the images below. When attaching the mount to the bottom plate, ensure that the slot faces inward.
 
 <div class="popup-gallery">
@@ -56,16 +58,17 @@ Gather all required components and assemble them as depicted in the images below
 **Note:** You might have encoders that are not covered in this guide. This guide covers encoders with resolution 48.
 {: .notice--warning}
 
+| Components     | #         |
+|:-------------|:---- -------|
+| M2.5 x 5mm Screws        |4|
+
 Don't know which encoder you are using? - Check this [page](/docs/setup/03-calibration/#whats-my-encoder-resolution)
 
-The new 48 resolution motor has encoder pre-attached. Firstly connect the jumper wires to the motor's pin as shown in the 1st image. Note that you need to align unthreaded holes in motor vertically to the holes in the motor mount, while the wires should face the back of the MBot as shown in the second figure.
+The new 48 resolution motor has encoder pre-attached. You need to align unthreaded holes in motor vertically to the holes in the motor mount, while the wires should face the back of the MBot as shown in the figure.
 
-<div class="popup-gallery">
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount1.jpg" title="Mount motor 1"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount1.jpg" width="200" height="200"></a>
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount2.jpg" title="Mount motor 2"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount2.jpg" width="200" height="200"></a>
-    <a href="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount3.jpg" title="Mount motor 3"><img src="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount3.jpg" width="200" height="200"></a>
-</div>
-
+<a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount.jpg">
+<img src="/assets/images/hardware/classic/assembly/bottomPlate/3-motor-mount.jpg" alt="" style="max-width:300px;"/>
+</a>
 
 ## 4. Mount the short 1.5” aluminum standoffs
 
