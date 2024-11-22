@@ -2,7 +2,7 @@
 layout: single
 title: Networking on the MBot
 toc: true
-last_modified_at: 2024-10-16
+last_modified_at: 2024-11-22
 ---
 
 In order to control and program your MBot from your laptop, we will need the robot and laptop to be connected to the same WiFi network. We will then be able to connect to it with [VSCode](/docs/tutorials/vscode) or [NoMachine](/docs/tutorials/no-machine).
@@ -61,10 +61,15 @@ If your WiFi network requires you to log in with a username and password (for ex
     **Tip:** The Raspberry Pi uses a Linux-based operating system, so make sure to follow Linux-specific instructions if there are any.
     {: .notice--info}
 
-**At the University of Michigan?** You need to connect to MWireless using the MSetup script. You can find the script `SecureW2_JoinNow.run` in the home directory in the base image. Or, download it from the [MSetup website](https://cloud.securew2.com/public/92472/UMich-WiFi/?device=Linux) (select "Join Now" to download the file). Then, run it:
-```bash
-sh SecureW2_JoinNow.run
-```
+**At the University of Michigan?** You need to connect to MWireless using the MSetup script. You can find the script `SecureW2_JoinNow.run` in the home directory in the base image. Or, download it from the [MSetup website](https://cloud.securew2.com/public/92472/UMich-WiFi/?device=Linux) (select "Join Now" to download the file).
+1. Connect to the robot's [access point](#connecting-to-the-mbots-access-point).
+2. Connect to [NoMachine](/docs/tutorials/no-machine) using the local access point.
+3. Open a terminal in NoMachine and run the setup script:
+    ```bash
+    sh SecureW2_JoinNow.run
+    ```
+    **Warning:** When you connect to the network, NoMachine will disconnect. This is normal! If you see an IP show up on the display, it worked. If it didn't work, you will need a monitor and keyboard to fix it.
+    {: .notice--warning}
 
 ## Connecting to the MBot's Access Point
 
@@ -87,4 +92,3 @@ If the MBot *fails to connect to any known WiFi network*, it will create its own
 
     **Note:** You will have to create *a new connection* in VSCode or NoMachine when you connect with a different address. Make sure you pick the connection that matches the robot's IP address.
     {: .notice--info}
-
