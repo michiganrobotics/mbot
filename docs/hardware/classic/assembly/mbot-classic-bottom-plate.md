@@ -37,7 +37,7 @@ Gather all required components and assemble them as depicted in the images below
 ## 2. Mount the motor brackets
 
 | Components     | #         |
-|:-------------|:---- -------|
+|:-------------|:------------|
 | M2.5 x 8mm Screws        |8|
 | Motor Mount (3D printed) |2|
 | M2.5 threaded inserts    |8|
@@ -59,7 +59,7 @@ Gather all required components and assemble them as depicted in the images below
 {: .notice--warning}
 
 | Components     | #         |
-|:-------------|:---- -------|
+|:-------------|:------------|
 | M2.5 x 5mm Screws        |4|
 
 Don't know which encoder you are using? - Check this [page](/docs/setup/03-calibration/#whats-my-encoder-resolution)
@@ -120,7 +120,7 @@ Then you can directly put the wheel on, use the hex key to tight the wheels. Not
 ## 6. Assemble the Control Board
 
 | Components     | #         |
-|:-------------|:---- -------|
+|:-------------|:------------|
 | Robotics Control Board   |1|
 | MBot PICO+               |1|
 | M2.5 8mm Nylon Standoffs |4|
@@ -153,7 +153,7 @@ Identify the GND pin on the Robotics Control Board and connect the wires to it a
 ## 8. Attach the Control Board to the bottom plate
 
 | Components     | #         |
-|:-------------|:---- -------|
+|:-------------|:------------|
 | M2.5 x 6mm Screws        |4|
 
 <a class="image-link" href="/assets/images/hardware/classic/assembly/bottomPlate/8-finish1.jpg">

@@ -6,10 +6,6 @@ toc: true
 last_modified_at: 2024-11-21
 ---
 
-Only the section "Final Assembly and Wiring" is updated. The rest is still under editing.
-{: .notice--warning}
-
-
 This guide will walk you through the steps needed to assemble the MBot Omni. The MBot Omni Bot is comprised of 3 sections: the [bottom plate](#bottom-assembly), [middle plate](#middle-assembly) and the [top plate](#top-assembly). Each of these plates are assembled separately first, before attaching them together to create the MBot Omni.
 
 <a class="image-link" href="/assets/images/hardware/omni/omni.jpg">
@@ -22,84 +18,138 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 <img src="/assets/images/hardware/omni/bottomPlate/bottom-finish.jpg" alt="" style="max-width:300px;"/>
 </a>
 
+### 1. Assemble control board and wheels
+
 | Components     | #         |
 |:-------------  |:--------- |
-|Bottom Acrylic Plate   |1|
-|DC Motors with Encoders|3|
-|3D Printed Motor Mounts|3|
-|[Motor Cables](/docs/hardware/omni/omni-motor-cables)|3|
 |Robotics Control Board|1|
-|2.5M-8mm Nylon Standoffs|4|
-|1.5in Aluminum 4-40 Standoffs|4|
+| Raspberry Pi Pico | 1|
 |Omni-wheel Sets|3|
 
+1. Attach the Pico board to the control board as shown in the images below.
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-1.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-1.png" width="300"  ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-2.png" width="300" ></a>
+    </div>
 
-### 1. Mount the motors
+2. Collect all the wheel components as shown in the image below.
+    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-3.png">
+    <img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-3.png" alt="" width="300" />
+    </a>
+
+    Note: The wheels used here have a diameter of 96 mm.
+
+    Then assemble the wheels:
+    1. Insert four long screws through the holes in the wheel (wheel facing direction doesn’t matter).
+    2. Stack a spacer onto the screws, then place another wheel on top. 
+    3. Add the coupler on top and tighten everything securely. 
+    4. Finally, use a hex key to attach two short screws into the coupler. These screws secure the wheel to the MBot later.
+
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-4.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-4.png"  width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-5.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-5.png"  width="300" ></a>
+    </div>
+
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-6.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-6.png"  width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-7.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-7.png"  width="300" ></a>
+    </div>
+
+### 2. Attach the motor mount 
 
 | Components     | #         |
-|:-------------|:---- -------|
-| M2.5 x 5mm Screws        |6|
-|12 V DC Motors with Encoders|3|
-|3D Printed Motor Mounts|3|
+|:-------------|:------------|
+| M2.5 x 8mm Screws        |12|
+| Motor Mount (3D printed) |2|
 
-The new 48 resolution motor has encoder pre-attached, which is the one you should use. Don't know which encoder you have? - Check this [page](/docs/setup/03-calibration/#whats-my-encoder-resolution)
+1. Look at the bottom of the motor mount. If the holes don’t already have **M2.5 threaded inserts** (as shown in the image below), you’ll need to install them yourself:
+    1. Heat the inserts with a soldering iron until they can melt into the plastic.
+    2. Push the heated inserts into the holes until they are flush. Let them cool and solidify before continuing.
+   
+    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-1.png">
+    <img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-1.png" alt=""  width="300" />
+    </a>
+2. Attach them as illustrated in the images below. When attaching the mount to the bottom plate, ensure that the slot faces inward.
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-2.png"  width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-3.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-3.png"  width="300" ></a>
+    </div>
 
-Align the motor's unthreaded holes vertically with the motor mount holes, secure the motor to the mount using two (2) M2.5x5 bolts, as shown in the red-highlighted area.
+### 3. Attach control board
 
-Repeat this process for all three motors.
+| Components   | #         |
+|:-------------|:-----------|
+| M2.5 8mm Nylon Standoffs |4|
+| M2.5 x 6mm Screws        |4|
+| Jumper Cap (Shorting block)  |1|
 
-<a class="image-link" href="/assets/images/hardware/omni/bottomPlate/1-motor-mount.jpg">
-<img src="/assets/images/hardware/omni/bottomPlate/1-motor-mount.jpg" alt="" style="max-width:300px;"/>
+1. Find the standoffs and screws, and secure them to the holes on the control board.
+ <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-1.png">
+ <img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-1.png" alt="" width="300"/>
+ </a>
+
+2. Put the jumper cap on. Notice that in the 2nd image there are 3 pins squared together. Since we are using 12V, make sure to position the jumper cap over the VM and 12V pins, as demonstrated in the 3rd image.
+    <div class="popup-gallery">
+    <a href="/assets/images/hardware/classic/assembly/bottomPlate/6-jumper-cap1.jpg" title="jumper cap on 1"><img src="/assets/images/hardware/classic/assembly/bottomPlate/6-jumper-cap1.jpg"  width="200" ></a>
+    <a href="/assets/images/hardware/classic/assembly/bottomPlate/6-jumper-cap2.jpg" title="jumper cap on 2"><img src="/assets/images/hardware/classic/assembly/bottomPlate/6-jumper-cap2.jpg"   width="200" ></a>
+    <a href="/assets/images/hardware/classic/assembly/bottomPlate/6-jumper-cap3.jpg" title="jumper cap on 3"><img src="/assets/images/hardware/classic/assembly/bottomPlate/6-jumper-cap3.jpg"  width="200" ></a>
+    </div>
+
+3. Attach the control board to the bottom plate like shown in the images below.
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-2.png"  width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-3.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-3.png"  width="300" ></a>
+    </div>
+
+
+### 4. Attach the motors
+
+| Components   | #         |
+|:-------------|:-----------|
+| M2.5x5mm Screws |6|
+
+The new 48 resolution motor has encoder pre-attached, which is the one you should use. Don't know which encoder you have? - Check this [page](/docs/setup/03-calibration/#whats-my-encoder-resolution).
+
+Align the motor's unthreaded holes vertically with the motor mount holes, secure the motor to the mount using two **M2.5x5** bolts, as shown in the image. Repeat this process for all three motors.
+
+<a class="image-link" href="/assets/images/hardware/omni/bottomPlate/4-put-motor.png">
+<img src="/assets/images/hardware/omni/bottomPlate/4-put-motor.png" alt="" style="max-width:300px;"/>
 </a>
 
-### 2. Attach control board
+### 5. Attach the wheels
+Slide the three (3) Omni wheel assemblies onto the motor shafts, leaving a nominal gap between the couplers and the motor mount screw heads like shown in the first image below, and fasten by tightening the two hex-head bolts on the coupler.
+
 <div class="popup-gallery">
-    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300" height="200"></a>
-    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300" height="200"></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/5-put-wheels-1.png" ><img src="/assets/images/hardware/omni/bottomPlate/5-put-wheels-1.png"  width="200" ></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/5-put-wheels-2.png" ><img src="/assets/images/hardware/omni/bottomPlate/5-put-wheels-2.png"  width="200" ></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/5-put-wheels-3.png" ><img src="/assets/images/hardware/omni/bottomPlate/5-put-wheels-3.png"  width="200" ></a>
 </div>
 
+### 6. Connect motors to the control board
 
-1. Next we will assembly the Robotics Control Board.
+Route the motor wires through the cut-out in the acrylic plate and connect them to the pin-outs on the control board as follows:
+- Right wheel → M0 slot
+- Back wheel → M1 slot
+- Left wheel → M2 slot
 
-2. Fasten four (4) M2.5x5 bolts through PCB mounting holes and into M2.5x8 nylon standoffs.
+ <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/6-connect-motors.png">
+ <img src="/assets/images/hardware/omni/bottomPlate/6-connect-motors.png" alt="" style="max-width:500px;"/>
+ </a>
 
+⚠️ Note: Make sure each harness is connected as shown in the image. The white pin must align with the GND pin, which is marked on the control board.
 
-5. Insert either male end of the DC battery cable into PCB power receptacle, and micro-USB connector into PICO microcontroller.
+### 7. Put on standoffs
 
-6. We will now attach the motors and the Robotics Control Board to the bottom acrylic plate.
+| Components               |# |
+|:-----------------------  |:-|
+| 4-40 x 1.5inch aluminum standoffs  |4 |
+| 4-40 x 3/8inch screws  |4 |
 
-
-7. Fasten three (3) motor assemblies to the bottom-side of the yellow acrylic plate with four (4) M2.5x8 bolts each, threading into the heat-set inserts on the mounts. NOTE: the “front” or “forward” direction of the robot as shown.
-
-
-8. Fasten the PCB assembly to the top-side of the yellow acrylic plate with four (4) M2.5x8 bolts, threading into the nylon standoffs attached to the PCB
-
-
-### 3. Attach the wheels
-9. Slide the three (3) Omni wheel assemblies onto the motor shafts, leaving a nominal gap between the couplers and the motor mount screw heads, and fasten by tightening the two hex-head bolts on the coupler.
-
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/11.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/11.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
-10. Route the three (3) motor assembly harnesses through the cut-out in the acrylic plate, and connect to the pin-outs on the end of the PCB assembly. NOTE: each harness must be connected in the orientation shown: if looking at the PCB from the back of the robot, the red wires should be on the left, and white wires on the right.
-
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/12.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/12.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
-11. Note that the Male Headers on the Robotics Control Board are numbered M0, M1 & M2. The back Motor will be connected to M1. The right motor will be connected to M0 and the left motor will be connected to M2.
-
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/12b.jpg">
-    <img src="/assets/images/hardware/omni/bottomPlate/12b.jpg" alt="" style="max-width:500px;"/>
-    </a>
-
-### 4. Put on standoffs
 Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom plate using four (4) #4-40x0.5” bolts. Note that the two standoffs at the back are intentionally asymmetrical—it’s part of the design.
 
 <div class="popup-gallery">
-    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300" height="200"></a>
-    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300" height="200"></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300"  width="300" ></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300"  width="300" ></a>
 </div>
 
 
@@ -108,16 +158,13 @@ Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom pl
 <img src="/assets/images/hardware/omni/middlePlate/middle-finish.jpg" alt="" style="max-width:300px;"/>
 </a>
 
-### Required Components
-- 1 X Middle Acrylic Plate
-- 1 X Raspberry Pi 4B 4GB
-- 1 X Raspberry Pi Heatsink Case
-- 1 X Raspberry Pi 5MP Camera with Cable
-- 1 X 3D Printed Camera Mount
-- 4 X 1.5in Aluminum 4-40 Standoffs
-
-
 ### 1. Prepare the Pi 4
+
+| Components               |# |
+|:-----------------------  |:-|
+| Raspberry Pi 4B 4GB |1 |
+| Raspberry Pi Heatsink Case | 1 |
+|Raspberry Pi 5MP Camera with Cable|1|
 
 1. Carefully peel off the protective plastic on both sides of the thermal pads that come packaged with the heatsink case.  Stick them onto the three chips shown on the Raspberry Pi, or directly onto the heatsink.  There are 3 spots for the thermal pads and the thermal pads are precut to the required shape.
 
@@ -151,38 +198,67 @@ Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom pl
     </a>
 
 ### 2. Prepare the camera and camera mount
-6. Fasten the camera PCB to the 3D-printed camera mount with two (2) M2x8 bolts threading directly into the 3D-printed material (only 2 necessary, diagonal orientation preferred)
+
+| Components               |# |
+|:-----------------------  |:-|
+| 3D Printed Camera Mount| 1|
+|M2x8 bolts| 2|
+
+1. Fasten the camera PCB to the 3D-printed camera mount with two (2) M2x8 bolts threading directly into the 3D-printed material (only 2 necessary, diagonal orientation preferred)
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/7.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/7.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-7. Insert USB-C-to-USB cable into port on Raspberry Pi as shown
+2. Insert USB-C-to-USB cable into port on Raspberry Pi as shown
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/8.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/8.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-8. Next we are going to attach the Raspberry Pi & the Camera to the middle acrylic plate.
+### 3. Add battery slot
 
-    <a class="image-link" href="/assets/images/hardware/omni/middlePlate/9.jpg">
-    <img src="/assets/images/hardware/omni/middlePlate/9.jpg" alt="" style="max-width:400px;"/>
-    </a>
+| Components               |# |
+|:-----------------------  |:-|
+| Middle Acrylic Plate| 1|
+| Zip tie |4|
+| battery slot pieces       |5| 
 
-### 3. Attach Pi4 and camera to the middle plate
-9. Fasten Raspberry Pi/Camera assembly onto the top of the blue acrylic plate by threading two (2) M2.5x20 bolts from the bottom-side through to the corresponding holes on the Raspberry Pi case/heatsink.
+Assemble the battery slot as shown in the images below. Attach 1 slot piece to the area marked with a red square using a zip tie. Stack 4 slot pieces together in the area marked with a blue square.
+<div class="popup-gallery">
+    <a href="/assets/images/hardware/omni/middlePlate/3-battery-slot-1.png" ><img src="/assets/images/hardware/omni/middlePlate/3-battery-slot-1.png"  width="200" ></a>
+    <a href="/assets/images/hardware/omni/middlePlate/3-battery-slot-2.png" ><img src="/assets/images/hardware/omni/middlePlate/3-battery-slot-2.png"  width="200" ></a>
+    <a href="/assets/images/hardware/omni/middlePlate/3-battery-slot-3.png" ><img src="/assets/images/hardware/omni/middlePlate/3-battery-slot-3.png"  width="200" ></a>
+</div>
+
+Next we are going to attach the Raspberry Pi & the Camera to the middle acrylic plate.
+
+<a class="image-link" href="/assets/images/hardware/omni/middlePlate/9.jpg">
+<img src="/assets/images/hardware/omni/middlePlate/9.jpg" alt="" style="max-width:400px;"/>
+</a>
+ 
+### 4. Attach Pi4 and camera to the middle plate
+
+| Components               |# |
+|:-----------------------  |:-|
+| 1.5in Aluminum 4-40 Standoffs| 4|
+|M2.5x20 bolts|2|
+|M2.5x8 bolt|1|
+|#4-40x0.5” bolts|4|
+
+1. Fasten Raspberry Pi/Camera assembly onto the top of the blue acrylic plate by threading two (2) M2.5x20 bolts from the bottom-side through to the corresponding holes on the Raspberry Pi case/heatsink.
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/10.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/10.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-10. Fasten the camera mount to the top of the acrylic plate as shown, with a single M2.5x8 bolt from the bottom-side.
+2. Fasten the camera mount to the top of the acrylic plate as shown, with a single M2.5x8 bolt from the bottom-side.
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/11.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/11.jpg" alt="" style="max-width:500px;"/>
     </a>
 
-11. Fasten four (4) #4-40x1.5” aluminum standoffs to the top-side of the blue acrylic plate with four (4) #4-40x0.5” bolts.
+3. Fasten four (4) #4-40x1.5” aluminum standoffs to the top-side of the blue acrylic plate with four (4) #4-40x0.5” bolts.
 
     <a class="image-link" href="/assets/images/hardware/omni/middlePlate/12.jpg">
     <img src="/assets/images/hardware/omni/middlePlate/12.jpg" alt="" style="max-width:500px;"/>
@@ -197,7 +273,7 @@ Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom pl
 ### 1. Attach the Lidar to the top plate
 
 | Components     | #         |
-|:-------------|:---- -------|
+|:-------------|:-----------|
 | Bottom Plate |1|
 | RPLidar A1 with USB Interface  |1|
 | Zip tie |1|
@@ -299,22 +375,26 @@ Assemble the 3-heads wire as depicted in the image. **Color and order matters!**
     - Green cable to BTLD
 
 3. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
+
     <a class="image-link" href="/assets/images/hardware/omni/wiring/2-middle-to-bottom.jpg">
         <img src="/assets/images/hardware/omni/wiring/2-middle-to-bottom.jpg" alt="" style="max-width:400px;"/>
     </a>
 
 4. Connect the 4PIN connector to the OLED, ensuring that the pins align with the marked positions, black wire to GND pin. And also put the battery in the battery slot.
+
     <a class="image-link" href="/assets/images/hardware/omni/wiring/2-jumper-to-oled.jpg">
         <img src="/assets/images/hardware/omni/wiring/2-jumper-to-oled.jpg" alt="" style="max-width:400px;"/>
     </a>
 
 5. Then, use the thumb screws to attach the top plate to the middle plate and secure the screws to the standoffs.
+   
     <a class="image-link" href="/assets/images/hardware/omni/wiring/2-top-to-middle.jpg">
         <img src="/assets/images/hardware/omni/wiring/2-top-to-middle.jpg" alt="" style="max-width:400px;"/>
     </a>
 
 ### 3. Final wiring
 1. Connect LiDAR to the Pi.
+   
     <a class="image-link" href="/assets/images/hardware/omni/wiring/3-lidar-to-pi.jpg">
         <img src="/assets/images/hardware/omni/wiring/3-lidar-to-pi.jpg" alt="" style="max-width:400px;"/>
     </a>
