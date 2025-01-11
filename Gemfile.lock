@@ -273,6 +273,7 @@ GEM
 PLATFORMS
   aarch64-linux-gnu
   arm64-darwin-22
+  arm64-darwin-23
   x64-mingw-ucrt
   x86_64-linux
 
