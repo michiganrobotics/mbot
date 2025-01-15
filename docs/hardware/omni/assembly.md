@@ -28,11 +28,12 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 
 1. Attach the Pico board to the control board as shown in the images below.
     <div class="popup-gallery">
-        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-1.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-1.png" width="300"  ></a>
-        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-2.png" width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-1.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-1.png" width="250"  ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-2.png" width="250" ></a>
     </div>
 
 2. Collect all the wheel components as shown in the image below.
+
     <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-3.png">
     <img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-3.png" alt="" width="300" />
     </a>
@@ -40,20 +41,20 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
     Note: The wheels used here have a diameter of 96 mm.
 
     Then assemble the wheels:
+
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-4.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-4.png"  width="250" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-5.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-5.png"  width="250" ></a>
+    </div>
+
+    <div class="popup-gallery">
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-6.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-6.png"  width="250" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-7.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-7.png"  width="250" ></a>
+    </div>
     1. Insert four long screws through the holes in the wheel (wheel facing direction doesn’t matter).
     2. Stack a spacer onto the screws, then place another wheel on top. 
     3. Add the coupler on top and tighten everything securely. 
     4. Finally, use a hex key to attach two short screws into the coupler. These screws secure the wheel to the MBot later.
-
-    <div class="popup-gallery">
-        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-4.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-4.png"  width="300" ></a>
-        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-5.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-5.png"  width="300" ></a>
-    </div>
-
-    <div class="popup-gallery">
-        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-6.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-6.png"  width="300" ></a>
-        <a href="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-7.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/1-assemble-parts-7.png"  width="300" ></a>
-    </div>
 
 ### 2. Attach the motor mount 
 
@@ -65,14 +66,13 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 1. Look at the bottom of the motor mount. If the holes don’t already have **M2.5 threaded inserts** (as shown in the image below), you’ll need to install them yourself:
     1. Heat the inserts with a soldering iron until they can melt into the plastic.
     2. Push the heated inserts into the holes until they are flush. Let them cool and solidify before continuing.
-   
-    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-1.png">
-    <img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-1.png" alt=""  width="300" />
-    </a>
+        <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-1.png">
+        <img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-1.png" alt=""  width="300" />
+        </a>
 2. Attach them as illustrated in the images below. When attaching the mount to the bottom plate, ensure that the slot faces inward.
     <div class="popup-gallery">
-        <a href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-2.png"  width="300" ></a>
-        <a href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-3.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-3.png"  width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-2.png"  width="250" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-3.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/2-put-motor-mounts-3.png"  width="250" ></a>
     </div>
 
 ### 3. Attach control board
@@ -84,9 +84,10 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 | Jumper Cap (Shorting block)  |1|
 
 1. Find the standoffs and screws, and secure them to the holes on the control board.
- <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-1.png">
- <img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-1.png" alt="" width="300"/>
- </a>
+
+    <a class="image-link" href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-1.png">
+    <img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-1.png" alt="" width="300"/>
+    </a>
 
 2. Put the jumper cap on. Notice that in the 2nd image there are 3 pins squared together. Since we are using 12V, make sure to position the jumper cap over the VM and 12V pins, as demonstrated in the 3rd image.
     <div class="popup-gallery">
@@ -97,8 +98,8 @@ This guide will walk you through the steps needed to assemble the MBot Omni. The
 
 3. Attach the control board to the bottom plate like shown in the images below.
     <div class="popup-gallery">
-        <a href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-2.png"  width="300" ></a>
-        <a href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-3.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-3.png"  width="300" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-2.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-2.png"  width="250" ></a>
+        <a href="/assets/images/hardware/omni/bottomPlate/3-put-control-board-3.png" title=""><img src="/assets/images/hardware/omni/bottomPlate/3-put-control-board-3.png"  width="250" ></a>
     </div>
 
 
@@ -148,8 +149,8 @@ Route the motor wires through the cut-out in the acrylic plate and connect them 
 Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom plate using four (4) #4-40x0.5” bolts. Note that the two standoffs at the back are intentionally asymmetrical—it’s part of the design.
 
 <div class="popup-gallery">
-    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="300"  width="300" ></a>
-    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="300"  width="300" ></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" title="Bottom Plate - Top"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish1.jpg" width="250" ></a>
+    <a href="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" title="Bottom Plate - Underneath"><img src="/assets/images/hardware/omni/bottomPlate/bottom-finish2.jpg" width="250" ></a>
 </div>
 
 
@@ -175,8 +176,8 @@ Fasten four (4) #4-40x1.5” aluminum standoffs to the top side of the bottom pl
 2. Insert the camera data cable that comes packaged with the camera into the RPi’s camera connector.  You will pull up the black plastic clamping piece, and slide the cable in with the metal contacts pointing away from the black plastic clamping piece.  Ensure it is properly seated and push down on the black plastic clamping piece to keep in place.  You should just barely see the contacts above the top of the connector.
 
     <div class="popup-gallery">
-        <a href="/assets/images/hardware/omni/middlePlate/2.jpg"><img src="/assets/images/hardware/omni/middlePlate/2.jpg" width="300" height="300"></a>
-        <a href="/assets/images/hardware/omni/middlePlate/3.jpg"><img src="/assets/images/hardware/omni/middlePlate/3.jpg" width="300" height="300"></a>
+        <a href="/assets/images/hardware/omni/middlePlate/2.jpg"><img src="/assets/images/hardware/omni/middlePlate/2.jpg" width="250" ></a>
+        <a href="/assets/images/hardware/omni/middlePlate/3.jpg"><img src="/assets/images/hardware/omni/middlePlate/3.jpg" width="250" ></a>
     </div>
 
 3. Thread the camera data cable through the corresponding slot on the heatsink case top.
