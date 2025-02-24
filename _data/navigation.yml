@@ -7,6 +7,8 @@ main:
     url: /docs/getting-started/
   - title: "Documentation"
     url: /docs/
+  - title: "Internal Docs"
+    url: /internal
 
 docs:
   - title: Documentation
