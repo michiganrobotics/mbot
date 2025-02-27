@@ -8,7 +8,7 @@ main:
   - title: "Documentation"
     url: /docs/
   - title: "Internal Docs"
-    url: /internal
+    url: /internal-docs
 
 docs:
   - title: Documentation
