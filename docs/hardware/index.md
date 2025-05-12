@@ -17,7 +17,7 @@ configurations:
     url: "/docs/hardware/omni/"
     btn_label: "Get Started"
     btn_class: "btn--primary"
-  - image_path: /assets/images/mbot-omni-no-bkg.png
+  - image_path: /assets/images/controlboard.png
     alt: "MBot Control Board"
     title: "MBot Control Board"
     excerpt: "The MBot Control Board is the backbone of an MBot platform"
