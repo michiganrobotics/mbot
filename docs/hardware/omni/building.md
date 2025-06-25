@@ -21,7 +21,8 @@ Want to build your own MBot Omni from scratch? On this page, you'll find the des
   - [Laser Cut Battery Clip DXF](https://www.dropbox.com/scl/fi/y2e5qqra6bz3351x4xmau/Battery-Clip.dxf?rlkey=n1n6009ux23dd2zckoqx1c5r3&dl=0)
   - [3D Printed Camera Mount STL](https://www.dropbox.com/scl/fi/8nfjd7ia1h9z1fxdtbtqx/MBot-Camera-Mount-Angled.stl?rlkey=6af1v0k3zehhjgtpkp3mw1n4x&dl=0)
   - [3D Printed Motor Mount STL](https://www.dropbox.com/scl/fi/jg96lskozyztngsft5ou6/MBot-Motor-Mount.stl?rlkey=p4woj1pharj43px08k8djggtt&dl=0)
-
+  - [3D Printed OLED Mount STL](https://www.dropbox.com/scl/fi/i5ck251c750exismp18h5/Omni-OLED-Mount.stl?rlkey=fl20xofdsh4wh6k2xm8yvyr1m&e=1&st=6dc730m8&dl=0)
+    
 ## Bill of Materials
 
 - [List of Components needed to build the MBot Omni](https://docs.google.com/spreadsheets/d/e/2PACX-1vTlfZYGW5uTrodWvTuyBI73t9LXLWAg7amZ9u0v1jE5wkCKM_sxEJ8NUUory6qmYT6ifWYVy3ZNxnM_/pubhtml?gid=1533986544&single=true)
