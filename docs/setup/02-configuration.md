@@ -18,10 +18,8 @@ If you are configuring a new robot, you must first [install the OS on a new SD c
 You will need the following information:
 
 1. Your robot's name (your course staff will tell you what your robot should be named to keep the fleet organized),
-2. The WiFi connection information for your classroom or home (if applicable),
-3. The IP registry information for your course (if applicable).
-
-Your course staff will provide this information to you. You will also need a way to read and write to a Micro SD card. You can use a laptop with an SD card slot or a USB adapter.
+2. The WiFi connection information for your classroom or home
+3. You will also need a way to read and write to a Micro SD card. You can use a laptop with an SD card slot or a USB adapter.
 
 ## Connect to the SD Card
 
