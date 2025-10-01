@@ -13,9 +13,9 @@ When you have completed this guide, check out the [MBot Bridge API documentation
 
 ## Prerequisites
 
-This tutorial assumes you have installed [VSCode](#). You will need a laptop connected to the same WiFi as the robot (this is MWireless on the UM campus).
+This tutorial assumes you have installed [VSCode](https://code.visualstudio.com/). You will need a laptop connected to the same WiFi as the robot (this is MWireless on the UM campus).
 
-You will also need to [turn the robot on](#) and [get its IP address](/docs/setup/networking).
+You will also need to turn the robot on and [get its IP address](/docs/setup/networking).
 
 ---
 
