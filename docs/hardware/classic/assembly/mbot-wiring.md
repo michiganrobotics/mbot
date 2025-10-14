@@ -18,7 +18,7 @@ This guide is for Differential Drive MBot Classic final wiring assembly. At the 
 |  3-heads jumper wire cable |1|
 |  4-40 thumb screw 3/8” |8|
 
-1. **(Optional)** Plug the 2-pin header into the control board. This step is in beta for the automatic firmawre flash method (see [link](/docs/setup/firmware/#automatic-boot-mode)). You'll get more details about this during the firmware flashing step, so it's up to you whether to plug it in now or skip it for now.
+1. Plug the 2-pin header into the control board. This step is in beta for the automatic firmawre flash method (see [link](/docs/setup/firmware/#automatic-boot-mode)). You'll get more details about this during the firmware flashing step, so it's up to you whether to plug it in now or skip it for now.
 
     <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg">
         <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg" alt="" style="max-width:400px;"/>
