@@ -2,7 +2,7 @@
 layout: single
 title: Tutorials
 toc: true
-last_modified_at: 2024-08-26
+last_modified_at: 2025-11-05
 ---
 
 Check out our tutorials to get started programming your MBot.
@@ -20,6 +20,7 @@ Check out our tutorials to get started programming your MBot.
 ## Programming
 
 * [The MBot Bridge API](/docs/tutorials/bridge): Use the MBot Bridge to program the robot.
+* [MicroPython](/docs/tutorials/micropython): Program the MBot using MicroPython.
 
 
 **Warning:** This documentation is under development! It is subject to change and you may find some bugs. If you find a bug, [create an issue](https://github.com/michiganrobotics/mbot/issues/new) or email [um-mbothelp@umich.edu](mailto:um-mbothelp@umich.edu) for support.
