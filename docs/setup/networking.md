@@ -64,16 +64,11 @@ If your WiFi network requires you to log in with a username and password (for ex
 **At the University of Michigan?** You need to connect to MWireless using the MSetup script. You can find the script `SecureW2_JoinNow.run` in the home directory in the base image. Or, download it from the [MSetup website](https://cloud.securew2.com/public/92472/UMich-WiFi/?device=Linux) (select "Join Now" to download the file).
 1. Connect to the robot's [access point](#connecting-to-the-mbots-access-point).
 2. Connect to [NoMachine](/docs/tutorials/no-machine) using the local access point.
-3. Open a terminal in NoMachine and set the time to current time:
-    ```bash
-    sudo date -s "YYYY-MM-DD HH:MM:SS"
-    ```
-    - For example, `sudo date -s "2025-08-22 16:43:00"`. The time doesn't have to be very accurate.
-4. Then in the terminal in NoMachine, run the setup script:
+3. Then in the terminal in NoMachine, run the setup script:
     ```bash
     sh SecureW2_JoinNow.run
     ```
-    **Warning:** When you connect to the network, NoMachine will disconnect. This is normal! If you see an IP show up on the display, it worked. If it didn't work, you will need a monitor and keyboard to fix it.
+    **Warning:** When you connect to the network, NoMachine will disconnect. This is normal! If you see an IP show up on the display, it worked. If it didn't work, you might have typo when input your UM credentials, will need a monitor and keyboard to fix it.
     {: .notice--warning}
 
 ## Connecting to the MBot's Access Point

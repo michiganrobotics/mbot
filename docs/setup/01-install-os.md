@@ -5,11 +5,11 @@ toc: true
 
 # Public image links
 mbot_image_folder_link: https://www.dropbox.com/scl/fo/h1ls98wl462unh4vtx4q4/AKDVHv1hSEn8bLaRHfXAomM?rlkey=iwiip4kzogas9r01am4cafj9p&st=l0jlbi6l&dl=0
-mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/psz70s9ja5syyhhk82dv3/2024-11-20-mbot-base-bookworm.img.gz?rlkey=71fy1nf2hqf6s8fq2r81za9lk&st=syabrkuu&dl=0
+mbot_base_rpi_os_link: https://www.dropbox.com/scl/fi/t10624sp4g2np0kftc0sk/2026-01-15-mbot-base-bookworm.img.gz?rlkey=zs5rvn4uqqmd0z612ebq4bxkm&st=if9hp6xo&dl=0
 mbot_full_classic_rpi_os_link: https://www.dropbox.com/scl/fi/neyf39e1vlq4ggqq2n4jk/2024-11-21-mbot-full-classic-bookworm.img.gz?rlkey=vggaa04owhq1rbywv16lkqab8&st=eugip8eg&dl=0
 mbot_full_omni_rpi_os_link: https://www.dropbox.com/scl/fi/hq1yp1lm7g8i6rrb9dgzz/2024-11-21-mbot-full-omni-bookworm.img.gz?rlkey=k97jkc9qm23ffh83qh9bvvic1&st=eivjt3xq&dl=0
 
-last_modified_at: 2024-11-21
+last_modified_at: 2026-01-15
 ---
 
 To configure a new robot, you must first flash a new SD card with the robot's image.
