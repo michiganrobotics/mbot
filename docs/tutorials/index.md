@@ -22,6 +22,11 @@ Check out our tutorials to get started programming your MBot.
 * [The MBot Bridge API](/docs/tutorials/bridge): Use the MBot Bridge to program the robot.
 * [MicroPython](/docs/tutorials/micropython): Program the MBot using MicroPython.
 
+## Mapping and Tools
+
+* [Mapping & Localization](/docs/tutorials/mapping): Build a map of your environment using SLAM.
+* [MBot Command Line Tool](/docs/tutorials/mbot-cli-tool): Command line tools for monitoring LCM traffic and managing MBot services.
+
 
 **Warning:** This documentation is under development! It is subject to change and you may find some bugs. If you find a bug, [create an issue](https://github.com/michiganrobotics/mbot/issues/new) or email [um-mbothelp@umich.edu](mailto:um-mbothelp@umich.edu) for support.
 {: .notice--danger}

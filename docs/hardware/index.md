@@ -21,7 +21,7 @@ configurations:
     alt: "MBot Control Board"
     title: "MBot Control Board"
     excerpt: "The MBot Control Board is the backbone of an MBot platform"
-    url: "https://mbot-dev.engin.umich.edu/mbot-robotics-control-board/"
+    url: "/docs/hardware/mbot-control-board/"
     btn_label: "More Info"
     btn_class: "btn--primary"
     

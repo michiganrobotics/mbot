@@ -1,9 +1,6 @@
 ---
 layout: single
-title: MBot Omni
-grand_parent: Getting Started
-parent: Hardware
-nav_order: 1
+title: MBot Omni Motor Cables
 author: abhishek
 last_modified_at: 2024-08-12
 ---

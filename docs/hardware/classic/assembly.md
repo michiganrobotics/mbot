@@ -1,9 +1,6 @@
 ---
 layout: single
-title: MBot Classic
-grand_parent: Getting Started
-parent: Hardware
-nav_order: 2
+title: MBot Classic Assembly Guide
 last_modified_at: 2024-10-07
 author: shaw
 ---

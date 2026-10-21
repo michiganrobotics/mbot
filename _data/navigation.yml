@@ -1,34 +1,28 @@
+# Top menu (masthead). Ordered by what most visitors need first.
 main:
-  - title: "About"
-    url: /about
-  # - title: "Teaching"
-  #   url: /teaching
   - title: "Getting Started"
     url: /docs/getting-started/
   - title: "Documentation"
     url: /docs/
+  - title: "Troubleshooting"
+    url: /docs/troubleshooting/
   - title: "UM Courses"
     url: /um-courses
+  - title: "About"
+    url: /about
+  # - title: "Teaching"
+  #   url: /teaching
 
+# Sidebar on every /docs page. Sections follow the order a new user works
+# through: start, build, set up, program, fix problems.
 docs:
-  - title: Documentation
+  - title: "Start Here"
     url: /docs/
     children:
       - title: "Getting Started"
         url: /docs/getting-started/
       - title: "MBot Basics"
         url: /docs/basics/
-      - title: "Troubleshooting"
-        url: /docs/troubleshooting/
-        children:
-          - title: "Overview"
-            url: /docs/troubleshooting/
-          - title: "Hardware Problems"
-            url: /docs/troubleshooting/hardware/
-          - title: "Software Problems"
-            url: /docs/troubleshooting/software/
-          - title: "Networking Problems"
-            url: /docs/troubleshooting/networking/
 
   - title: "Hardware"
     url: /docs/hardware/
@@ -54,6 +48,8 @@ docs:
         children:
           - title: "Assembly"
             url: "/docs/hardware/omni/assembly/"
+          - title: "Motor Cables"
+            url: "/docs/hardware/omni/omni-motor-cables/"
           - title: "Building"
             url: "/docs/hardware/omni/building/"
       - title: "MBot Control Board"
@@ -71,14 +67,14 @@ docs:
             url: /docs/setup/02-configuration/
           - title: "Step 3: Calibration & Flashing"
             url: /docs/setup/03-calibration/
-      - title: "Networking"
-        url: /docs/setup/networking/
       - title: "Flashing Firmware"
         url: /docs/setup/firmware/
+      - title: "Networking"
+        url: /docs/setup/networking/
       - title: "Advanced: OS Image Setup"
         url: /docs/setup/new-image/
 
-  - title: Tutorials
+  - title: "Tutorials"
     url: /docs/tutorials/
     children:
       - title: "What's my MBot's IP?"
@@ -95,15 +91,23 @@ docs:
         url: /docs/tutorials/mapping/
       - title: "MBot Command Line Tool"
         url: /docs/tutorials/mbot-cli-tool/
-  # - title: Tutorials
-  #   children:
-  #     - title: "MBot Tutorials"
-  #       url: /docs/tutorials/
-  #     - title: "Intermediate"
-  #       url: /docs/tutorials/intermediate/
-  #     - title: "Advanced"
-  #       url: /docs/tutorials/advanced/
+      # MicroPython is a placeholder page; add it here when the tutorial exists.
+      # - title: "MicroPython"
+      #   url: /docs/tutorials/micropython/
 
+  - title: "Troubleshooting"
+    url: /docs/troubleshooting/
+    children:
+      - title: "Common Problems"
+        url: /docs/troubleshooting/
+      - title: "Hardware Problems"
+        url: /docs/troubleshooting/hardware/
+      - title: "Software Problems"
+        url: /docs/troubleshooting/software/
+      - title: "Networking Problems"
+        url: /docs/troubleshooting/networking/
+
+  # Placeholder sections, not shown until they have content:
   # - title: Concepts
   #   children:
   #     - title: "Architecture"

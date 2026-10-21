@@ -128,7 +128,7 @@ Slide the three (3) Omni wheel assemblies onto the motor shafts, leaving a nomin
 
 ### 6. Connect motors to the control board
 
-Route the motor wires through the cut-out in the acrylic plate and connect them to the pin-outs on the control board as follows:
+Route the motor wires through the cut-out in the acrylic plate and connect them to the pin-outs on the control board as follows (see [Motor Cables](/docs/hardware/omni/omni-motor-cables) for how the cables are made):
 - Right wheel → M0 slot
 - Back wheel → M1 slot
 - Left wheel → M2 slot
