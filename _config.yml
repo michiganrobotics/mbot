@@ -32,8 +32,6 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 # remote_theme: pmarsceill/just-the-docs
 # theme: just-the-docs
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
 # Site Settings
 locale                   : "en-US"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -41,12 +39,13 @@ name                     : "UM Robotics"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 masthead_title           : " "
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true  # Shows "Home / Docs / Setup / ..." above each page title.
 enable_copy_code_button  : true  # For copy button on code blocks.
 minimal_mistakes_skin: "mbot" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Search configuration.
 search: true
+search_full_content: true  # Index the full text of every page, not only the first words.
 lunr:
   search_within_pages: true
 
@@ -155,13 +154,7 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
+# Plugins: see "Build settings" at the end of this file.
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -198,11 +191,16 @@ defaults:
       path: "docs"
     values:
       show_date: true
+      toc_sticky: true  # Keep the "On this page" list visible while scrolling.
       sidebar:
         nav: "docs"
 
 # Build settings
+# This was listed twice before; YAML only kept the second list, so the
+# effective plugins are unchanged except jekyll-sitemap, which is added
+# so search engines can find every page.
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-sitemap
