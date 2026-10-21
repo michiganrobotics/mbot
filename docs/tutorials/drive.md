@@ -16,7 +16,7 @@ You will need:
 **Don't know your IP?** See the [tutorial on finding out your robot's IP](/docs/tutorials/get-ip).
 {: .notice--info}
 
-Your robot will need to be fully set up before driving. See the [setup instructions](/docs/setup/) if your robot has not been configured. **Students:** Check with your instructor if your aren't sure if your robot has been set up for you.
+Your robot will need to be fully set up before driving. See the [setup instructions](/docs/setup/) if your robot has not been configured. **Students:** Check with your instructor if you aren't sure if your robot has been set up for you.
 {: .notice--info}
 
 ## Driving the Robot

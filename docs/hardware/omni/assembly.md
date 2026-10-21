@@ -290,7 +290,7 @@ Next we are going to attach the Raspberry Pi & the Camera to the middle acrylic 
 1. Fish the RPLidar USB Interface (the little green board with micro usb slot) through the opening in the top plate and align with holes shown in the image.
 2. Using two M2 screws and nuts, screw the USB interface on the bottom side of the top plate.
 3. Place the RPLidar on top of the top plate and align with the holes as shown below.  Using four 2.5MX8 mm screw, secure the RPLidar to the top plate.
-4. Attach a MircoUSB cable to the USB interface. Using a Zip tie secure the USB cable to the top plate.
+4. Attach a Micro USB cable to the USB interface. Using a Zip tie secure the USB cable to the top plate.
 
 
 ### 2. OLED Screen

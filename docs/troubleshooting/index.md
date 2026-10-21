@@ -47,7 +47,7 @@ If the robot wheels *do not turn at all*, here are some things to check:
 
     For details and illustrations, see the Assembly Guide for your platform in the [Hardware](/docs/hardware) section.
 
-**Still not working?** If you still can't drive your robot, you may have a hardware problem. Check that the device `/dev/mbot_tty` exists and check for errors in the service `mbot-lcm-serial.service` (see the [Software Guide]((/docs/troubleshooting/software/#checking-service-status)) for instructions). You may have to replace the USB cable or the Pico.
+**Still not working?** If you still can't drive your robot, you may have a hardware problem. Check that the device `/dev/mbot_tty` exists and check for errors in the service `mbot-lcm-serial.service` (see the [Software Guide](/docs/troubleshooting/software/#checking-service-status) for instructions). You may have to replace the USB cable or the Pico.
 {: .notice--info}
 
 ---

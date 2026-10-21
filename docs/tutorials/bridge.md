@@ -127,7 +127,7 @@ The following functions can be used to read data from the robot.
 
     Reads the latest robot pose computed using Simultaneous Localization and Mapping (SLAM).
 
-    SLAM must be active and the robot must be localized in a good map of its environment to use this function. See the [mapping guide](/mbot/mapping) for instructions. The SLAM pose is measured from the pose where the robot was when the mapping process started.
+    SLAM must be active and the robot must be localized in a good map of its environment to use this function. See the [mapping guide](/docs/tutorials/mapping/) for instructions. The SLAM pose is measured from the pose where the robot was when the mapping process started.
 
     Returns:
     {: .sub-head}
@@ -249,7 +249,7 @@ The following functions can be used to read robot commands. None of the reading 
 
     Reads the latest robot pose computed using Simultaneous Localization and Mapping (SLAM).
 
-    SLAM must be active and the robot must be localized in a good map of its environment to use this function. See the [mapping guide](/mbot/mapping) for instructions. The SLAM pose is measured from the pose where the robot was when the mapping process started.
+    SLAM must be active and the robot must be localized in a good map of its environment to use this function. See the [mapping guide](/docs/tutorials/mapping/) for instructions. The SLAM pose is measured from the pose where the robot was when the mapping process started.
 
     Returns:
     {: .sub-head}

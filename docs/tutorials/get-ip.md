@@ -13,7 +13,7 @@ There are three ways to get the robot's IP, depending on your hardware and your 
 2. **Is your robot configured with an IP registry?** If your fleet has an IP registry, [get the IP from the registry](#getting-the-ip-from-the-mbot-ip-registry).
 3. **No display or IP registry?** [Get the IP from the SD card](#getting-the-ip-from-the-sd-card).
 
-**Note:** Your IP address might change occasionally. You should double check the IP every time your use your robot.
+**Note:** Your IP address might change occasionally. You should double check the IP every time you use your robot.
 {: .notice--info}
 
 ## Getting the IP from the MBot's Display
