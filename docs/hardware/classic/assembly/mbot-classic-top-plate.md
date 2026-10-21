@@ -77,26 +77,24 @@ Note that the OLED mount and the camera mount are both white and look similar, b
     </div>
 
 
-## 3. Assemble 3-heads jumper wire cable
+## 3. Assemble the OLED cable
 
 | Components     | #         |
 |:-------------|:-----------|
-| jumper wires (Black/Red/Yellow/Blue/Green/White)   |6|
-| Crimp connector housings (3/4/6 pins)   |3|
+| jumper wires (Black/Red/Yellow/Blue)   |4|
+| Crimp connector housings (4/6 pins)   |2|
 
-You will need to build the OLED/Bootloader cable assembly as shown. This cable has three heads, which plug into the following:
+You will need to build the OLED cable assembly as shown. This cable has two heads, which plug into the following:
 - Raspberry Pi header (6-pin header)
 - OLED module (4-pin header)
-- Control board (3-pin header)
 
-This cable allows communication with the OLED and controls the run and bootload modes on the control board.
+This cable connects the OLED screen to the Raspberry Pi.
 
-Assemble the 3-heads wire as depicted in the image. **Color and order matters!** Your assembled wire should look exactly like the image indicated.
+Assemble the cable as depicted in the image. **Color and order matters!** Your assembled wire should look exactly like the image indicated. Pin 7 and Pin 11 of the 6-pin header stay empty.
 
 <div class="popup-gallery">
 <a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" title="Assemble the jumper wires 1"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" width="200" height="200"></a>
-<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" width="200" height="200"></a>
-<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" width="400" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" title="OLED cable wiring"><img src="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" width="400" height="120"></a>
 </div>
 
 After assembling the wires, do not plug them in yet.

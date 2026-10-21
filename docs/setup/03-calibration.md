@@ -108,18 +108,15 @@ We will now flash the calibration script onto the Pico to calibrate it before we
 
 The calibration script detects the motor and encoder polarity and then calibrates the motor coefficients. The robot will move around for this step so you will need clear space on the floor (preferably on the same type of surface that you plan to use the robots on).
 
-### Manual Flashing Mode
+### Put the Board in Flashing Mode
+{: #manual-flashing-mode}
 
-Before we flash the robot, we must put it in flashing mode. To do this, follow these steps:
+Before we flash the robot, we must put it in flashing mode. Do this every time before you flash. Follow these steps:
 
 1. Locate the "BOOTSEL" and "RST" buttons on the board (short for "Boot Select" and "Reset").
     ![BOOTSEL Button](/assets/images/setup/bootsel-location.png){:style="width:800px;" .align-center}
 2. Hold down both "RST" and "BOOTSEL"
 3. Release "RST" *then* "BOOTSEL" to put the board into flashing mode.
-
-**Can I skip this step?** Some robots may be able to automatically put the robots in flashing mode, so the above step can be skipped.
-Read through the guide on [Automatic Boot Mode](/docs/setup/firmware/#automatic-boot-mode) to find out more.
-{: .notice--info}
 
 ### Flashing the Calibration Code
 
@@ -133,8 +130,8 @@ To calibrate the robot, with the robot in flashing mode, do:
 </div>
 </div>
 
-**Got an error?** If you get the error: `No accessible RP2040 devices in BOOTSEL mode were found` you may need to [manually put the board into Flashing mode](#manual-flashing-mode) before you run the above command.<br/><br/>
-**Still getting an error?** You may have a problem with [Automatic Boot Mode](/docs/setup/firmware/#automatic-boot-mode). See that guide for troubleshooting tips.
+**Got an error?** If you get the error: `No accessible RP2040 devices in BOOTSEL mode were found`, the board is not in flashing mode. [Put the board in flashing mode](#manual-flashing-mode) and run the command again.<br/><br/>
+**Still getting an error?** See [I can't flash the MBot Control Board](/docs/troubleshooting/#i-cant-flash-the-mbot-control-board) in the Troubleshooting Guide.
 {: .notice--info}
 
 The Pico will reboot automatically, and will then run its calibration routine. *Don't touch the robot while it does this procedure.* The calibration procedure looks like this for the Omni robot:
@@ -145,7 +142,7 @@ The Pico will reboot automatically, and will then run its calibration routine. *
 
 **Flash the MBot Firmware onto the Pico.** The calibration script will have saved parameters onto the Pico's memory. We can now flash the firmware that will run on the Pico during operation.
 
-**Put your board in boot mode:** If you needed to manually put the board in flashing mode during calibration, you will need to do this again before running the next command. See [the manual flashing instructions above](#manual-flashing-mode).
+**Put your board in flashing mode again:** You need to do this before running the next command. See [the flashing mode instructions above](#manual-flashing-mode).
 {: .notice--info}
 
 To flash the MBot Control Board with the firmware, do:

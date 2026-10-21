@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" font-family="Helvetica, Arial, sans-serif" font-size="22">
+  <title>OLED cable: 4-pin OLED connector to 6-pin Raspberry Pi connector</title>
+  <rect width="1000" height="300" fill="#ffffff"/>
+  <!-- OLED housing (4 pin) -->
+  <rect x="140" y="20" width="150" height="150" rx="6" fill="#333"/>
+  <g fill="#111" stroke="#666" stroke-width="2">
+    <rect x="150" y="30" width="60" height="26"/><rect x="150" y="66" width="60" height="26"/>
+    <rect x="150" y="102" width="60" height="26"/><rect x="150" y="138" width="60" height="26"/>
+  </g>
+  <g fill="#ddd"><rect x="160" y="38" width="40" height="10"/><rect x="160" y="74" width="40" height="10"/><rect x="160" y="110" width="40" height="10"/><rect x="160" y="146" width="40" height="10"/></g>
+  <polygon points="140,151 128,144 128,158" fill="#111"/>
+  <g text-anchor="end" fill="#111">
+    <text x="118" y="51">GND</text><text x="118" y="87">3V3</text><text x="118" y="123">SCL</text><text x="118" y="159">SDA</text>
+  </g>
+  <!-- Pi housing (6 pin) -->
+  <rect x="600" y="20" width="160" height="222" rx="6" fill="#333"/>
+  <g fill="#111" stroke="#666" stroke-width="2">
+    <rect x="680" y="30" width="70" height="26"/><rect x="680" y="66" width="70" height="26"/>
+    <rect x="680" y="102" width="70" height="26"/><rect x="680" y="138" width="70" height="26"/>
+    <rect x="680" y="174" width="70" height="26"/><rect x="680" y="210" width="70" height="26"/>
+  </g>
+  <g fill="#ddd"><rect x="690" y="38" width="50" height="10"/><rect x="690" y="74" width="50" height="10"/><rect x="690" y="110" width="50" height="10"/><rect x="690" y="146" width="50" height="10"/><rect x="690" y="182" width="50" height="10"/><rect x="690" y="218" width="50" height="10"/></g>
+  <polygon points="760,43 772,36 772,50" fill="#111"/>
+  <g fill="#111">
+    <text x="782" y="51">3V3</text><text x="782" y="87">GPIO3</text><text x="782" y="123">GPIO5</text>
+    <text x="782" y="159" fill="#777">GPIO7 (empty)</text><text x="782" y="195">GND</text><text x="782" y="231" fill="#777">GPIO11 (empty)</text>
+  </g>
+      <!-- Wires: GND black to pin 9, 3V3 red to pin 1, SCL yellow to pin 5, SDA blue to pin 3 -->
+  <g fill="none" stroke-width="10" stroke-linecap="round">
+    <path d="M290,43 C450,43 450,187 600,187" stroke="#111"/>
+    <path d="M290,79 C450,79 450,43 600,43" stroke="#e8262a"/>
+    <path d="M290,115 L600,115" stroke="#f5a623"/>
+    <path d="M290,151 C450,151 450,79 600,79" stroke="#2b3a99"/>
+  </g>
+  <text x="500" y="285" text-anchor="middle" font-size="18" fill="#444">OLED connector (left) to Raspberry Pi connector (right). Pin 7 and Pin 11 stay empty.</text>
+</svg>

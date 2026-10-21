@@ -318,26 +318,24 @@ Next we are going to attach the Raspberry Pi & the Camera to the middle acrylic 
 ## Final Assembly and Wiring
 {: .line}
 
-### 1. Assemble 3-heads jumper wire cable
+### 1. Assemble the OLED cable
 
 | Components     | #         |
 |:-------------|:-----------|
-| jumper wires (Black/Red/Yellow/Blue/Green/White)   |6|
-| Crimp connector housings (3/4/6 pins)   |3|
+| jumper wires (Black/Red/Yellow/Blue)   |4|
+| Crimp connector housings (4/6 pins)   |2|
 
-You will need to build the OLED/Bootloader cable assembly as shown. This cable has three heads, which plug into the following:
+You will need to build the OLED cable assembly as shown. This cable has two heads, which plug into the following:
 - Raspberry Pi header (6-pin header)
 - OLED module (4-pin header)
-- Control board (3-pin header)
 
-This cable allows communication with the OLED and controls the run and bootload modes on the control board.
+This cable connects the OLED screen to the Raspberry Pi.
 
-Assemble the 3-heads wire as depicted in the image. **Color and order matters!** Your assembled wire should look exactly like the image indicated.
+Assemble the cable as depicted in the image. **Color and order matters!** Your assembled wire should look exactly like the image indicated. Pin 7 and Pin 11 of the 6-pin header stay empty.
 
 <div class="popup-gallery">
 <a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" title="Assemble the jumper wires 1"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires1.jpg" width="200" height="200"></a>
-<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires3.jpg" width="200" height="200"></a>
-<a href="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" title="Assemble the jumper wires 2"><img src="/assets/images/hardware/classic/assembly/topPlate/3-jumper-wires2.jpg" width="400" height="200"></a>
+<a href="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" title="OLED cable wiring"><img src="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" width="400" height="120"></a>
 </div>
 
 
@@ -351,43 +349,35 @@ Assemble the 3-heads wire as depicted in the image. **Color and order matters!**
 |4-40 Thumbscrews|8|
 |USB-C Cable|2|
 |TalentCell Battery with Power Cable|1|
-|Assembled 3-heads jumper wire cable|1|
+|Assembled OLED cable|1|
 
 <a class="image-link" href="/assets/images/hardware/omni/wiring/2-components.jpg">
     <img src="/assets/images/hardware/omni/wiring/2-components.jpg" alt="" style="max-width:400px;"/>
 </a>
 
-1. Plug the 6-pin connector into the Raspberry Pi pins.
+1. Plug the 6-pin connector of the OLED cable into the Raspberry Pi pins.
 
-    According to the image below, the red cable should be connected to Pin 1 (the number inside the circle, not the number marked on the side), and the white cable should be connected to Pin 11. Plug into the Pi as shown in the image.
+    According to the image below, the red cable should be connected to Pin 1 (the number inside the circle, not the number marked on the side). Pin 7 and Pin 11 stay empty. Plug into the Pi as shown in the image.
     <div class="popup-gallery">
     <a href="https://pinout-ai.s3.eu-west-2.amazonaws.com/raspberry-pi-5-gpio-pinout-diagram.webp" title=""><img src="https://pinout-ai.s3.eu-west-2.amazonaws.com/raspberry-pi-5-gpio-pinout-diagram.webp" width="800" height="200"></a>
-    <a href="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" title=""><img src="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" width="350"></a>
+    <a href="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" title=""><img src="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" width="350"></a>
     <a href="/assets/images/hardware/omni/wiring/2-plug-jumper-wire.jpg" title=""><img src="/assets/images/hardware/omni/wiring/2-plug-jumper-wire.jpg" width="350"></a>
     </div>
 
 
-2. **(Optional)** Pull the 2-pin header thru the hole and plug into the control board. This step is in beta for the automatic firmawre flash method (see [link](/docs/setup/firmware/#automatic-boot-mode)). You'll get more details about this during the firmware flashing step, so it's up to you whether to plug it in now or skip it for now.
-
-    <a class="image-link" href="/assets/images/hardware/omni/wiring/2-plug-bootloader.jpg">
-        <img src="/assets/images/hardware/omni/wiring/2-plug-bootloader.jpg" alt="" style="max-width:400px;"/>
-    </a>
-    - White cable to RUN
-    - Green cable to BTLD
-
-3. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
+2. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
 
     <a class="image-link" href="/assets/images/hardware/omni/wiring/2-middle-to-bottom.jpg">
         <img src="/assets/images/hardware/omni/wiring/2-middle-to-bottom.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-4. Connect the 4PIN connector to the OLED, ensuring that the pins align with the marked positions, black wire to GND pin. And also put the battery in the battery slot.
+3. Connect the 4PIN connector to the OLED, ensuring that the pins align with the marked positions, black wire to GND pin. And also put the battery in the battery slot.
 
     <a class="image-link" href="/assets/images/hardware/omni/wiring/2-jumper-to-oled.jpg">
         <img src="/assets/images/hardware/omni/wiring/2-jumper-to-oled.jpg" alt="" style="max-width:400px;"/>
     </a>
 
-5. Then, use the thumb screws to attach the top plate to the middle plate and secure the screws to the standoffs.
+4. Then, use the thumb screws to attach the top plate to the middle plate and secure the screws to the standoffs.
    
     <a class="image-link" href="/assets/images/hardware/omni/wiring/2-top-to-middle.jpg">
         <img src="/assets/images/hardware/omni/wiring/2-top-to-middle.jpg" alt="" style="max-width:400px;"/>
