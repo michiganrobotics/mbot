@@ -81,6 +81,13 @@ function updateLinks() {
         selection_made = selection_made && OMNI_WHEEL_DIAMETER > 0;
     }
 
+    // Firmware v1.2.0 has no MBot Omni files for the 40 resolution encoder
+    // (the download links return 404). Do not offer broken links.
+    const noOmniEnc40 = (MBOT_TYPE === "OMNI" && ENC_RES === 40 && mbotFirmwareVersion === "v1.2.0");
+    if (noOmniEnc40) {
+        selection_made = false;
+    }
+
     if (selection_made) {
         if (btnCalibration.classList.contains('inactive')) {
             btnCalibration.classList.remove('inactive');
@@ -121,6 +128,10 @@ function updateLinks() {
         }
     }
     else {
+        if (noOmniEnc40) {
+            document.getElementById('wget-command').querySelector('code').textContent =
+                "There is no " + mbotFirmwareVersion + " firmware for the MBot Omni with the 40 resolution encoder. Ask course staff which firmware to use.";
+        }
         if (!btnCalibration.classList.contains('inactive')) {
             btnCalibration.classList.remove('btn--info');
             btnCalibration.classList.add('inactive');

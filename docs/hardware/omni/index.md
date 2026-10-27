@@ -8,7 +8,7 @@ last_modified_at: 2024-08-23
   <img src="/assets/images/mbotomniHeadShot.png" alt="" style="max-width:200px;" class="align-center"/>
 </a>
 
-Ready to build your own MBot Omni? If you have all the parts, head to the [Assembly Guide](/docs/hardware/omni/assembly) to get started.
+Ready to build your own MBot Omni? If you have all the parts, head to the [Assembly Guide](/docs/hardware/omni/assembly) to get started. You will also need to make the [Motor Cables](/docs/hardware/omni/omni-motor-cables).
 
 Need to get the hardware? See our [Building Guide](/docs/hardware/omni/building) for the design files and list of parts.
 

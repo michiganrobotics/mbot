@@ -15,29 +15,17 @@ This guide is for Differential Drive MBot Classic final wiring assembly. At the 
 
 | Components     | #         |
 |:-------------|:---- -------|
-|  3-heads jumper wire cable |1|
+|  OLED cable |1|
 |  4-40 thumb screw 3/8” |8|
 
-1. Plug the 2-pin header into the control board. This step is in beta for the automatic firmawre flash method (see [link](/docs/setup/firmware/#automatic-boot-mode)). You'll get more details about this during the firmware flashing step, so it's up to you whether to plug it in now or skip it for now.
+1. Use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
 
-    <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg">
-        <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg" alt="" style="max-width:400px;"/>
-    </a>
-    - White cable to RUN
-    - Green cable to BTLD
+2. Plug the 6-pin connector of the OLED cable into the Raspberry Pi pins.
 
-    Next, pull the cable out through the hole on the left side of the middle plate. Then, use the thumb screws to attach the middle plate to the bottom plate and secure the screws to the standoffs.
-
-    <a class="image-link" href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble2.png">
-        <img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble2.png" alt="" style="max-width:400px;"/>
-    </a>
-
-2. Plug the 6-pin connector into the Raspberry Pi pins.
-
-    According to the image below, the red cable should be connected to Pin 1 (the number inside the circle, not the number marked on the side), and the white cable should be connected to Pin 11.
+    According to the image below, the red cable should be connected to Pin 1 (the number inside the circle, not the number marked on the side). Pin 7 and Pin 11 stay empty.
     <div class="popup-gallery">
     <a href="https://pinout-ai.s3.eu-west-2.amazonaws.com/raspberry-pi-5-gpio-pinout-diagram.webp" title=""><img src="https://pinout-ai.s3.eu-west-2.amazonaws.com/raspberry-pi-5-gpio-pinout-diagram.webp" width="800" height="200"></a>
-    <a href="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" title=""><img src="/assets/images/hardware/classic/assembly/middlePlate/3-jumper-wires2.jpg" width="350"></a>
+    <a href="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" title=""><img src="/assets/images/hardware/classic/assembly/topPlate/oled-cable.svg" width="350"></a>
     <a href="/assets/images/hardware/classic/assembly/wiring/1-final-assemble3.png" title=""><img src="/assets/images/hardware/classic/assembly/wiring/1-final-assemble3.png" width="350"></a>
     </div>
 

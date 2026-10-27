@@ -19,7 +19,7 @@ This guide is for Differential Drive MBot Classic middle plate assembly. At the 
 | Middle Acrylic Sheet     |1|    |
 | Raspberry PI 5           |1|    |
 | M2.5 8mm Nylon Standoffs |4| The grey ones (shortest)|
-| M2.5 x 6mm Screws        |8| Use with Nylon standsoffs |
+| M2.5 x 6mm Screws        |8| Use with Nylon standoffs |
 | 2.5” Aluminum standoffs  |4| Longest standoffs |
 | M2.5 x 8mm Screws        |4| Use the the 2.5” standoffs|
 | M2.5 X 30mm Standoffs    |4| Second shortest standoffs |

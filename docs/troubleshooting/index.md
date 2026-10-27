@@ -47,7 +47,7 @@ If the robot wheels *do not turn at all*, here are some things to check:
 
     For details and illustrations, see the Assembly Guide for your platform in the [Hardware](/docs/hardware) section.
 
-**Still not working?** If you still can't drive your robot, you may have a hardware problem. Check that the device `/dev/mbot_tty` exists and check for errors in the service `mbot-lcm-serial.service` (see the [Software Guide]((/docs/troubleshooting/software/#checking-service-status)) for instructions). You may have to replace the USB cable or the Pico.
+**Still not working?** If you still can't drive your robot, you may have a hardware problem. Check that the device `/dev/mbot_tty` exists and check for errors in the service `mbot-lcm-serial.service` (see the [Software Guide](/docs/troubleshooting/software/#checking-service-status) for instructions). You may have to replace the USB cable or the Pico.
 {: .notice--info}
 
 ---
@@ -69,15 +69,9 @@ No accessible RP2040 devices in BOOTSEL mode were found.
 {: .no-copy}
 If you see this error, the firmware *did not flash correctly*. Here are some things to check:
 
-1. **Make sure the Pico is in Boot Mode.** See the [Firmware Flashing Tutorial](/docs/setup/firmware/#1-manual-boot-mode) for instructions to do this. The buttons are small, so make sure you are pressing them and releasing them in the correct order!
-2. **Do you have automatic flashing set up?** If you are using the `RST` and `BOOTSEL` buttons to put the Pico into Boot Mode and still getting the error above, you may have a *known issue* with automatic flashing (this feature is new and may not always work!).
-
-    Check if you have these cables connected to the MBot Control Board (the green and white wires).
-    ![The cable needed to automatically flash the MBot Control Board](/assets/images/hardware/classic/assembly/wiring/1-final-assemble1.jpg){:style="max-width:400px;" .align-center}
-
-    If so, **unplug the connector from the MBot Control Board** to disable automatic flashing. Put the board in Boot Mode manually (see the [Firmware Flashing Tutorial](/docs/setup/firmware/#1-manual-boot-mode) for instructions), then try again.
-
-3. **Try holding `BOOTSEL` for longer.** If step 1 and 2 don't work for you, when you are putting the board in Boot Mode, try holding down the `BOOTSEL` button for 5-10 seconds *after* you release `RST`.
+1. **Make sure the Pico is in Boot Mode.** See the [Firmware Flashing Tutorial](/docs/setup/firmware/#1-manual-boot-mode) for instructions to do this. The buttons are small, so make sure you are pressing them and releasing them in the correct order! You need to do this every time before you flash.
+2. **Check the USB cable.** The USB-C cable must connect the Pico to one of the Raspberry Pi's USB ports, and the MBot Control Board must have power.
+3. **Try holding `BOOTSEL` for longer.** If steps 1 and 2 don't work for you, when you are putting the board in Boot Mode, try holding down the `BOOTSEL` button for 5-10 seconds *after* you release `RST`.
 
 **Still not working?** If you still can't flash your Pico, it may need to be replaced.
 {: .notice--info}

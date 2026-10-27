@@ -46,7 +46,7 @@ You now have an SD card with the OS image flashed on it for the Raspberry Pi. Ke
 
 ## 2. Configure the image
 
-If the flash succeeded, the SD card will have two partitions: a 134MB Volume formatted as fat32 and a 16GB Volume formated as ext4. When you insert the SD card in your laptop, it should mount the smaller fat32 partition.  Find the file `mbot_config.txt` on this volume and modify it as follows:
+If the flash succeeded, the SD card will have two partitions: a 134MB Volume formatted as fat32 and a 16GB Volume formatted as ext4. When you insert the SD card in your laptop, it should mount the smaller fat32 partition.  Find the file `mbot_config.txt` on this volume and modify it as follows:
 - Set `mbot_hostname` to a unique hostname for your robot.
     **Tip:** If you are setting up an MBot fleet (e.g. for a course) you may want to set a naming convention for the robots to keep track of them more easily, like `mbot-fleetname-XX`. You can then fill in `XX` for each robot later from your image.
     {: .notice--info}
@@ -62,13 +62,13 @@ See the [Networking Guide](/docs/setup/networking) to choose how your robot will
 * `new_wifi_ssid` is the *name* of the WiFi network.
 * `new_wifi_password` is the *password* for the WiFi network.
 
-**If you are using an institutional or enterprise network:** If your WiFi connection requires you to log on (e.g. a university WiFi network), you will need a monitor on first boot to log in to the WiFi. Proceed to [Step 3](#3-boot-the-pi5).
+**If you are using an institutional or enterprise network:** If your WiFi connection requires you to log on (e.g. a university WiFi network), you will need a monitor on first boot to log in to the WiFi. Proceed to [Step 3](#3-boot-the-robot).
 
 ### Determine how to get your IP address
 
 In order to connect to the MBot in the next steps, you will need a way of knowing the robot's IP address. See the [Networking Guide](/docs/setup/networking) for details on how to make this choice.
 
-**If you are using the MBot's display or getting the IP from the SD Card:** This is set up by default on the MBot base image. No further action is needed. Go to [Step 3](#3-boot-the-pi5).
+**If you are using the MBot's display or getting the IP from the SD Card:** This is set up by default on the MBot base image. No further action is needed. Go to [Step 3](#3-boot-the-robot).
 
 **If you are using an IP registry:** Enter the details of your IP registry in `mbot_config.txt`:
 * `mbot_ip_list_url` is the URL to the IP registry on GitHub for your fleet of robots. It should be in the form `https://github.com/<my-org>/mbot_ip_registry.git`.
@@ -162,16 +162,16 @@ For this part, you should first [connect to your robot using VSCode](/docs/tutor
     1. Download the latest release and unpack it:
         ```bash
         cd ~/mbot_ws/
-        wget https://github.com/mbot-project/mbot_lcm_monitor/releases/download/{{ page.lcm_monitor_version }}/mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz
-        tar -xvzf mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz
+        wget https://github.com/mbot-project/mbot_lcm_monitor/releases/download/{{ page.lcm_monitor_version }}/mbot_lcm_monitor-{{ page.lcm_monitor_version | remove_first: 'v' }}.tar.gz
+        tar -xvzf mbot_lcm_monitor-{{ page.lcm_monitor_version | remove_first: 'v' }}.tar.gz
         ```
     2. Install the app:
         ```bash
-        cd mbot_lcm_monitor-{{ page.lcm_monitor_version }}/
+        cd mbot_lcm_monitor-{{ page.lcm_monitor_version | remove_first: 'v' }}/
         ./deploy_app.sh --no-rebuild
         ```
-    3. Follow the printed instructions (which you can also find in `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/README.txt`) to configure NGINX.
-    4. It's now safe to delete the folder `mbot_lcm_monitor-{{ page.lcm_monitor_version }}/` and the tar file `mbot_lcm_monitor-{{ page.lcm_monitor_version }}.tar.gz`.
+    3. Follow the printed instructions (which you can also find in `mbot_lcm_monitor-{{ page.lcm_monitor_version | remove_first: 'v' }}/README.txt`) to configure NGINX.
+    4. It's now safe to delete the folder `mbot_lcm_monitor-{{ page.lcm_monitor_version | remove_first: 'v' }}/` and the tar file `mbot_lcm_monitor-{{ page.lcm_monitor_version | remove_first: 'v' }}.tar.gz`.
 
 7. **Optional: Install the MBot Autonomy code.** The autonomy code includes SLAM and a motion controller program. The autonomy source code is private, but you can install the public compiled binaries and services.
 
